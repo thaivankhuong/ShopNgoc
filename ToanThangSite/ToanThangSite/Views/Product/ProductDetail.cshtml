@@ -1,0 +1,136 @@
+﻿@model ToanThangSite.Entities.Core.Product
+@using ToanThangSite.Business.Common
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_LayoutV2.cshtml";
+}
+<style>
+    .product-info table {
+        width: 100% !important;
+    }
+</style>
+
+<div>
+    <div class="container">
+        <div class="product-single">
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                    <div class="product-media thumbnai-none">
+
+                        <div class="product-single-photos pull-none ">
+                            <a href="@Model.Avatar" alt="@Model.Title" class="cloud-zoom" data-rel="useWrapper: false, showTitle: false, zoomWidth:'auto', zoomHeight:'auto', adjustY:0, adjustX:10" style="position: relative; display: block;">
+                                <img src="@Model.Avatar" alt="@Model.Title" title="@Model.Title" style="display: block;">
+                            </a>
+                            <div class="mousetrap" style="background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 470px; height: 658px; left: 0px; top: 0px; cursor: move;"></div>
+                        </div>
+
+                        <div class="more-views">
+                            <div class="swiper-container swiper-container-horizontal" data-margin="15" data-items="3" data-xs-items="3" data-direction="horizontal" style="cursor: grab;">
+                                <div class="swiper-wrapper">
+                                    @foreach (var item in Model.ListImage.Split(';').Where(x => x != "" && x != null && x != string.Empty))
+                                    {
+                                        <div class="swiper-slide">
+                                            <a href="@item" class="thumb-link" title="" data-rel="@item">
+                                                <img src="@item" alt="@Model.Title">
+                                            </a>
+                                        </div>
+                                    }
+
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev swiper-button-disabled"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    <div class="product-info">
+                        <h1 itemprop="name">@Model.Title</h1>
+                        <span class="available instock"><i class="fa fa-check-square-o"></i>@(Convert.ToBoolean(Model.Status) ? "IN STOCK" : "IN STOCK")</span>
+                        <div itemprop="offers" itemscope="">
+                            <meta itemprop="priceCurrency" content="SGD">
+                            <link itemprop="availability">
+                            <div class="product-single-prices">
+                                @if (!string.IsNullOrEmpty(Model.PriceSale))
+                                {
+
+                                    <span id="ProductPrice" class="price" itemprop="price"> <span class="money" data-currency-sgd="$@String.Format("{0:0,0}", Convert.ToDouble( Model.PriceSale))"> $@string.Format("{0:0,0}", Convert.ToDouble(Model.PriceSale))</span></span>
+                                    <s id="ComparePrice" class="product-single-sale"> <span class="money" data-currency-sgd="$@String.Format("{0:0,0}", Convert.ToDouble(Model.Price))"> $@String.Format("{0:0,0}", Convert.ToDouble(Model.Price)) </span></s>
+                                }
+                                else
+                                {
+                                    <span id="ProductPrice" class="price" itemprop="price"> <span class="money" data-currency-sgd="$@String.Format("{0:0,0}", Model.Price)" data-currency="SGD"> $@String.Format("{0:0,0}", Model.Price)</span></span>
+                                }
+
+                            </div>
+                            <div class="product-description rte">
+                                @Html.Raw(Model.Content)
+                            </div>
+                                <div class="product-options  linked-options">
+                                    <div class="selector-wrapper">
+                                        <label for="productSelect-option-0">Size</label>
+                                        <select class="single-option-selector" data-option="option1" id="productSelect-option-0">
+                                            <option value="6">6</option>
+                                            <option value="8">8</option>
+                                            <option value="10">10</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="total-price"> <span class="money" data-currency-sgd=" $180.00" data-currency="SGD"> $180.00</span></div>
+
+                                </div>
+                                <div class="product-actions">
+                                    <div class="product-single-quantity">
+                                        <label class="label" for="Quantity">Qty</label>
+                                        <div class="quantity">
+                                            <span class="qtyminus" data-field="quantity"><i class="fa fa-angle-down"></i></span>
+                                            <input type="text" id="Quantity" data-field="quantity" name="quantity" value="1" class="quantity-selector">
+                                            <span class="qtyplus" data-field="quantity"><i class="fa fa-angle-up"></i></span>
+                                        </div>
+                                    </div>
+                                    @{ 
+                                        var url = "/" + Model.Title.ToUrlFormat(true) + ".html";
+                                    }
+                                    <button  onclick="addtocart(this,true)" data-productid="@Model.ProductID"  data-name="@Model.Title" data-url="@url" data-price="@Model.Price" data-pricesale="@Model.PriceSale" data-urlimg="@Model.Avatar" class="btn btn-primary btn-addToCart">Add to Cart</button>
+                                    <div class="product-wishlist">
+
+                                        <div class="action-item">
+                                            <a class="action-link wishlist" href="javascript:;" title="Wishlist">
+                                                <i class="fa fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="product-sharing">
+                                <div class="social-sharing is-clean" data-permalink="https://iwantthemissingpiece.com/products/dahlia-cheongsam-1">
+                                    <label class="label">Share This</label>
+                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1" class="share-facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a target="_blank" href="http://twitter.com/share?text=Dahlia%20Cheongsam&amp;url=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1" class="share-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a target="_blank" href="../../pinterest.com/pin/create/button/index9918.html?url=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1&amp;media=http://cdn.shopify.com/s/files/1/1187/0028/products/TMP_FLIGHTOFFANCY-2941_1024x1024.jpg?v=1578226670&amp;description=Dahlia%20Cheongsam" class="share-pinterest">
+                                        <i class="fa fa-pinterest"></i>
+                                    </a>
+                                    <a target="_blank" href="http://plus.google.com/share?url=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1" class="share-google">
+                                        <!-- Cannot get Google+ share count with JS yet -->
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @Html.Action("ProductSimilar", "Product", new { @id = Model.ProductID })
+    </div>
+
+</div>
+
+
+<script src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/cloud-zoom.1.0.2.min5f5d.js?v=15333175034253906628" type="text/javascript"></script>
+

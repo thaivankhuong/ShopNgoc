@@ -1,0 +1,234 @@
+﻿@model ToanThangSite.Entities.Core.Product
+@using ToanThangSite.Business.Common
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="body">
+    <div class="product-slide-2 mb25">
+        <div class="uk-container uk-container-center">
+            <div class="border">
+                <div class="uk-grid uk-grid-medium">
+                    <div class="uk-width-large-1-1">
+                        <div class="ts-heading">
+                            <!-- <h3 class="title">@Model.Title</h3> -->
+                        </div>
+                        <div class="product-top">
+                            <div class="uk-grid uk-grid-small">
+                                <div class="uk-width-large-1-2">
+                                    <div class="product-1">
+                                        <div class="slide-product mb25">
+                                            <div class="slide-4">
+                                                <div id="slider" class="flexslider uk-margin-small-bottom">
+                                                    <img src="@Model.Avatar" alt="@Model.Title" style="width: 100%;" />
+                                                </div>
+                                                <div class="thumbs_list">
+                                                    <ul class="thumbs_list_derail">
+                                                        @foreach (var item in Model.ListImage.Split(';').Where(x => x != "" && x != null && x != string.Empty))
+                                                        {
+                                                            <li><img src="@item" alt="@Model.Title" /></li>
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- .slide-4 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-large-1-2">
+                                    <div class="uk-width-1-1 product-info">
+                                        <h1 class="title">@Model.Title</h1>
+                                        <p>
+                                            <strong>Giá bán :&nbsp;</strong> <strong class="blue">@String.Format("{0:0,0}", Model.Price) VND</strong>
+                                        </p>
+                                        <p>
+                                            <strong>Khuyến mãi :&nbsp;</strong> <strong class="red">@String.Format("{0:0,0}VND", Model.PriceSale) </strong>
+                                        </p>
+                                        <p><strong>Mã Sản Phẩm :&nbsp;</strong>@Model.Code</p>
+                                        <p>
+                                            <strong>Kho hàng :&nbsp;</strong>
+                                            @if (Model.Status == true)
+                                            {
+                                                @Html.Raw("Còn hàng")
+                                            }
+                                        </p>
+
+
+                                        <p>
+                                            <strong>Xuất xứ :&nbsp;</strong>
+                                            @if (Model.MadeIn == "")
+                                            {
+                                                @Html.Raw("Đang cập nhật")
+                                            }
+                                            else
+                                            {
+                                                @Html.Raw(Model.MadeIn)
+                                            }
+                                        </p>
+                                        <p>
+                                            @if (Model.Tags != "" && Model.Tags != null)
+                                            {
+                                                <strong>Tags :&nbsp;</strong>
+                                                foreach (var item in Model.Tags.Split(',').Where(x => x != "" && x != null && x != string.Empty))
+                                                {
+                                                    <a href="@String.Format("/tags-{0}.html",@item.ToString().ToLower().Trim(' ').Replace(" ","-"))">@item</a>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <strong>Tags :&nbsp;</strong>
+                                            }
+                                        </p>
+
+                                        <p><strong>Tóm tắt :&nbsp;</strong>@Model.Description</p>
+
+
+                                    </div>
+
+
+                                    <a href="#purchase-info" class="order uk-text-center mb15" data-uk-modal="">
+                                        <span class="title-2">ĐẶT MUA, GIAO HÀNG TẬN NƠI</span>
+                                        <span class="text-2">(Thanh Toán Khi Nhận Hàng)</span>
+                                    </a>
+                                    <div class="share-buttons">
+                                        <!-- Facebook -->
+                                        <a href="https://www.facebook.com/tomhumalaska.vn/" id="fb_a" target="_blank">
+                                            <img src="/Content/img/facebook.png" alt="Facebook" />
+                                        </a>
+
+                                        <!-- Google+ -->
+                                        <a href="#" id="gg_a" target="_blank">
+                                            <img src="/Content/img/google.png" alt="Google" />
+                                        </a>
+
+                                        <!-- Twitter -->
+                                        <a href="#" id="tw_a" target="_blank">
+                                            <img src="/Content/img/twitter.png" alt="Twitter" />
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product-detail mt25">
+                            <ul class="uk-subnav uk-subnav-pill ts-ul1" data-uk-switcher="{connect:'#subnav-pill-content-1'}">
+                                <li class="uk-active">
+                                    <a href="#">Chi tiết sản phẩm</a>
+                                </li>
+                                @*<li>
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>*@
+                                @*<li>
+                                    <a href="#">Bản đồ</a>
+                                </li>*@
+                            </ul>
+                            <div class="sub-info border">
+                                <ul id="subnav-pill-content-1" class="uk-switcher">
+                                    <li class="uk-active">
+                                        <!-- <h2>@Model.Title</h2> -->
+
+                                        <p>&nbsp;</p>
+
+                                        <p class="mb20">@Html.Raw(Model.Content)</p>
+
+                                        <div class="order-parent">
+                                            <a href="#purchase-info" class="order uk-text-center mb15" data-uk-modal="">
+                                                <span class="title-2">ĐẶT MUA, GIAO HÀNG TẬN NƠI</span>
+                                                <span class="text-2">(Thanh Toán Khi Nhận Hàng)</span>
+                                            </a>
+                                        </div>
+                                        <div class="feature-post-9">
+                                            <div class="uk-container uk-container-center">
+                                                <div class="border1">
+                                                    <div class="border2">
+                                                        <div class="heading">
+                                                            <h2 class="title">@ViewBag.ReasonTitle</h2>
+                                                        </div>
+                                                        <div>
+                                                            <ul class="ul1">
+                                                                @foreach (var item in ViewBag.ReasonContent)
+                                                                {
+                                                                    <li>@item</li>
+                                                                }
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- .feature-post-9 -->
+                                    </li>
+                                    @*<li>
+                                        <p>Ch&agrave;o mừng bạn đến Nh&agrave; Trà Thảo Dược Toàn Thắng</p>
+
+                                        <p>Khi truy cập v&agrave;o website <b><a href="http://thaoduoctoanthang.com/">thaoduoctoanthang.com</a></b> để tham khảo, tư vấn hoặc mua sản phẩm. Bạn c&oacute; thể li&ecirc;n hệ với nh&agrave; thuốc trực tiếp tr&ecirc;n trang web bằng c&aacute;ch:</p>
+
+                                        <p>&ndash; Gửi mail g&oacute;p &yacute; v&agrave;o mail: ltt.tdg@gmail.com</p>
+
+                                        <p>&ndash; Click trực tiếp v&agrave;o ĐẶT MUA, GIAO H&Agrave;NG TẬN NƠI.</p>
+
+                                        <p>&ndash; LH trực tiếp v&agrave;o SDT:  0902.436.989</p>
+
+                                        <p>&ndash; Đến trực tiếp địa chỉ tại tất cả các chi nhánh</p>
+
+                                        <p>Trong trường hợp kh&aacute;ch h&agrave;ng chuyển khoản trước v&agrave;o số t&agrave;i khoản: 0100000000009, chủ t&agrave;i khoản: thaoduoctoanthang, Ng&acirc;n h&agrave;ng n&ocirc;ng nghiệp v&agrave; ph&aacute;t triển n&ocirc;ng th&ocirc;n Agribank chi nh&aacute;nh Thanh Tr&igrave;. KH sẽ được giảm ngay 20.000đ/1sp.</p>
+
+                                        <p>Mua h&agrave;ng dưới mọi h&igrave;nh thức. Khi mua h&agrave;ng tại Trà Thảo Dược Toàn Thắng, kh&aacute;ch h&agrave;ng nhận h&agrave;ng rồi mới thanh to&aacute;n cho nh&acirc;n vi&ecirc;n chuyển ph&aacute;t.</p>
+
+                                        <p>
+                                            <em>Ch&uacute;c bạn lu&ocirc;n khỏe mạnh</em>
+                                        </p>
+                                    </li>*@
+                                    <li>
+                                        @if (Model.ListBranch != "" && Model.ListBranch != null)
+                                        {
+                                            @Html.Action("BranchProduct", "Branch", new { @ID = Model.ListBranch.Trim(';').Split(';') })
+                                        }
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="purchase-info" class="uk-modal">
+    <div class="uk-modal-dialog p35">
+        <a class="uk-modal-close uk-close"></a>
+        <div class="title m0 pb25 fz20 lh26">
+            <span class="uk-text-bold">Thông tin liên hệ</span>
+        </div>
+        <div id="orderForm" class="uk-form form">
+            <div class="item mb15">
+                <label for="" class="fc-db mb5">Họ và tên</label>
+                <input type="text" name="fullname" id="Order_FullName" required class="uk-width-1-1 text" placeholder="Họ và tên" />
+            </div>
+            <div class="item mb15">
+                <label for="" class="fc-db mb5">Địa chỉ</label>
+                <input type="text" name="address" required id="Order_Address" class="uk-width-1-1 text" placeholder="Địa chỉ" />
+            </div>
+            <div class="item mb15">
+                <label for="" class="fc-db mb5">Số điện thoại</label>
+                <input type="text" name="phone" required id="Order_Mobi" class="uk-width-1-1 text" placeholder="Số điện thoại" />
+            </div>
+            <div class="item mb15">
+                <label for="" class="fc-db mb5">Email (không bắt buộc)</label>
+                <input type="email" name="email" id="Order_Email" class="uk-width-1-1 text" placeholder="Email" />
+                <input type="hidden" name="pname" value="@Model.Title" id="Order_ProductName" class="uk-width-1-1 text" />
+            </div>
+            <div class="item mb15">
+                <label for="" class="fc-db mb5">Nội dung</label>
+                <textarea name="message" class="uk-width-1-1" id="Order_Content" placeholder="Tên sản phẩm và số lượng"></textarea>
+            </div>
+            <p style="color:red" id="ms_errorOrder"></p>
+            <div class="item mb15">
+                <button type="submit" name="submit" value="" onclick="SendOrder()" id="senOrderp" class="uk-button btn">Gửi</button>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("ProductSimilar", "Product", new { @id = Model.ProductID })

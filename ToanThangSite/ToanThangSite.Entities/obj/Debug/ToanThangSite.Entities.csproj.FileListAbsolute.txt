@@ -1,0 +1,118 @@
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll.config
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll.config
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.pdb
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csprojResolveAssemblyReference.cache
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
+D:\Napoho\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll.config
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csprojResolveAssemblyReference.cache
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csprojAssemblyReference.cache
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CoreCompileInputs.cache
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CopyComplete
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csprojAssemblyReference.cache
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CoreCompileInputs.cache
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CopyComplete
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb

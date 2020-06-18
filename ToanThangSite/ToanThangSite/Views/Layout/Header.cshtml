@@ -1,0 +1,164 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Core.ProductCategory>
+@using ToanThangSite.Business.Common
+<header id="header" class="site-header header-v1  header--fixed hide-from-print headroom headroom--top headroom--not-bottom">
+    <div class="header-bar">
+        <div class="container">
+            <div class="header-bar-inner">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-2">
+                        <div class="mobile-menu dropdown-toggle hidden-lg hidden-md">
+                            <a class="menu-icon" href="#" title="">
+                                <svg version="1.1" id="Capa_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 317.825 317.825" style="enable-background:new 0 0 317.825 317.825;" xml:space="preserve">
+<g><g> <g><g>
+                                <path style="fill:#010002;" d="M301.934,143.021H15.891C7.119,143.021,0,150.14,0,158.912c0,8.772,7.119,15.891,15.891,15.891
+					h286.042c8.74,0,15.891-7.119,15.891-15.891C317.825,150.14,310.674,143.021,301.934,143.021z" />
+
+                                <path style="fill:#010002;" d="M15.891,79.456h286.042c8.74,0,15.891-7.119,15.891-15.891s-7.151-15.891-15.891-15.891H15.891
+					C7.119,47.674,0,54.793,0,63.565S7.119,79.456,15.891,79.456z" />
+
+                                <path style="fill:#010002;" d="M301.934,238.369H15.891C7.119,238.369,0,245.52,0,254.26c0,8.74,7.119,15.891,15.891,15.891
+					h286.042c8.74,0,15.891-7.151,15.891-15.891C317.825,245.52,310.674,238.369,301.934,238.369z" />
+	</g></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="main-menu">
+                                    <ul class="main-nav toggle-menu">
+                                        <li class="level-0 menu-item active ">
+                                            <a href="/" class="level-0">Home</a>
+                                        </li>
+                                        <li class="level-0 menu-item ">
+                                            <a href="/about.html" class="level-0">About</a>
+                                        </li>
+                                        <li class="level-0 menu-item toggle-content" aria-haspopup="true">
+                                            <a href="javascript:;" class="level-0">
+                                                Shop<span class="caret"><i class="fa fa-angle-down"></i></span>
+                                            </a>
+                                            <ul class="sub-menu level-1">
+                                                @foreach (var item in Model)
+                                                {
+                                                    var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                                                    <li>
+                                                        <a href="@url">@item.Title <span class="count"></span></a>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </li>
+                                        <li class="level-0 menu-item ">
+                                            <a href="stockists.html" class="level-0">Stores</a>
+                                        </li>
+                                        <li class="level-0 menu-item ">
+                                            <a href="contact.html" class="level-0">Contact</a>
+                                        </li>
+                                        <li class="level-0 menu-item ">
+                                            <a href="blogs/tmp-stories.html" class="level-0">TMP Gives Back</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-inline message hidden-sm hidden-xs">
+                            <li>
+                                <p><i class="fa fa-envelope"> </i> Email : <a href="mailto:hello@iwantthemissingpiece.com">hello@iwantthemissingpiece.com</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-instagram"></i> IG: <a href="https://www.instagram.com/iwantthemissingpiece/" target="_blank">@@iwantthemissingpiece</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-inner">
+        <div class="container">
+            <div class="inner-header-wrap">
+                <div class="logo">
+
+                    <a href="index.html" class="logo-wrapper hidden-xs">
+                        <img src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/logo69f9.png?v=18249558904098692576" alt="The Missing Piece">
+                    </a>
+                    <a href="index.html" class="logo-wrapper hidden-lg hidden-md hidden-sm">
+                        <img src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/logo69f9.png?v=18249558904098692576" alt="The Missing Piece">
+                    </a>
+                </div>
+                <div class="site-header-inner">
+                    <div class="main-menu hidden-sm hidden-xs">
+                        <div class="main-menu">
+                            <ul class="main-nav">
+                                <li class="level-0 menu-item active ">
+                                    <a href="/" class="level-0">Home</a>
+                                </li>
+                                <li class="level-0 menu-item ">
+                                    <a href="/about.html" class="level-0">About</a>
+                                </li>
+                                <li class="level-0 menu-item dropdown" aria-haspopup="true">
+                                    <a href="collections.html" class="level-0">
+                                        Shop<span class="caret"></span>
+                                    </a>
+                                    <ul class="sub-menu level-1">
+                                        @foreach (var item in Model)
+                                        {
+                                            var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                                            <li>
+                                                <a href="@url">@item.Title <span class="count"></span></a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </li>
+                                <li class="level-0 menu-item ">
+                                    <a href="stockists.html" class="level-0">Stores</a>
+                                </li>
+                                <li class="level-0 menu-item ">
+                                    <a href="contact.html" class="level-0">Contact</a>
+                                </li>
+                                <li class="level-0 menu-item ">
+                                    <a href="blogs/tmp-stories.html" class="level-0">TMP Gives Back</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mini-cart mini-cart-default default click">
+                        <a title="" href="javascript:void(0)">
+
+                            <i class="fa fa-shopping-cart"></i><span class="cart-count">0</span>
+                        </a>
+                        <div class="miniCart-content">
+
+                            <div class="noitice">
+                                There are <span class="cart-count">0</span> <span>items</span> in your cart
+                            </div>
+                            <ul class="miniCart-list">
+                               
+                            </ul>
+                            <div class="summary">
+                                <p class="total">
+                                    <span class="label">Total</span>
+                                    <span class="price cart-total"> <span class=money>$0 </span></span>
+                                </p>
+                                <div class="actions">
+                                    <a class="btn btn-small btn-primary btn-cart" href="cart.html">View cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-search dropdown-toggle">
+                        <a class="btn-search" title="" href="#"><i class="fa fa-search"></i></a>
+                        <div class="dropdown-content search-content">
+                            <form action="/search" method="get" class="clearfix" role="search">
+                                <input type="hidden" name="type" value="product">
+                                <button type="submit" class="search-submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <input type="search" name="q" value="" aria-label="Search" class="search-input" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-vsb header-v1"></div>

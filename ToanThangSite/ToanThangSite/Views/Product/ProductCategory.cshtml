@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Core.ProductCategory>
+@using ToanThangSite.Business.Common
+<ul>
+    @foreach (var item in Model)
+    {
+        var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+        <li>
+            <a href="@url" title="@item.Title.ToUrlFormat(true)">@item.Title</a>
+        </li>
+    }
+</ul>

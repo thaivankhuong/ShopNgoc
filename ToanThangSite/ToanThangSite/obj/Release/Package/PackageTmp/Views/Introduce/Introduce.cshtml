@@ -1,0 +1,26 @@
+﻿@model ToanThangSite.Entities.Core.Introduce
+@{
+    ViewBag.Title = "Introduce";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="body">
+    <div class="product-slide-2 mb25">
+        <div class="uk-container uk-container-center">
+            <div class="border">
+                <div class="uk-grid uk-grid-medium">
+                    <div class="uk-width-large-1-1">
+                        <div class="ts-heading">
+                            <h3 class="title">Về Chúng Tôi</h3>
+                        </div>
+
+                        <div class="ts-text">
+                            <p>@Html.Raw(Model.Content)</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

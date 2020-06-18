@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Core.Branch>
+<div class="middle">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-1">
+            <div class="heading">
+                <h3 class="title"><a href="#" onclick="return false;" title="">Danh sách đại lý</a></h3>
+            </div>
+            @foreach (var item in Model)
+            {
+                <div class="item">
+                    <p><b>@item.Title: </b>@item.Address<br /><b>Điện thoại: </b> @item.Mobi</p>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

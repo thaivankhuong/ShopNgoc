@@ -1,0 +1,574 @@
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ApplicationInsights.config
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\csc.exe
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\System.Collections.Immutable.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\System.Reflection.Metadata.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\vbc.exe
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe.config
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll.config
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\CKFinder.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\EntityFramework.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Agent.Intercept.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Web.Infrastructure.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Owin.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\PagedList.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Razor.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\WebGrease.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\CKFinder.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\EntityFramework.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\PagedList.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.Razor.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.pdb
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csprojResolveAssemblyReference.cache
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.dll
+G:\ThaoDuocToanThang\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ApplicationInsights.config
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\csc.exe
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\System.Collections.Immutable.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\vbc.exe
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe
+D:\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe.config
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll.config
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\CKFinder.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Web.Infrastructure.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Owin.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Razor.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\WebGrease.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\bin\CKFinder.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Razor.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.pdb
+D:\Napoho\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csprojResolveAssemblyReference.cache
+D:\Napoho\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.dll
+D:\Napoho\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ApplicationInsights.config
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\csc.exe
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\System.Collections.Immutable.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\vbc.exe
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe.config
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll.config
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\CKFinder.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Web.Infrastructure.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Owin.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Razor.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\WebGrease.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\CKFinder.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.Razor.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.pdb
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csprojResolveAssemblyReference.cache
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.dll
+D:\Napoho\Napoho\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ApplicationInsights.config
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\csc.exe
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\System.Collections.Immutable.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\vbc.exe
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe.config
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll.config
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\CKFinder.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Agent.Intercept.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Web.Infrastructure.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Owin.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Razor.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\WebGrease.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\CKFinder.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Razor.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.pdb
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csprojResolveAssemblyReference.cache
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.dll
+D:\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ApplicationInsights.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\csc.exe
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\System.Collections.Immutable.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\System.Reflection.Metadata.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\vbc.exe
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\CKFinder.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Web.Infrastructure.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Owin.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Razor.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\WebGrease.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\CKFinder.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.Razor.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.pdb
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll.config
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csprojAssemblyReference.cache
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csproj.CoreCompileInputs.cache
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csproj.CopyComplete
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.dll
+E:\Phuc Hoi Du Lieu\Lung Tung\Napoho\tomhumSite\ToanThangSite\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ApplicationInsights.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\csc.exe
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\System.Collections.Immutable.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\vbc.exe
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\roslyn\VBCSCompiler.exe.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\CKFinder.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\EntityFramework.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Web.Infrastructure.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Owin.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\PagedList.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Razor.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\WebGrease.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Business.dll.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Entities.dll.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\CKFinder.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\EntityFramework.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\EntityFramework.SqlServer.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.DependencyCollector.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.Web.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AI.WindowsServer.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.ApplicationInsights.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\PagedList.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\PagedList.Mvc.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Helpers.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Mvc.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Optimization.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.Razor.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Deployment.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\System.Web.WebPages.Razor.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Antlr3.Runtime.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Newtonsoft.Json.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Google.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.pdb
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\bin\ToanThangSite.Services.dll.config
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csprojAssemblyReference.cache
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csproj.CoreCompileInputs.cache
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.Web.csproj.CopyComplete
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.dll
+E:\Web Project FreeLand\TheMissShop\ToanThangSite\ToanThangSite\obj\Debug\ToanThangSite.pdb

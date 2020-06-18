@@ -1,0 +1,388 @@
+﻿@model PagedList.IPagedList<ToanThangSite.Entities.Core.Product>
+@using PagedList.Mvc
+@using ToanThangSite.Business.Common
+@{
+    ViewBag.Title = "ProductList";
+    Layout = "~/Views/Shared/_LayoutV2.cshtml";
+}
+
+@*<section id="body">
+        <div class="product-slide-2 mb25">
+            <div class="uk-container uk-container-center">
+                <div class="border">
+                    <div class="heading">
+                        <h3 class="title">@ViewBag.CatName</h3>
+                    </div>
+                    <div class="border">
+                        <div class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-match="{target:'.title'}">
+                            @foreach (var item in Model)
+                            {
+                                var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                                <div class="mb35">
+                                    <figure class="item">
+                                        <div class="upper">
+                                            <a href="@url" title="@item.Title" class="thumb">
+                                                <img src="@item.Thumb" alt="@item.Title.ToUrlFormat(true)">
+                                            </a>
+                                            <h3 class="title nl2"><a href="@url" title="@item.Title">@item.Title</a></h3>
+                                        </div>
+                                        <figcaption style="background: #2150d6;">
+                                            <p class="text-1">
+                                                <span>Giá bán: </span>
+                                                <label>@String.Format("{0:0,0}", item.Price) VND</label>
+                                            </p>
+                                            <p class="text-2">
+                                                <span>Khuyến mại: </span>
+                                                <label>
+                                                    @if (item.PriceSale != "" && item.PriceSale != null)
+                                                    {
+                                                        @String.Format("{0:0,0} VND", item.PriceSale)
+                                                    }
+                                                    else
+                                                    {
+                                                        @String.Format("{0:0,0} VND", item.Price)
+                                                    }
+                                                </label>
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="uk-width-medium-1-1">
+                        <div class="pagination-container">
+                            <ul class="pagination">
+                                @if (Model.PageCount > 1)
+                                {
+                                    string urlpage = ViewBag.UrlProduct;
+                                    @Html.PagedListPager(Model, page => urlpage.ToString().Substring(0, urlpage.ToString().LastIndexOf('.')) + ".htmlpg=" + page);
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="body">
+        <div class="product-slide-2 mb25">
+            <div class="uk-container uk-container-center">
+                <div class="border">
+                    <div class="uk-grid uk-grid-medium">
+                        <div class="uk-width-large-1-1">
+                            <div class="ts-heading">
+                            </div>
+                            <div class="product-top">
+                                <div class="uk-grid uk-grid-small">
+                                    <div class="uk-width-large-1-2">
+                                        <div class="product-1">
+                                            <div class="slide-product mb25">
+                                                <div class="slide-4">
+                                                    <div id="slider" class="flexslider uk-margin-small-bottom">
+                                                        <img src="@Model.Avatar" alt="@Model.Title" style="width: 100%;" />
+                                                    </div>
+                                                    <div class="thumbs_list">
+                                                        <ul class="thumbs_list_derail">
+                                                            @foreach (var item in Model.ListImage.Split(';').Where(x => x != "" && x != null && x != string.Empty))
+                                                            {
+                                                                <li><img src="@item" alt="@Model.Title" /></li>
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-large-1-2">
+                                        <div class="uk-width-1-1 product-info">
+                                            <h1 class="title">@Model.Title</h1>
+                                            <p>
+                                                <strong>Giá bán :&nbsp;</strong> <strong class="blue">@String.Format("{0:0,0}", Model.Price) VND</strong>
+                                            </p>
+                                            <p>
+                                                <strong>Khuyến mãi :&nbsp;</strong> <strong class="red">@String.Format("{0:0,0}VND", Model.PriceSale) </strong>
+                                            </p>
+                                            <p><strong>Mã Sản Phẩm :&nbsp;</strong>@Model.Code</p>
+                                            <p>
+                                                <strong>Kho hàng :&nbsp;</strong>
+                                                @if (Model.Status == true)
+                                                {
+                                                    @Html.Raw("Còn hàng")
+                                                }
+                                            </p>
+
+
+                                            <p>
+                                                <strong>Xuất xứ :&nbsp;</strong>
+                                                @if (Model.MadeIn == "")
+                                                {
+                                                    @Html.Raw("Đang cập nhật")
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw(Model.MadeIn)
+                                                }
+                                            </p>
+                                            <p>
+                                                @if (Model.Tags != "" && Model.Tags != null)
+                                                {
+                                                    <strong>Tags :&nbsp;</strong>
+                                                    foreach (var item in Model.Tags.Split(',').Where(x => x != "" && x != null && x != string.Empty))
+                                                    {
+                                                        <a href="@String.Format("/tags-{0}.html",@item.ToString().ToLower().Trim(' ').Replace(" ","-"))">@item</a>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <strong>Tags :&nbsp;</strong>
+                                                }
+                                            </p>
+
+                                            <p><strong>Tóm tắt :&nbsp;</strong>@Model.Description</p>
+                                        </div>
+                                        <a href="#purchase-info" class="order uk-text-center mb15" data-uk-modal="">
+                                            <span class="title-2">ĐẶT MUA, GIAO HÀNG TẬN NƠI</span>
+                                            <span class="text-2">(Thanh Toán Khi Nhận Hàng)</span>
+                                        </a>
+                                        <div class="share-buttons">
+                                            <!-- Facebook -->
+                                            <a href="https://www.facebook.com/tomhumalaska.vn/" id="fb_a" target="_blank">
+                                                <img src="/Content/img/facebook.png" alt="Facebook" />
+                                            </a>
+
+                                            <!-- Google+ -->
+                                            <a href="#" id="gg_a" target="_blank">
+                                                <img src="/Content/img/google.png" alt="Google" />
+                                            </a>
+
+                                            <!-- Twitter -->
+                                            <button onclick="dong()">
+                                                <img src="/Content/img/twitter.png" alt="Twitter" />
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-detail mt25">
+                                <ul class="uk-subnav uk-subnav-pill ts-ul1" data-uk-switcher="{connect:'#subnav-pill-content-1'}">
+                                    <li class="uk-active">
+                                        <a href="#">Chi tiết sản phẩm</a>
+                                    </li>
+                                </ul>
+                                <div class="sub-info border">
+                                    <ul id="subnav-pill-content-1" class="uk-switcher">
+                                        <li class="uk-active">
+                                            <!-- <h2>@Model.Title</h2> -->
+
+                                            <p>&nbsp;</p>
+
+                                            <p class="mb20">@Html.Raw(Model.Content)</p>
+
+                                            <div class="order-parent">
+                                                <a href="#purchase-info" class="order uk-text-center mb15" data-uk-modal="">
+                                                    <span class="title-2">ĐẶT MUA, GIAO HÀNG TẬN NƠI</span>
+                                                    <span class="text-2">(Thanh Toán Khi Nhận Hàng)</span>
+                                                </a>
+                                            </div>
+                                            <div class="feature-post-9">
+                                                <div class="uk-container uk-container-center">
+                                                    <div class="border1">
+                                                        <div class="border2">
+                                                            <div class="heading">
+                                                                <h2 class="title">@ViewBag.ReasonTitle</h2>
+                                                            </div>
+                                                            <div>
+                                                                <ul class="ul1">
+                                                                    @foreach (var item in ViewBag.ReasonContent)
+                                                                    {
+                                                                        <li>@item</li>
+                                                                    }
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            @if (Model.ListBranch != "" && Model.ListBranch != null)
+                                            {
+                                                @Html.Action("BranchProduct", "Branch", new { @ID = Model.ListBranch.Trim(';').Split(';') })
+                                            }
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+@*<div id="purchase-info" class="uk-modal">
+        <div class="uk-modal-dialog p35">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="title m0 pb25 fz20 lh26">
+                <span class="uk-text-bold">Thông tin liên hệ</span>
+            </div>
+            <div id="orderForm" class="uk-form form">
+                <div class="item mb15">
+                    <label for="" class="fc-db mb5">Họ và tên</label>
+                    <input type="text" name="fullname" id="Order_FullName" required class="uk-width-1-1 text" placeholder="Họ và tên" />
+                </div>
+                <div class="item mb15">
+                    <label for="" class="fc-db mb5">Địa chỉ</label>
+                    <input type="text" name="address" required id="Order_Address" class="uk-width-1-1 text" placeholder="Địa chỉ" />
+                </div>
+                <div class="item mb15">
+                    <label for="" class="fc-db mb5">Số điện thoại</label>
+                    <input type="text" name="phone" required id="Order_Mobi" class="uk-width-1-1 text" placeholder="Số điện thoại" />
+                </div>
+                <div class="item mb15">
+                    <label for="" class="fc-db mb5">Email (không bắt buộc)</label>
+                    <input type="email" name="email" id="Order_Email" class="uk-width-1-1 text" placeholder="Email" />
+                    <input type="hidden" name="pname" value="@Model.Title" id="Order_ProductName" class="uk-width-1-1 text" />
+                </div>
+                <div class="item mb15">
+                    <label for="" class="fc-db mb5">Nội dung</label>
+                    <textarea name="message" class="uk-width-1-1" id="Order_Content" placeholder="Tên sản phẩm và số lượng"></textarea>
+                </div>
+                <p style="color:red" id="ms_errorOrder"></p>
+                <div class="item mb15">
+                    <button type="submit" name="submit" value="" onclick="SendOrder()" id="senOrderp" class="uk-button btn">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
+
+
+
+<section class="product-wrap">
+    <div class="container ">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4 sidebar collection-sidebar hidden">
+                <div class="hidden-xs">
+                    <div class="filter-block">
+                        <div class="block block-color filter-tag color">
+                            <div class="block-title">
+                                <h3>Filter by color<a href="javascript:void(0)" class="clear" style="display:none"><i class="fa fa-close"></i></a></h3>
+                            </div>
+                            <div class="block-content">
+                                <ul class="list-menu"></ul>
+                            </div>
+                        </div>
+                        <div class="block filter-custom filter-tag">
+
+                            <div class="block-title">
+                                <h3>Filter by price<a href="javascript:void(0)" class="clear" style="display:none"><i class="fa fa-close"></i></a></h3>
+                            </div>
+                            <div class="block-content">
+                                <ul class="list-menu"></ul>
+                            </div>
+                        </div>
+
+                        <div class="block filter-custom filter-tag">
+
+                            <div class="block-title">
+                                <h3>Filter by size<a href="javascript:void(0)" class="clear" style="display:none"><i class="fa fa-close"></i></a></h3>
+                            </div>
+                            <div class="block-content">
+                                <ul class="list-menu"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="main">
+                    <div class="collection-grid">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                                <div class="item col-md-3 col-sm-6">
+                                    <div class="product-item product-grid-item " data-id="product-@item.ProductID">
+                                        <div class="product-item-info" data-available="true">
+                                            <div class="product-image @item.ProductID">
+                                                <a href="@url" class="product-item-photo">
+                                                    <img src="@item.Thumb" alt="@item.Title.ToUrlFormat(true)">
+                                                </a>
+                                                <div class="product-action">
+                                                    <div class="action-item">
+                                                        <a class="action-link btn-quickview" href="javascript:void(0)" id="raven-jumpsuit" title="Quick view"><i class="fa fa-search"></i></a>
+                                                    </div>
+                                                    <div class="action-item">
+                                                        <a class="action-link wishlist" href="javascript:void(0)" title="Wishlist">
+                                                            <i class="fa fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="action-item">
+                                                        <div class="action-link last action ">
+                                                            <form action="https://iwantthemissingpiece.com/cart/add" method="post" class="variants" id="AddToCartForm-4159792775249" enctype="multipart/form-data">
+                                                                <input type="hidden" name="id" value="31649934016593" />
+                                                                <a class="btn-addToCart" href="javascript:void(0)" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-details">
+                                                <a href="@url" title="@item.Title" class="product-item-name">@item.Title</a>
+                                                <div class="product-meta">
+                                                    <div class="price-box pull-left">
+                                                        <span class=money>$@string.Format("{0:0,0}", Convert.ToDouble(item.Price))</span>
+                                                    </div>
+                                                    <div class="custom-reviews hide-caption">
+                                                        <span class="shopify-product-reviews-badge" data-id="@item.ProductID"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="a-center clearfix">
+                    <ul class="pagination">
+                        @if (Model.PageCount > 1)
+                        {
+                            string urlpage = ViewBag.UrlProduct;
+                            @Html.PagedListPager(Model, page => urlpage.ToString().Substring(0, urlpage.ToString().LastIndexOf('.')) + ".htmlpg=" + page);
+                        }
+                        @*<li class="prev"><a href="new-in9ba9.html?page=3" title="&laquo; Previous"><i class="fa fa-chevron-left"></i></a></li>
+                        <li>
+                            <a href="new-in2679.html?page=1" title="">1</a>
+                        </li>
+                        <li>
+                            <a href="new-in4658.html?page=2" title="">2</a>
+                        </li>
+                        <li>
+                            <a href="new-in9ba9.html?page=3" title="">3</a>
+                        </li>
+                        <li class="active"><span>4</span></li>
+                        <li>
+                            <a href="new-inaf4d.html?page=5" title="">5</a>
+                        </li>
+                        <li>
+                            <a href="new-inc575.html?page=6" title="">6</a>
+                        </li>
+                        <li class="next"><a href="new-inaf4d.html?page=5" title="Next &raquo;"><i class="fa fa-chevron-right"></i></a></li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

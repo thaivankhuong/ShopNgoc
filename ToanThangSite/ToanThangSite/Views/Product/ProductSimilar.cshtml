@@ -1,0 +1,108 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Core.Product>
+@using ToanThangSite.Business.Common
+@*<div class="product-slide-2 mt25">
+    <div class="uk-container uk-container-center">
+        <div class="border">
+            <div class="heading">
+                <h3 class="title">Sản phẩm liên quan</h3>
+            </div>
+            <div class="border">
+                <div class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-match="{target:'.title'}">
+                    @foreach (var item in Model)
+                    {
+                        var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                        <div class="mb35">
+                            <figure class="item">
+                                <div class="upper">
+                                    <a href="@url" title="@item.Title" class="thumb">
+                                        <img src="@item.Thumb" alt="@item.Title.ToUrlFormat(true)">
+                                    </a>
+                                    <h3 class="title nl2"><a href="@url" title="@item.Title">@item.Title</a></h3>
+                                </div>
+                                <figcaption>
+                                    <p class="text-1">
+                                        <span>Giá bán: </span>
+                                        <label>@String.Format("{0:0,0}", item.Price) VND</label>
+                                    </p>
+                                    <p class="text-2">
+                                        <span>Khuyến mại: </span>
+                                        <label>@if (item.PriceSale != "" && item.PriceSale != null)
+                                        {
+                                            @String.Format("{0:0,0} VND", item.PriceSale)
+                                        }
+                                        else
+                                        {
+                                            @String.Format("{0:0,0} VND", item.Price)
+                                        }</label>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+<div class="box-related">
+    <div class="box-title">
+        <h2><span> R</span></h2>
+        <p></p>
+    </div>
+    <div class="box-content">
+        <div class="swiper-container" data-margin="30" data-items="3" data-xs-items="1" data-direction="horizontal">
+            <div class="swiper-wrapper">
+                @foreach (var item in Model)
+                {
+                    var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+
+                    <div class="swiper-slide item">
+                        <div class="product-item product-grid-item " data-id="product-@item.ProductID">
+                            <div class="product-item-info" data-available="true">
+                                <div class="product-image @item.ProductID">
+                                    <a href="dara-toga-pants-set-stripe.html" class="product-item-photo">
+                                        <img src="@item.Thumb" alt="@item.Title.ToUrlFormat(true)">
+                                    </a>
+                                    <div class="product-action">
+                                        <div class="action-item">
+                                            <a class="action-link btn-quickview" href="@url"  title="Quick view"><i class="fa fa-search"></i></a>
+                                        </div>
+                                        <div class="action-item">
+                                            <a class="action-link wishlist" href="javascript:void(0)" title="Wishlist">
+                                                <i class="fa fa-heart"></i>
+                                            </a>
+                                        </div>
+                                        <div class="action-item">
+                                            <div class="action-link last action ">
+                                                <form  id="AddToCartForm-@item.ProductID" >
+                                                    <input type="hidden" name="id" value="32013511295057" />
+                                                    <a class="btn-addToCart" href="javascript:void(0)" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="@url" title="@item.Title" class="product-item-name">@item.Title</a>
+                                    <div class="product-meta">
+                                        <div class="price-box pull-left">
+                                            <span class=money>$@String.Format("{0:0,0}", Convert.ToDouble(item.Price)) </span>
+                                        </div>
+                                        <div class="custom-reviews hide-caption">
+                                            <span class="shopify-product-reviews-badge" data-id="@item.ProductID"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,288 @@
+﻿
+
+
+
+@model ToanThangSite.Entities.Core.Product
+
+@{
+    ViewBag.Title = "ProductCreate";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<script>
+
+</script>
+<div class="breadcrumbwidget">
+
+    <ul class="breadcrumb">
+        <li><a href="@Url.Action("Index","Home")">Home</a> <span class="divider">/</span></li>
+        <li class="active">Edit</li>
+    </ul>
+</div>
+<div class="pagetitle">
+    <h1>Đăng</h1>
+</div>
+<div class="maincontent">
+    <div class="contentinner content-elements">
+
+        <div class="row-fluid">
+            <div class="span12">
+                @using (Html.BeginForm("ProductEdit", "Product",new{@id=Model.ProductID}, FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="widgetcontent">
+                        <div id="accordion" class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons" role="tab" id="ui-accordion-accordion-header-0" aria-controls="ui-accordion-accordion-panel-0" aria-selected="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><a href="#">Thông tin cơ bản</a></h3>
+                            <div class="stdform ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" id="ui-accordion-accordion-panel-0" aria-labelledby="ui-accordion-accordion-header-0" role="tabpanel" aria-expanded="true" aria-hidden="false" style="display: block;">
+                                <p>
+                                    <label>Danh mục</label>
+                                    <span class="field">
+                                        @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.ProductCategory, "ProductCategoryID", "Title", "....Chọn...."), new { @class = "input-large", @placeholder = "Danh mục" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Độ ưu tiên</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.Position, new { @class = "input-large", @placeholder = "Độ ưu tiên" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Mã sản phẩm</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.Code, new { @class = "input-large", @placeholder = "Mã" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Tiêu đề</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.Title, new { @class = "input-block-level", @placeholder = "Tiêu đề" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Giá</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.Price, new { @class = "input-block-level", @placeholder = "Giá" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Giá khuyến mãi(Nếu có)</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.PriceSale, new { @class = "input-block-level", @placeholder = "Giá khuyến mãi(Nếu có)" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Xuất xứ</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.MadeIn, new { @class = "input-block-level", @placeholder = "Xuất xứ" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Danh sách chi nhánh</label>
+                                    <span class="formwrapper">
+
+                                        <span id="dualselect" style="margin-left:0 !important" class="dualselect">
+                                            @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.Branch, "BranchID", "Title", "....Chọn...."), new { @multiple = "multiple", @class = "uniformselect", @placeholder = "Chọn chi nhánh", @size = "10" })
+                                            <span class="ds_arrow">
+                                                <button class="btn ds_prev"><i class="icon-chevron-left"></i></button><br>
+                                                <button class="btn ds_next"><i class="icon-chevron-right"></i></button>
+                                            </span>
+                                            @Html.TextBoxFor(model => model.ListBranch, new { @class = "input-block-level", @placeholder = "Danh sách ID chi nhánh", @id = "BranchList" })
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Mô tả</label>
+                                    <span class="field">
+                                        @Html.TextAreaFor(model => model.Description, new { @class = "span12", @cols = "100", @rows = "5" })
+                                    </span>
+                                    <small class="desc">Chú ý: Mô tả ngắn cho bài viết với nội dung có liên quan đến bài viết và không quá dài.</small>
+                                </p>
+                                <p>
+                                    <label>Xem trước ảnh</label>
+                                    <span>
+                                        <img src="@Model.Avatar" id="reviewImg" style="width:200px;height:220px" />
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Hình Ảnh</label>
+                                    <span>
+                                        @Html.TextBoxFor(model => model.Avatar, new { @class = "span10", @id = "Picture" })
+                                        @Html.TextBoxFor(model => model.Thumb, new { @class = "span10 dislay-none", @id = "Picture-Thumb" })
+                                        <input type="button" id="Browse" value="..." class="btn btn-default fr" style="height:30px;width:30px" />
+                                    </span>
+                                    <script type="text/javascript">
+                                        jQuery('#Browse').click(function () {
+                                            var finder = new CKFinder();
+                                            finder.selectActionFunction = function (fileUrl) {
+                                                // lấy file ảnh cuối cùng
+                                                //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
+                                                jQuery('#Picture').val(fileUrl);
+                                                jQuery('#Picture-Thumb').val('/Areas/Admin/Content/FileUploads/_thumbs/Images/'+fileUrl.substring(fileUrl.lastIndexOf("/") + 1))
+                                                jQuery('#reviewImg').attr("src", fileUrl);
+                                            };
+                                            finder.popup();
+                                        });
+                                    </script>
+                                </p>
+                                <p>
+                                    <label>Trạng thái</label>
+                                    <span class="field ">
+                                        @Html.RadioButtonFor(model => model.Status, true, new { @name = "ckbStatus", @checked = "checked" }) Hiện
+                                        @Html.RadioButtonFor(model => model.Status, false, new { @name = "ckbStatus" }) Ẩn
+                                    </span>
+                                </p>
+                            </div>
+                            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-accordion-header-1" aria-controls="ui-accordion-accordion-panel-4" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="#">Hình ảnh sản phẩm</a></h3>
+                            <div class="stdform ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-accordion-panel-1" aria-labelledby="ui-accordion-accordion-header-4" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+                                <p>
+                                    <label>Xem trước ảnh</label>
+                                    <span>
+                                        <img src="~/Areas/Admin/Content/Fileuploads/Article/image2.png" id="reviewImg1" style="width:160px;height:180px;float:left" />
+                                        <img src="~/Areas/Admin/Content/Fileuploads/Article/image2.png" id="reviewImg2" style="width:160px;height:180px;float:left" />
+                                        <img src="~/Areas/Admin/Content/Fileuploads/Article/image2.png" id="reviewImg3" style="width:160px;height:180px;float:left" />
+                                        <img src="~/Areas/Admin/Content/Fileuploads/Article/image2.png" id="reviewImg4" style="width:160px;height:180px;float:left" />
+                                        <img src="~/Areas/Admin/Content/Fileuploads/Article/image2.png" id="reviewImg5" style="width:160px;height:180px" />
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Hình Ảnh</label>
+                                    <span>
+                                        @Html.TextBoxFor(model => model.ListImage, new { @class = "span10", @id = "ImageList", @readonly = "true" })
+                                    </span>
+                                    <script type="text/javascript">
+                                        var Picture1 = "", Picture2 = "", Picture3 = "", Picture4 = "", Picture5 = "";
+                                        jQuery('#reviewImg1').click(function () {
+                                            var finder = new CKFinder();
+                                            finder.selectActionFunction = function (fileUrl) {
+                                                // lấy file ảnh cuối cùng
+                                                //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
+                                                Picture1 = fileUrl;
+                                                var lstfileUrl = Picture1 + ";" + Picture2 + ";" + Picture3 + ";" + Picture4 + ";" + Picture5;
+                                                jQuery('#ImageList').val(lstfileUrl);
+                                                jQuery('#reviewImg1').attr("src", fileUrl);
+                                            };
+                                            finder.popup();
+                                        });
+                                        jQuery('#reviewImg2').click(function () {
+                                            var finder = new CKFinder();
+                                            finder.selectActionFunction = function (fileUrl) {
+                                                // lấy file ảnh cuối cùng
+                                                //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
+                                                Picture2 = fileUrl;
+                                                var lstfileUrl = Picture1 + ";" + Picture2 + ";" + Picture3 + ";" + Picture4 + ";" + Picture5;
+                                                jQuery('#ImageList').val(lstfileUrl);
+                                                jQuery('#reviewImg2').attr("src", fileUrl);
+                                            };
+                                            finder.popup();
+                                        });
+                                        jQuery('#reviewImg3').click(function () {
+                                            var finder = new CKFinder();
+                                            finder.selectActionFunction = function (fileUrl) {
+                                                // lấy file ảnh cuối cùng
+                                                //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
+                                                Picture3 = fileUrl;
+                                                var lstfileUrl = Picture1 + ";" + Picture2 + ";" + Picture3 + ";" + Picture4 + ";" + Picture5;
+                                                jQuery('#ImageList').val(lstfileUrl);
+                                                jQuery('#reviewImg3').attr("src", fileUrl);
+                                            };
+                                            finder.popup();
+                                        });
+                                        jQuery('#reviewImg4').click(function () {
+                                            var finder = new CKFinder();
+                                            finder.selectActionFunction = function (fileUrl) {
+                                                // lấy file ảnh cuối cùng
+                                                //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
+                                                Picture4 = fileUrl;
+                                                var lstfileUrl = Picture1 + ";" + Picture2 + ";" + Picture3 + ";" + Picture4 + ";" + Picture5;
+                                                jQuery('#ImageList').val(lstfileUrl);
+                                                jQuery('#reviewImg4').attr("src", fileUrl);
+                                            };
+                                            finder.popup();
+                                        });
+                                        jQuery('#reviewImg5').click(function () {
+                                            var finder = new CKFinder();
+                                            finder.selectActionFunction = function (fileUrl) {
+                                                // lấy file ảnh cuối cùng
+                                                //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
+                                                Picture5 = fileUrl;
+                                                var lstfileUrl = Picture1 + ";" + Picture2 + ";" + Picture3 + ";" + Picture4 + ";" + Picture5;
+                                                jQuery('#ImageList').val(lstfileUrl);
+                                                jQuery('#reviewImg5').attr("src", fileUrl);
+                                            };
+                                            finder.popup();
+                                        });
+                                    </script>
+                                </p>
+                            </div>
+                            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-accordion-header-1" aria-controls="ui-accordion-accordion-panel-1" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="#">Thông tin chi tiết</a></h3>
+                            <div class="stdform ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-accordion-panel-1" aria-labelledby="ui-accordion-accordion-header-1" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+                                <p>
+                                    <span class="span12">
+                                        @Html.TextAreaFor(model => model.Content, new { @class = "span12", @cols = "100", @rows = "5" })
+                                        <script type="text/javascript">
+                                            CKEDITOR.replace("Content");
+                                        </script>
+                                    </span>
+                                </p>
+                            </div>
+                            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-accordion-header-2" aria-controls="ui-accordion-accordion-panel-2" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="#">SEO</a></h3>
+                            <div class="stdform ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-accordion-panel-2" aria-labelledby="ui-accordion-accordion-header-2" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+                                <p>
+                                    <label>Từ khóa</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.Keyword, new { @class = "input-block-level", @placeholder = "Từ khóa cho bài viết" })
+                                    </span>
+                                    <small class="desc">Chú ý: Nhập tất cả các từ khóa có liên quan tới bài viết phân cách với nhau bằng dấu phẩy.</small>
+                                </p>
+                                <p>
+                                    <label>Tags</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.Tags, new { @class = "input-block-level", @placeholder = "Từ khóa cho bài viết theo dạng tag" })
+                                    </span>
+                                    <small class="desc">Chú ý: Nhập tất cả các tag từ khóa có liên quan tới bài viết phân cách với nhau bằng dấu phẩy.</small>
+                                </p>
+                                <p>
+                                    <label>Meta Title</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.MetaTitle, new { @class = "input-block-level" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <label>Meta Description</label>
+                                    <span class="field">
+                                        @Html.TextBoxFor(model => model.MetaDescription, new { @class = "input-block-level" })
+                                    </span>
+                                </p>
+                            </div>
+                            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-accordion-header-3" aria-controls="ui-accordion-accordion-panel-3" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="#">Thông tin khác</a></h3>
+                            <div class="stdform ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-accordion-panel-3" aria-labelledby="ui-accordion-accordion-header-3" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+                                <p>
+                                    <label>Ngày đăng</label>
+                                    <span class="field"><input type="text" name="input6" class="input-block-level" readonly="readonly" placeholder="Ngày đăng"></span>
+                                    <small class="desc">Chú ý: Dữ liệu tự động cập nhật, không cần nhập.</small>
+                                </p>
+                                <p>
+                                    <label>Người đăng</label>
+                                    <span class="field"><input type="text" name="input6" class="input-block-level" readonly="readonly" placeholder="Người đăng"></span>
+                                    <small class="desc">Chú ý: Dữ liệu tự động cập nhật, không cần nhập.</small>
+                                </p>
+                                <p>
+                                    <label>Lượt xem</label>
+                                    <span class="field"><input type="text" name="input6" class="input-block-level" readonly="readonly" placeholder="Lượt xem"></span>
+                                    <small class="desc">Chú ý: Dữ liệu tự động cập nhật, không cần nhập.</small>
+                                </p>
+                            </div>
+
+                        </div>
+                        <p class="stdformbutton">
+                            <button type="submit" class="btn btn-primary">Lưu</button>
+                            <button type="reset" class="btn">Hủy</button>
+                            <a href="@Url.Action("ProductList","Product")" class="btn btn-primary fr"><i class="icon  icon-arrow-left"></i>&nbsp;Về trang danh sách</a>
+                        </p>
+                    </div>
+                }
+                <p class="stdformbutton">
+                </p>
+            </div><!--span6-->
+        </div><!--row-fluid-->
+    </div><!--contentinner-->
+</div>

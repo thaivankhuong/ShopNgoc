@@ -1,0 +1,60 @@
+﻿@model ToanThangSite.Entities.Core.Contact
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="body">
+
+    <div class="product-slide-2 mb25">
+        <div class="uk-container uk-container-center">
+            <div class="border">
+                <div class="heading">
+                    <h3 class="title">Liên Hệ</h3>
+                </div>
+                <div class="border">
+                    <div class="contact1">
+
+                        @using (Html.BeginForm("Contact", "Contact", new { @class = "contactform", @novalidate = "novalidate" }, FormMethod.Post))
+                        {
+                            <ul>
+                                <li>
+                                    <label for="name">Tên <span class="required">*</span></label>
+                                    @Html.TextBoxFor(model => model.FullName, new { @class = "required" })
+                                </li>
+                                <li>
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "required email" })
+                                </li>
+                                <li>
+                                    <label for="message">Nội Dung Tin<span class="required">*</span></label>
+                                    
+                                    @Html.TextAreaFor(model => model.Content, new { @class = "required", @rows = "6", @cols = "40" })
+                                </li>
+                                <li>
+                                    <input class="linkbutton ml120" type="submit" value="Submit" id="submit_id">
+                                    <input class="linkbutton" type="reset" value="Reset">
+                                </li>
+                            </ul>
+                        }
+                    </div>
+
+                    <div class="contact2">
+                        <h3 class="heading3">Thông Tin Liên Hệ</h3>
+                        <div>
+                            <p>CÔNG TY TNHH LONG PHÚ TÂN</p>
+
+                            <p>Phường Tăng Nhơn Phú A, Quận 9, Thành phố Hồ Chí Minh</p>
+
+                            <p>Điện Thoại :0902.489.498</p>
+
+                            <p>Email: tomhumalaska.vn@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="uk-clearfix"></div>
+                  
+                    <iframe style="border:0;width:100%;height:450px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.527522474591!2d106.78861051435123!3d10.847423792273386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752714d4027fe5%3A0xcee524736d22ffa2!2zxJDGsOG7nW5nIDM4NSwgVMSDbmcgTmjGoW4gUGjDuiBBLCBRdeG6rW4gOSwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2sin!4v1499339442911" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

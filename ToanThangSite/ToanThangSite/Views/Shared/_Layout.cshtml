@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Html.Raw(ViewBag.Header)
+	<meta name=&quot;google-site- verification&quot;content=&quot;ir85eRzHyr77sSM2rnSWQRM0OLZghxv7JjB5saDKx8s&quot; />
+    <meta name="p:domain_verify" content="e1044f75763b08bc268e58d55b72471b" />
+    <link rel="icon" href="http://tomhumalaska.vn/Content/img/logokhuong_icon.ico" type="image/gif">
+    
+    @Styles.Render("~/Content/css")
+
+    <link href="~/Content/css/flexslider.css" rel="stylesheet" />
+    <link href="~/Content/css/uikit.docs.min.css" rel="stylesheet" />
+    <link href="~/Content/css/library.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+</head>
+
+<body itemscope itemtype="http://schema.org/Product" style="background-image:url(/Content/img/images.jpg);">
+  
+   
+    @Html.Action("Header","Layout")
+    <!-- .header-18 -->
+    <div class="uk-container uk-container-center mt20">
+        <div class="slide-13">
+            <div class="uk-grid uk-grid-small  grid-reverse-lg grid-reverse-sm" data-uk-grid-match="">
+                <div class="uk-width-large-3-10 mb25">
+                    <div class="left-menu">
+                        <h3 class="title">Danh mục sản phẩm</h3>
+                        @Html.Action("ProductCategory","Product")
+                    </div>
+                </div>
+                    @Html.Action("Slider", "Slider")
+            </div>
+        </div>
+    </div>
+    <!-- .slide-13 -->
+
+    <div class="product-slide-1 uk-float-right mb25 product-sticky" style="max-width: 230px;" data-uk-sticky="top:50">
+        <div class="uk-container uk-container-center">
+        </div>
+    </div>
+    @RenderBody()
+    <!-- #body -->
+    @Html.Action("Footer","Layout")
+    <!-- .footer-14-->
+    @Scripts.Render("~/Content/js")
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77770643-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+   
+</body>
+</html>

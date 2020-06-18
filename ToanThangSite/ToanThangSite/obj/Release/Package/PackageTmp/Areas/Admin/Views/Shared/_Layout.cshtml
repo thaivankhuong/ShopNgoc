@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site - Admin : @ViewBag.Title</title>
+    @Styles.Render("~/Content/acss")
+    @Scripts.Render("~/Content/ajs")
+    <script src="~/Areas/Admin/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Areas/Admin/Content/ckfinder/ckfinder.js"></script>
+
+</head>
+<body>
+    <div class="mainwrapper">
+        <div class="leftpanel">
+            <div class="logopanel">
+                <h1><a href="@Url.Action("Index","Home")">ToanThang-AD <span>v1.0</span></a></h1>
+            </div><!--logopanel-->
+            <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+            <div class="searchwidget">
+            </div><!--searchwidget-->
+            <div class="leftmenu">
+                <ul class="nav nav-tabs nav-stacked">
+                    <li class="nav-header">HỆ THỐNG</li>
+                    <li><a href="@Url.Action("Index","Home")"><span class="icon-home"></span> Dashboard</a></li>
+                    @*<li><a href="#"><span class="icon-random"></span> Phân Quyền</a></li>*@
+                    <li class="nav-header">DỮ LIỆU</li>
+                    <li><a href="@Url.Action("ProductCategoryList", "ProductCategory")"><span class="icon-file"></span> Danh mục sản phẩm</a></li>
+                    <li><a href="@Url.Action("IntroduceList","Introduce")"><span class="icon-eye-open"></span> Giới thiệu</a></li>
+                    <li><a href="@Url.Action("ProductList","Product")"><span class="icon-file"></span> Sản phẩm</a></li>
+                    <li><a href="@Url.Action("ArticleList","Article")"><span class="icon-file"></span> Tin tức</a></li>
+                    <li><a href="@Url.Action("List","Branch")"><span class="icon-file"></span> Chi nhánh</a></li>
+                    <li><a href="@Url.Action("List","Order")"><span class="iconsweets-image"></span> Đặt hàng</a></li>
+                    <li><a href="@Url.Action("ContactList", "Contact")"><span class="icon-file"></span> Liên hệ</a></li>
+                    <li><a href="@Url.Action("SliderList","Slider")"><span class="icon-briefcase"></span> Slider</a></li>
+                    <li class="nav-header">SEO</li>
+                    <li><a href="@Url.Action("SeoMetaList","SeoMeta")"><span class="icon-file"></span> SeoMeta</a></li>
+                </ul>
+            </div><!--leftmenu-->
+
+        </div><!--mainleft-->
+        <div class="rightpanel">
+            <div class="headerpanel">
+                <a href="#" class="showmenu"></a>
+
+                <div class="headerright">
+                    <div class="dropdown userinfo">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://demo.themepixels.com/page.html">Hi, ADMIN! <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("ChangePassword","Account")"><span class="icon-eye-open"></span> Đổi mật khẩu</a></li>
+                            <li class="divider"></li>
+                            <li><a href="@Url.Action("Logout","Account")"><span class="icon-off"></span> Đăng xuất</a></li>
+                        </ul>
+                    </div><!--dropdown-->
+
+                </div><!--headerright-->
+
+            </div><!--headerpanel-->
+            @RenderBody()
+        </div><!--mainright-->
+        <div class="clearfix"></div>
+        <div class="footer">
+            <div class="footerleft">ToanThang tool admin - site</div>
+            <div class="footerright">&copy; ToanThang - <a href="http://thaoduoctoanthang.com/">Follow me on Website</a></div>
+        </div><!--footer-->
+    </div><!--mainwrapper-->
+    <!--modal-->
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in" id="myModal">
+        <div class="modal-header">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+            <h3 id="myModalLabel">Hiển Thị Dữ Liệu Chi Tiết</h3>
+        </div>
+        <div id="myModalbody" class="modal-body">
+            
+        </div>
+        <div class="modal-footer">
+            <button data-dismiss="modal" class="btn">Close</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function showDetail(action) {
+            jQuery.ajax({
+                method: "GET",
+                url: action,
+            }).done(function (data) {
+                if (data == '') {
+                    jAlert('Lỗi hiển thị dữ liệu!');
+                }
+                else {
+                    jQuery('#myModalbody').html(data);
+                    jQuery('#myModal').modal();
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
