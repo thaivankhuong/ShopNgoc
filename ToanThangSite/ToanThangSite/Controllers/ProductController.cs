@@ -33,6 +33,10 @@ namespace ToanThangSite.Controllers
             IPagedList<Product> model;
             ViewBag.CatName = ProductCategoryBusiness.GetByID(id).Title;
             ViewBag.UrlProduct = Request.Url.AbsoluteUri;
+            List<ProductColor> listcolor = ProductBusiness.GetAllProductColor();
+            List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
+            ViewBag.ProductColor = listcolor;
+            ViewBag.ProducSize = listsize;
             if (id == 0)
             {
 
@@ -52,22 +56,39 @@ namespace ToanThangSite.Controllers
                 tag.title = item.Title;
             }
             
-            tag.siteName = "Tôm Hùm Tôm Càng Xanh";
-            tag.pageType = "article";
-            tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
-            tag.robots = "index,follow";
-            tag.canonica = "http://localhost:27730";
-            tag.image = "http://localhost:27730" + item.Avatar;
-            tag.locale = "vi_VN";
-            tag.keywords = item.Keyword;
-            tag.FBadmins = "";
-            tag.publishedTime = item.CreateTime.ToString();
-            tag.updateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString();
-            tag.tags = item.Keyword;
+            //tag.siteName = "Tôm Hùm Tôm Càng Xanh";
+            //tag.pageType = "article";
+            //tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
+            //tag.robots = "index,follow";
+            //tag.canonica = "http://localhost:27730";
+            //tag.image = "http://localhost:27730" + item.Avatar;
+            //tag.locale = "vi_VN";
+            //tag.keywords = item.Keyword;
+            //tag.FBadmins = "";
+            //tag.publishedTime = item.CreateTime.ToString();
+            //tag.updateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString();
+            //tag.tags = item.Keyword;
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             ViewBag.ReasonTitle = ReasonBusiness.GetByProduct(item.ProductID).Title;
             ViewBag.ReasonContent = ReasonBusiness.GetByProduct(item.ProductID).Content.Trim('|').Split('|');
+            List<ProductColor> listcolor = ProductBusiness.GetAllProductColor()     ; 
+            List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
+            if (!string.IsNullOrEmpty(item.ProductColor))
+            {
+                string[] arr = item.ProductColor.Split(',');
+                listcolor = listcolor.Where(s => arr.Contains(s.Id.ToString())).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(item.ProductSize))
+            {
+                string[] arr = item.ProductSize.Split(',');
+                listsize = listsize.Where(s => arr.Contains(s.Id.ToString())).ToList();
+            }
+
+            ViewBag.ProductColor = listcolor;
+            ViewBag.producSize = listsize;
+
             ProductBusiness.AddviewTime(id);
             if (item.ListImage == null || item.ListImage == "" || item.ListImage == string.Empty)
             {
@@ -121,6 +142,10 @@ namespace ToanThangSite.Controllers
 
         public ActionResult HomeProduct()
         {
+            List<ProductColor> listcolor = ProductBusiness.GetAllProductColor()     ; 
+            List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
+            ViewBag.ProductColor = listcolor;
+            ViewBag.ProducSize = listsize;
             var listgethot = ProductBusiness.GetHot();
             return PartialView(ProductBusiness.GetHot());
         }

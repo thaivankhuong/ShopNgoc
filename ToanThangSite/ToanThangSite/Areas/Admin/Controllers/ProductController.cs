@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using ToanThangSite.Business.Core;
 using ToanThangSite.Entities.Core;
+using ToanThangSite.Entities.Models;
 
 namespace ToanThangSite.Areas.Admin.Controllers
 {
@@ -23,13 +24,15 @@ namespace ToanThangSite.Areas.Admin.Controllers
         public ActionResult ProductCreate()
         {
             ViewBag.Branch = BranchBusiness.GetAll();
+            ViewBag.ProductColor = ProductBusiness.GetAllProductColor();
+            ViewBag.producSize = ProductBusiness.GetAllProductSize();
             ViewBag.ProductCategory = ProductCategoryBusiness.GetAll();
             return View();
         }
 
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult ProductCreate(Product item)
+        public ActionResult ProductCreate(ProductModel item)
         {
             if (ProductBusiness.Create(item))
             {
@@ -42,12 +45,14 @@ namespace ToanThangSite.Areas.Admin.Controllers
         {
             ViewBag.Branch = BranchBusiness.GetAll();
             ViewBag.ProductCategory = ProductCategoryBusiness.GetAll();
+            ViewBag.ProductColor = ProductBusiness.GetAllProductColor();
+            ViewBag.producSize = ProductBusiness.GetAllProductSize();
             Product item = ProductBusiness.GetByID(id);
             return View(item);
         }
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult ProductEdit(int id, Product item)
+        public ActionResult ProductEdit(int id, ProductModel item)
         {
             if (ProductBusiness.Update(id, item))
             {

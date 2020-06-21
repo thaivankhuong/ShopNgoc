@@ -121,6 +121,8 @@
           <Property Name="MetaTitle" Type="nvarchar" MaxLength="250" />
           <Property Name="MetaDescription" Type="nvarchar" MaxLength="550" />
           <Property Name="Tags" Type="nvarchar" MaxLength="4000" />
+          <Property Name="ProductSize" Type="nvarchar(max)" />
+          <Property Name="ProductColor" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="ProductCategory">
           <Key>
@@ -134,6 +136,13 @@
           <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
           <Property Name="ModifyBy" Type="nvarchar" MaxLength="50" />
           <Property Name="SeoUrl" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="ProductColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="ProductSize">
           <Key>
@@ -179,6 +188,7 @@
           <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductColor" EntityType="Self.ProductColor" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductSize" EntityType="Self.ProductSize" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Reason" EntityType="Self.Reason" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SeoMeta" EntityType="Self.SeoMeta" Schema="dbo" store:Type="Tables" />
@@ -201,6 +211,7 @@
           <EntitySet Name="Articles" EntityType="Model.Article" />
           <EntitySet Name="Products" EntityType="Model.Product" />
           <EntitySet Name="ProductSizes" EntityType="Model.ProductSize" />
+          <EntitySet Name="ProductColors" EntityType="Model.ProductColor" />
         </EntityContainer>
         <EntityType Name="Account">
           <Key>
@@ -359,6 +370,8 @@
           <Property Name="MetaTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="MetaDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
           <Property Name="Tags" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="ProductSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProductColor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ProductSize">
           <Key>
@@ -366,6 +379,13 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ProductColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -514,6 +534,8 @@
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="Model.Product">
               <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
+                <ScalarProperty Name="ProductSize" ColumnName="ProductSize" />
                 <ScalarProperty Name="Tags" ColumnName="Tags" />
                 <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
                 <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
@@ -545,6 +567,14 @@
           <EntitySetMapping Name="ProductSizes">
             <EntityTypeMapping TypeName="Model.ProductSize">
               <MappingFragment StoreEntitySet="ProductSize">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductColors">
+            <EntityTypeMapping TypeName="Model.ProductColor">
+              <MappingFragment StoreEntitySet="ProductColor">
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>

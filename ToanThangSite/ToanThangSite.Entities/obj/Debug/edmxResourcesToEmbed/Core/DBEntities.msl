@@ -142,6 +142,8 @@
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="Model.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
+          <ScalarProperty Name="ProductSize" ColumnName="ProductSize" />
           <ScalarProperty Name="Tags" ColumnName="Tags" />
           <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
           <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
@@ -173,6 +175,14 @@
     <EntitySetMapping Name="ProductSizes">
       <EntityTypeMapping TypeName="Model.ProductSize">
         <MappingFragment StoreEntitySet="ProductSize">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductColors">
+      <EntityTypeMapping TypeName="Model.ProductColor">
+        <MappingFragment StoreEntitySet="ProductColor">
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

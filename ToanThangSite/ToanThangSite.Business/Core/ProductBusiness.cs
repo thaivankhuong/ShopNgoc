@@ -116,32 +116,54 @@ namespace ToanThangSite.Business.Core
             }
         }
 
-        public static bool Create(Product item)
+        public static bool Create(ProductModel item)
         {
             try
             {
                 DBEntities db = new DBEntities();
-                item.SeoUrl = item.Title.ToUrlFormat(true) + ".html";
-                item.Thumb = item.Avatar;// "/Areas/Admin/Content/FileUploads/_thumbs/Images/" + item.Avatar.Substring(item.Avatar.LastIndexOf("/") + 1);
-                item.CreateBy = HttpContext.Current.User.Identity.Name;
-                item.CreateTime = DateTime.Now;
-                item.ModifyBy = HttpContext.Current.User.Identity.Name;
-                item.ModifyTime = DateTime.Now;
-                item.ViewTime = 0;
+                var product = new Product();
+                product.Code = item.Code;
+                product.Title = item.Title;
+                product.Description = item.Description;
+                product.Avatar = item.Avatar;
+                product.ListImage = item.ListImage;
+                product.Content = item.Content;
+                product.Keyword = item.Keyword;
+                product.Price = item.Price;
+                product.PriceSale = item.PriceSale;
+                product.MadeIn = item.MadeIn;
+                product.ListBranch = item.ListBranch;
+                product.Status = item.Status;
+                product.Position = item.Position;
+                product.ViewTime = item.ViewTime;
+                product.CategoryID = item.CategoryID;
+                product.MetaTitle = item.MetaTitle;
+                product.MetaDescription = item.MetaDescription;
+                product.Tags = item.Tags;
+
+                product.SeoUrl = item.Title.ToUrlFormat(true) + ".html";
+                product.Thumb = item.Avatar;// "/Areas/Admin/Content/FileUploads/_thumbs/Images/" + item.Avatar.Substring(item.Avatar.LastIndexOf("/") + 1);
+                product.CreateBy = HttpContext.Current.User.Identity.Name;
+                product.CreateTime = DateTime.Now;
+                product.ModifyBy = HttpContext.Current.User.Identity.Name;
+                product.ModifyTime = DateTime.Now;
+                product.ViewTime = 0;
+                product.ProductColor = item.ProductColor.Count() > 0 ? string.Join(",", item.ProductColor).ToString() : null;
+                product.ProductSize = item.ProductSize.Count() > 0 ? string.Join(",", item.ProductSize).ToString() : null;
                 if (item.Description == null || item.Description == string.Empty || item.Description == "")
                 {
                     item.Description = item.Title;
                 }
-                db.Products.Add(item);
+                db.Products.Add(product);
                 db.SaveChanges();
 
-                Reason r = new Reason();
-                r.Title = "5 LÝ DO ĐỂ BẠN MUA HÀNG TẠI TOMHUMALASKA.VN";
-                r.ProductID = item.ProductID;
-                r.Content = "Cam kết bán giá rẻ nhất cho người tiêu dùng|Sản phẩm Tươi sống|Tư vấn mua Hiệu quả – Chuyên nghiệp – Tận tâm|Thanh toán thu tiền tận nơi trên toàn quốc|Được đổi trả hàng hoá";
-                db.Reasons.Add(r);
-                db.SaveChanges();
-                db.Dispose();
+                //Reason r = new Reason();
+                //r.Title = "5 LÝ DO ĐỂ BẠN MUA HÀNG TẠI TOMHUMALASKA.VN";
+                //r.ProductID = item.ProductID;
+                //r.Content = "Cam kết bán giá rẻ nhất cho người tiêu dùng|Sản phẩm Tươi sống|Tư vấn mua Hiệu quả – Chuyên nghiệp – Tận tâm|Thanh toán thu tiền tận nơi trên toàn quốc|Được đổi trả hàng hoá";
+                //db.Reasons.Add(r);
+                //db.SaveChanges();
+                //db.Dispose();
 
                 return true;
             }
@@ -150,7 +172,7 @@ namespace ToanThangSite.Business.Core
                 return false;
             }
         }
-        public static bool Update(int id, Product item)
+        public static bool Update(int id, ProductModel item)
         {
             try
             {
@@ -177,6 +199,8 @@ namespace ToanThangSite.Business.Core
                 model.MetaTitle = item.MetaTitle;
                 model.MetaDescription = item.MetaDescription;
                 model.Tags = item.Tags;
+                model.ProductColor = item.ProductColor.Count() > 0 ? string.Join(",", item.ProductColor).ToString() : null;
+                model.ProductSize = item.ProductSize.Count() > 0 ? string.Join(",", item.ProductSize).ToString() : null;
                 db.SaveChanges();
                 db.Dispose();
                 return true;
@@ -233,6 +257,31 @@ namespace ToanThangSite.Business.Core
             catch (Exception ex)
             {
                 return false;
+            }
+        }
+
+        public static List<ProductColor> GetAllProductColor()
+        {
+            try
+            {
+                return ProductServices.GetAllProductColor();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        public static List<ProductSize> GetAllProductSize()
+        {
+            try
+            {
+                return ProductServices.GetAllProductSize();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
             }
         }
     }

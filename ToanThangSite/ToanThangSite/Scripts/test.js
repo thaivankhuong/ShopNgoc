@@ -40,7 +40,7 @@ function CheckShowCart() {
                 '                            </a>' +
                 '                        </td>' +
                 '                        <td>' +
-                '                            <a href="' + objiteam.url + '" class="product-name">' + objiteam.name +
+                '                            <a href="' + objiteam.url + '" class="product-name">' + objiteam.name + ' - ' + objiteam.sizename + ' / ' + objiteam.colorname +
                 '                            </a>' +
                 '                        </td>' +
                 '                        <td>' +

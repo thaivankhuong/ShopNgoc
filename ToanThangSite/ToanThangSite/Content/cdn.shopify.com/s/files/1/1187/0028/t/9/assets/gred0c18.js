@@ -683,8 +683,22 @@ $(gred.init)
         $(".error-popup ").addClass("active");
         var jsonordercar = localStorage.getItem("orderCar");
         var quantity = 1;
+        var sizeid = 1; $("#productsize").val();
+        var sizename = '';$("#productsize option:selected").text();
+        var colorname =''; $("#productcolor option:selected").text();
+        var colorid = 0; $("#productcolor").val();
         if (isItem) {
-            quantity =  $("#Quantity").val();
+            quantity = $("#Quantity").val();
+            sizeid =  $("#productsize").val();
+            sizename =  $("#productsize option:selected").text();
+            colorname =  $("#productcolor option:selected").text();
+            colorid = $("#productcolor").val();
+        }
+        else {
+            sizeid = $(t).attr("data-sizeid");
+            sizename = $(t).attr("data-namesize");
+            colorname = $(t).attr("data-namecolor");
+            colorid = $(t).attr("data-idcolor");      
         }
         var productId = $(t).attr("data-productid");
         var url = $(t).attr("data-url");
@@ -692,6 +706,7 @@ $(gred.init)
         var pricesale = $(t).attr("data-pricesale");
         var urlimg = $(t).attr("data-urlimg");
         var name = $(t).attr("data-name");
+      
         if (jsonordercar === null) {
             var arrorder = [];
             var obj = {
@@ -701,7 +716,11 @@ $(gred.init)
                 pricesale: pricesale,
                 urlimg: urlimg,
                 url: url,
-                name : name
+                name: name,
+                sizeid: sizeid,
+                sizename: sizename,
+                colorname: colorname,
+                colorid: colorid
             }
             arrorder.push(obj);
             var json = JSON.stringify(arrorder);
@@ -709,7 +728,7 @@ $(gred.init)
         }
         else {
             var ordercart = jQuery.parseJSON(jsonordercar);
-            var result = ordercart.find(fruit => fruit.productId == parseInt(productId));
+            var result = ordercart.find(fruit => fruit.productId == parseInt(productId) && fruit.sizeid == parseInt(sizeid) && fruit.colorid == parseInt(colorid));
             if (result === null || result === undefined) {
                 var obj = {
                     quantity: quantity,
@@ -718,7 +737,11 @@ $(gred.init)
                     pricesale: pricesale,
                     urlimg: urlimg,
                     url: url,
-                    name: name
+                    name: name,
+                    sizeid: sizeid,
+                    sizename: sizename,
+                    colorname: colorname,
+                    colorid: colorid
                 }
                 ordercart.push(obj);
             }
@@ -759,7 +782,7 @@ function sumcart() {
                 '                                        <img src="' + objiteam.urlimg +'" alt="'+ +'">' +
                 '                                    </a>' +
                 '                                    <div class="product-details">' +
-                '                                        <a class="product-name" href="' + objiteam.url + '">' +  objiteam.name + 
+                '                                        <a class="product-name" href="' + objiteam.url + '">' + objiteam.name + ' - ' + objiteam.sizename + ' / ' + objiteam.colorname  +
                 '                                        </a>' +
                 '                                        <div class="custom-reviews hide-caption">' +
                 '                                            <span class="shopify-product-reviews-badge" data-id="' + objiteam.productId +'"></span>' +

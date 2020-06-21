@@ -1,5 +1,19 @@
 ﻿@model IEnumerable<ToanThangSite.Entities.Core.ProductCategory>
 @using ToanThangSite.Business.Common
+<style>
+    .mini-cart .miniCart-content .total .cart-total {
+        float: right;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .mini-cart .miniCart-content  .total {
+        color: #1c1c1c;
+        line-height: 1em;
+        margin: 0 0 35px;
+    }
+
+</style>
 <header id="header" class="site-header header-v1  header--fixed hide-from-print headroom headroom--top headroom--not-bottom">
     <div class="header-bar">
         <div class="container">
@@ -124,20 +138,18 @@
                             <i class="fa fa-shopping-cart"></i><span class="cart-count">0</span>
                         </a>
                         <div class="miniCart-content">
-
                             <div class="noitice">
                                 There are <span class="cart-count">0</span> <span>items</span> in your cart
                             </div>
                             <ul class="miniCart-list">
-                               
                             </ul>
-                            <div class="summary">
+                            <div >
                                 <p class="total">
                                     <span class="label">Total</span>
                                     <span class="price cart-total"> <span class=money>$0 </span></span>
                                 </p>
                                 <div class="actions">
-                                    <a class="btn btn-small btn-primary btn-cart" href="cart.html">View cart</a>
+                                    <a class="btn btn-small btn-primary btn-cart"  href="cart.html">View cart</a>
                                 </div>
                             </div>
                         </div>

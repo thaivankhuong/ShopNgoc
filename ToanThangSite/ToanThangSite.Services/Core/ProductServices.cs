@@ -134,5 +134,36 @@ namespace ToanThangSite.Services.Core
                 throw;
             }
         }
+
+        public static List<ProductColor> GetAllProductColor()
+        {
+            try
+            {
+                DBEntities db = new DBEntities();
+                List<ProductColor> Lst = db.ProductColors.ToList();
+                db.Dispose();
+                return Lst;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        public static List<ProductSize> GetAllProductSize()
+        {
+            try
+            {
+                DBEntities db = new DBEntities();
+                List<ProductSize> Lst = db.ProductSizes.ToList();
+                db.Dispose();
+                return Lst;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }

@@ -37,5 +37,6 @@ namespace ToanThangSite.Entities.Core
         public virtual DbSet<Article> Articles { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductSize> ProductSizes { get; set; }
+        public virtual DbSet<ProductColor> ProductColors { get; set; }
     }
 }

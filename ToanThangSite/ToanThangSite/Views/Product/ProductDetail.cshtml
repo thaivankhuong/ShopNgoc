@@ -1,5 +1,6 @@
 ﻿@model ToanThangSite.Entities.Core.Product
 @using ToanThangSite.Business.Common
+@using ToanThangSite.Entities.Core
 @{
     ViewBag.Title = "ProductDetail";
     Layout = "~/Views/Shared/_LayoutV2.cshtml";
@@ -67,41 +68,49 @@
                             <div class="product-description rte">
                                 @Html.Raw(Model.Content)
                             </div>
-                                <div class="product-options  linked-options">
-                                    <div class="selector-wrapper">
-                                        <label for="productSelect-option-0">Size</label>
-                                        <select class="single-option-selector" data-option="option1" id="productSelect-option-0">
-                                            <option value="6">6</option>
-                                            <option value="8">8</option>
-                                            <option value="10">10</option>
-                                            <option value="12">12</option>
-                                        </select>
-                                    </div>
-                                    <div class="total-price"> <span class="money" data-currency-sgd=" $180.00" data-currency="SGD"> $180.00</span></div>
-
+                            <div class="product-options  linked-options">
+                                <div class="selector-wrapper">
+                                    <label >Size</label>
+                                    <select class="single-option-selector" data-option="option1" id="productsize">
+                                        @foreach (var item in (List<ProductSize>)ViewBag.producSize)
+                                        {
+                                            <option value="@item.Id">@item.Name</option>
+                                        }
+                                    </select>
                                 </div>
-                                <div class="product-actions">
-                                    <div class="product-single-quantity">
-                                        <label class="label" for="Quantity">Qty</label>
-                                        <div class="quantity">
-                                            <span class="qtyminus" data-field="quantity"><i class="fa fa-angle-down"></i></span>
-                                            <input type="text" id="Quantity" data-field="quantity" name="quantity" value="1" class="quantity-selector">
-                                            <span class="qtyplus" data-field="quantity"><i class="fa fa-angle-up"></i></span>
-                                        </div>
-                                    </div>
-                                    @{ 
-                                        var url = "/" + Model.Title.ToUrlFormat(true) + ".html";
+                                <div class="selector-wrapper">
+                                <label>Color</label>
+                                <select class="single-option-selector" data-option="option2" id="productcolor">
+                                    @foreach (var item in (List<ProductColor>)ViewBag.ProductColor)
+                                    {
+                                        <option value="@item.Id">@item.Name</option>
                                     }
-                                    <button  onclick="addtocart(this,true)" data-productid="@Model.ProductID"  data-name="@Model.Title" data-url="@url" data-price="@Model.Price" data-pricesale="@Model.PriceSale" data-urlimg="@Model.Avatar" class="btn btn-primary btn-addToCart">Add to Cart</button>
-                                    <div class="product-wishlist">
-
-                                        <div class="action-item">
-                                            <a class="action-link wishlist" href="javascript:;" title="Wishlist">
-                                                <i class="fa fa-heart"></i>
-                                            </a>
-                                        </div>
+                                </select>
+                                </div>
+                                <div class="total-price"> <span class="money" data-currency-sgd=" $180.00" data-currency="SGD"> $180.00</span></div>
+                            </div>
+                            <div class="product-actions">
+                                <div class="product-single-quantity">
+                                    <label class="label" for="Quantity">Qty</label>
+                                    <div class="quantity">
+                                        <span class="qtyminus" data-field="quantity"><i class="fa fa-angle-down"></i></span>
+                                        <input type="text" id="Quantity" data-field="quantity" name="quantity" value="1" class="quantity-selector">
+                                        <span class="qtyplus" data-field="quantity"><i class="fa fa-angle-up"></i></span>
                                     </div>
                                 </div>
+                                @{
+                                    var url = "/" + Model.Title.ToUrlFormat(true) + ".html";
+                                }
+                                <button onclick="addtocart(this,true)" data-productid="@Model.ProductID" data-name="@Model.Title" data-url="@url" data-price="@Model.Price" data-pricesale="@Model.PriceSale" data-urlimg="@Model.Avatar" class="btn btn-primary btn-addToCart">Add to Cart</button>
+                                <div class="product-wishlist">
+
+                                    <div class="action-item">
+                                        <a class="action-link wishlist" href="javascript:;" title="Wishlist">
+                                            <i class="fa fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-sharing">
                                 <div class="social-sharing is-clean" data-permalink="https://iwantthemissingpiece.com/products/dahlia-cheongsam-1">
                                     <label class="label">Share This</label>
@@ -125,12 +134,10 @@
                 </div>
             </div>
         </div>
-
         @Html.Action("ProductSimilar", "Product", new { @id = Model.ProductID })
     </div>
 
 </div>
-
 
 <script src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/cloud-zoom.1.0.2.min5f5d.js?v=15333175034253906628" type="text/javascript"></script>
 

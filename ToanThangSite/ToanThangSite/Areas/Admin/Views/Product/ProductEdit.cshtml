@@ -1,12 +1,10 @@
-﻿
-
-
-
-@model ToanThangSite.Entities.Core.Product
-
+﻿@model ToanThangSite.Entities.Core.Product
+@using ToanThangSite.Entities.Core
 @{
     ViewBag.Title = "ProductCreate";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    string[] arrsize = Model.ProductSize != null ?  Model.ProductSize.Split(',').ToArray() : null;
+    string[] arrcolor = Model.ProductSize != null ?  Model.ProductColor.Split(',').ToArray() : null;
 }
 <script>
 
@@ -26,7 +24,7 @@
 
         <div class="row-fluid">
             <div class="span12">
-                @using (Html.BeginForm("ProductEdit", "Product",new{@id=Model.ProductID}, FormMethod.Post))
+                @using (Html.BeginForm("ProductEdit", "Product", new { @id = Model.ProductID }, FormMethod.Post))
                 {
                     @Html.AntiForgeryToken()
                     <div class="widgetcontent">
@@ -75,20 +73,31 @@
                                         @Html.TextBoxFor(model => model.MadeIn, new { @class = "input-block-level", @placeholder = "Xuất xứ" })
                                     </span>
                                 </p>
-                                @*<p>
-                                    <label>Danh sách chi nhánh</label>
-                                    <span class="formwrapper">
-
-                                        <span id="dualselect" style="margin-left:0 !important" class="dualselect">
-                                            @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.Branch, "BranchID", "Title", "....Chọn...."), new { @multiple = "multiple", @class = "uniformselect", @placeholder = "Chọn chi nhánh", @size = "10" })
-                                            <span class="ds_arrow">
-                                                <button class="btn ds_prev"><i class="icon-chevron-left"></i></button><br>
-                                                <button class="btn ds_next"><i class="icon-chevron-right"></i></button>
-                                            </span>
-                                            @Html.TextBoxFor(model => model.ListBranch, new { @class = "input-block-level", @placeholder = "Danh sách ID chi nhánh", @id = "BranchList" })
-                                        </span>
+                                <p>
+                                    <label>Chọn màu </label>
+                                    <span class="field">
+                                        @*<input name="ProductColor" id="ProductColor" placeholder="Tiêu đề" type="text" value="">*@
+                                        <select class="form-control select2 input-block-level" name="ProductColor[]" id="ProductColor" multiple="multiple">
+                                            @foreach (var item in (List<ProductColor>)ViewBag.ProductColor)
+                                            {
+                                                bool selected = arrsize != null && arrsize.Any(s => s == item.Id.ToString()) ? true : false;
+                                                <option @(selected ? "selected" : "") value="@item.Id">@item.Name</option>
+                                            }
+                                        </select>
                                     </span>
-                                </p>*@
+                                </p>
+                                <p>
+                                    <label>Chọn size</label>
+                                    <span class="field">
+                                        <select class="form-control select2 input-block-level" id="ProductSize" name="ProductSize[]" multiple="multiple">
+                                            @foreach (var item in (List<ProductSize>)ViewBag.producSize)
+                                            {
+                                                bool selected = arrcolor != null && arrcolor.Any(s => s == item.Id.ToString()) ? true : false;
+                                                <option @(selected ? "selected" : "") value="@item.Id">@item.Name</option>
+                                            }
+                                        </select>
+                                    </span>
+                                </p>
                                 <p>
                                     <label>Mô tả</label>
                                     <span class="field">
@@ -116,7 +125,7 @@
                                                 // lấy file ảnh cuối cùng
                                                 //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
                                                 jQuery('#Picture').val(fileUrl);
-                                                jQuery('#Picture-Thumb').val('/Areas/Admin/Content/FileUploads/_thumbs/Images/'+fileUrl.substring(fileUrl.lastIndexOf("/") + 1))
+                                                jQuery('#Picture-Thumb').val('/Areas/Admin/Content/FileUploads/_thumbs/Images/' + fileUrl.substring(fileUrl.lastIndexOf("/") + 1))
                                                 jQuery('#reviewImg').attr("src", fileUrl);
                                             };
                                             finder.popup();
@@ -286,3 +295,14 @@
         </div><!--row-fluid-->
     </div><!--contentinner-->
 </div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('.select2').select2({
+            placeholder: "All",
+            allowClear: true
+        });
+
+
+    });
+</script>

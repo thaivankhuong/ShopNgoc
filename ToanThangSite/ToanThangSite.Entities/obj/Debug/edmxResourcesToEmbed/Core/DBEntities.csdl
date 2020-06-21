@@ -13,6 +13,7 @@
     <EntitySet Name="Articles" EntityType="Model.Article" />
     <EntitySet Name="Products" EntityType="Model.Product" />
     <EntitySet Name="ProductSizes" EntityType="Model.ProductSize" />
+    <EntitySet Name="ProductColors" EntityType="Model.ProductColor" />
   </EntityContainer>
   <EntityType Name="Account">
     <Key>
@@ -171,6 +172,8 @@
     <Property Name="MetaTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MetaDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
     <Property Name="Tags" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="ProductSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductColor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="ProductSize">
     <Key>
@@ -178,5 +181,12 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

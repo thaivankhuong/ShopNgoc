@@ -8,7 +8,7 @@ using PagedList;
 using static ToanThangSite.Business.Common.SetMetatag;
 using ToanThangSite.Entities.Core;
 
-namespace ToanThangSite.Controllers
+namespace ToanThangSite.Controllers  
 {
     public class ArticleController : Controller
     {
