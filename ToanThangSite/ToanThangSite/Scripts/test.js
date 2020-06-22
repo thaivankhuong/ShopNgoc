@@ -49,15 +49,15 @@ function CheckShowCart() {
                 '                        <td>' +
                 '                            <div class="product-single-quantity">' +
                 '                                <div class="quantity">' +
-                '                                    <span class="qtyminus qtyminuscart" data-price="' + priceshow +'"  data-productid="' + objiteam.productId +'"><i class="fa fa-angle-down"></i></span>' +
-                '                                    <input type="text" id="Quantity' + objiteam.productId+'" data-field="quantity" name="quantity' + objiteam.productId + '" value="' + objiteam.quantity + '" class="quantity-selector">' +
-                '                                    <span class="qtyplus qtypluscart" data-price="' + priceshow +'" data-productid="' + objiteam.productId +'" data-field="quantity1"><i class="fa fa-angle-up"></i></span>' +
+                '                                    <span class="qtyminus qtyminuscart" data-price="' + priceshow + '"  data-productid="' + objiteam.productId + '"><i class="fa fa-angle-down"></i></span>' +
+                '                                    <input type="text" id="Quantity' + objiteam.productId + '" data-field="quantity" name="quantity' + objiteam.productId + '" value="' + objiteam.quantity + '" class="quantity-selector">' +
+                '                                    <span class="qtyplus qtypluscart" data-price="' + priceshow + '" data-productid="' + objiteam.productId + '" data-field="quantity1"><i class="fa fa-angle-up"></i></span>' +
                 '                                </div>' +
                 '                            </div>' +
                 '                        </td>' +
                 '                        <td>' +
                 '                            <span>' +
-                '                                <span class="money money-item" id="money-'+objiteam.productId +'">' + formatNumber(total_quantity, '.', ',') +'</span>' +
+                '                                <span class="money money-item" id="money-' + objiteam.productId + '">' + formatNumber(total_quantity, '.', ',') + '</span>' +
                 '                            </span>' +
                 '                        </td>' +
                 '                    </tr>';
@@ -70,13 +70,13 @@ function CheckShowCart() {
     else {
         $("#noneproduct").show();
         $("#showproductcart").hide();
-        
+
     }
 }
 function InitQuantityplus() {
     $(".qtypluscart").click(function () {
         var productid = $(this).attr("data-productid");
-       
+
         var quantity = $("#Quantity" + productid).val();
         quantity = parseInt(quantity) + 1;
         $("#Quantity" + productid).val(quantity);
@@ -89,7 +89,7 @@ function InitQuantityplus() {
             var ordercart = jQuery.parseJSON(jsonordercar);
             var result = ordercart.find(fruit => fruit.productId == parseInt(productid));
             result.quantity = quantity;
-            
+
             var json = JSON.stringify(ordercart);
             localStorage.setItem("orderCar", json);
             sumcart();
@@ -105,7 +105,7 @@ function InitQuantityplus() {
         }
         $("#Quantity" + productid).val(quantity);
         var price = $(this).attr("data-price");
-        var total = parseInt(price)  * quantity;
+        var total = parseInt(price) * quantity;
         $("#money-" + productid).html(formatNumber(total, '.', ','));
 
         var jsonordercar = localStorage.getItem("orderCar");
@@ -159,3 +159,44 @@ function SendOrder() {
         }
     }).done(function () { })
 }
+
+
+//function SubmitCartProduct() {
+//    debugger;
+//}
+
+$('#form-productsubmit').submit(function (event) {
+    event.preventDefault();
+    var jsonordercar = localStorage.getItem("orderCar");
+
+    if (jsonordercar !== null && jsonordercar !== undefined && jsonordercar !== "undefined" && jsonordercar != [] && jsonordercar != "[]") {
+        var model = {
+            Id: 0,
+            FullName: $("#fullname").val(),
+            Address: $("#address").val(),
+            Mobi: $("#phone").val(),
+            Email: $("#email").val(),
+            Content: $("#CartSpecialInstructions").val(),
+            ProductName: jsonordercar
+        };
+        debugger;
+
+        $.ajax({
+            url: "/Contact/OrderCreate/",
+            method: 'POST',
+            data: JSON.stringify(model),
+            contentType: "application/json; charset=utf-8",
+            dataType: "text",
+            success: function (data) {
+                debugger;
+            }
+        }).done(function () {
+
+        })
+
+    }
+    else {
+        alert("Bạn chưa chọn sản phẩm nào!");
+    }
+   
+})

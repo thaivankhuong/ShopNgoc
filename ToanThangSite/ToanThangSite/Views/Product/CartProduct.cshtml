@@ -90,7 +90,7 @@
         </div>
     </div>
     <div class="page-content" id="showproductcart">
-        <div class="table-responsive" >
+        <div class="table-responsive">
             <table class="checkout table">
                 <thead>
                     <tr>
@@ -142,25 +142,48 @@
             </table>
         </div>
         <div class="cart-total">
-            <div class="grid__item large--five-twelfths">
-                <div class="cart__note">
-                    <label for="CartSpecialInstructions">Your order comments (limited to 140 words)</label>
-                    <textarea name="note" class="input-full" id="CartSpecialInstructions"></textarea>
+            <form  id="form-productsubmit"> 
+                <div class="grid__item large--five-twelfths">
+                    <div class="col-md-6">
+                        <div>
+                            <label>Email:</label>
+                            <input style="border:1px solid" name="email" type="email" id="email" class="input-full" required />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <label>Full Name:</label>
+                            <input style="border:1px solid" name="FullName" type="text" id="fullname" class="input-full" required />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <label>Phone:</label>
+                            <input style="border:1px solid" name="Phone" id="phone" type="text"  class="input-full" required />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <label>Address:</label>
+                            <input style="border:1px solid" name="Address" id="address" type="text" class="input-full" required />
+                        </div>
+                    </div>
+                    <div class="cart__note col-md-12">
+                        <label for="CartSpecialInstructions">Your order comments</label>
+                        <textarea name="note" class="input-full" id="CartSpecialInstructions"></textarea>
+                    </div>
+                    <br>
+                    <div class="sub-total">
+                        <span class="subtotal-title">Subtotal</span>
+                        <span class="subtotal"> <span class="money">$00</span></span>
+                        <p><em>Shipping, taxes, and discounts will be calculated at checkout.</em></p>
+                        <input type="submit" name="update" class="btn update-cart" value="Update Cart">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="sub-total">
-                <span class="subtotal-title">Subtotal</span>
-                <span class="subtotal"> <span class="money" >$1,000.00</span></span>
-                <p><em>Shipping, taxes, and discounts will be calculated at checkout.</em></p>
-                <input type="submit" name="update" class="btn update-cart" value="Update Cart">
-                <input type="submit" name="checkout" class="btn checkout btn-primary" value="Check Out">
-            </div>
+            </form>
         </div>
     </div>
 </div>
-
-
 
 @section scripts
 {
