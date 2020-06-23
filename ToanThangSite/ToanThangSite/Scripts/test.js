@@ -166,6 +166,7 @@ function SendOrder() {
 //}
 
 $('#form-productsubmit').submit(function (event) {
+    $(".loading ").addClass("active");
     event.preventDefault();
     var jsonordercar = localStorage.getItem("orderCar");
 
@@ -179,8 +180,6 @@ $('#form-productsubmit').submit(function (event) {
             Content: $("#CartSpecialInstructions").val(),
             ProductName: jsonordercar
         };
-        debugger;
-
         $.ajax({
             url: "/Contact/OrderCreate/",
             method: 'POST',
@@ -188,10 +187,14 @@ $('#form-productsubmit').submit(function (event) {
             contentType: "application/json; charset=utf-8",
             dataType: "text",
             success: function (data) {
-                debugger;
+                $(".success-popup ").addClass("active");
+                setTimeout(function () {
+                    $(".success-popup ").removeClass("active");
+                    window.location.href = '/';
+                }, 2500);
             }
         }).done(function () {
-
+            $(".loading ").removeClass("active");
         })
 
     }

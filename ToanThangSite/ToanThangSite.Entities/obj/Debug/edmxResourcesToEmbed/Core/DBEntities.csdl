@@ -14,6 +14,7 @@
     <EntitySet Name="Products" EntityType="Model.Product" />
     <EntitySet Name="ProductSizes" EntityType="Model.ProductSize" />
     <EntitySet Name="ProductColors" EntityType="Model.ProductColor" />
+    <EntitySet Name="ProductOrders" EntityType="Model.ProductOrder" />
   </EntityContainer>
   <EntityType Name="Account">
     <Key>
@@ -188,5 +189,15 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="SizeId" Type="Int32" />
+    <Property Name="ColorId" Type="Int32" />
   </EntityType>
 </Schema>

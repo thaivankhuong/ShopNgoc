@@ -41,7 +41,7 @@
       this.initCollectionViewMode();
 
       /* Paging */
-      this.initPaging();
+    //  this.initPaging();
       
       this.clearfix();
 
@@ -295,7 +295,7 @@
           collection.filterMapEvents(); 
           collection.initReview(); 
 
-          collection.initPaging();
+        //  collection.initPaging();
           collection.initToggle();
           gred.ConvertCurrency();
           
@@ -391,28 +391,28 @@
 
     /* --------------------------------------------------------- */
     /* Paging */
-    initPaging: function() {
-      $(".pagination a").click(function(e) {
-        var page = $(this).attr("href").match(/page=\d+/g); 
-        if (page) {
-          Shopify.queryParams.page = parseInt(page[0].match(/\d+/g));
-          if (Shopify.queryParams.page) {
-            var newurl = collection.filterCreateUrl();
-            collection.fillterClick = true;
-            History.pushState({
-              param: Shopify.queryParams
-            }, newurl, newurl);
-            collection.filterGetContent(newurl);
-            //go to top
-            $('body,html').animate({
-              scrollTop: 0
-            }, 600);
+    //initPaging: function() {
+    //  $(".pagination a").click(function(e) {
+    //    var page = $(this).attr("href").match(/page=\d+/g); 
+    //    if (page) {
+    //      Shopify.queryParams.page = parseInt(page[0].match(/\d+/g));
+    //      if (Shopify.queryParams.page) {
+    //        var newurl = collection.filterCreateUrl();
+    //        collection.fillterClick = true;
+    //        History.pushState({
+    //          param: Shopify.queryParams
+    //        }, newurl, newurl);
+    //        collection.filterGetContent(newurl);
+    //        //go to top
+    //        $('body,html').animate({
+    //          scrollTop: 0
+    //        }, 600);
 
-          }
-        }
-        e.preventDefault();
-      });
-    },
+    //      }
+    //    }
+    //    e.preventDefault();
+    //  });
+    //},
 	
     clearfix: function(){
     	var ctr = 1;

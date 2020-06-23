@@ -196,3 +196,38 @@ E:\Web Project FreeLand\shopGit\ShopNgoc\ToanThangSite\ToanThangSite.Business\ob
 E:\Web Project FreeLand\shopGit\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.csproj.CopyComplete
 E:\Web Project FreeLand\shopGit\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.dll
 E:\Web Project FreeLand\shopGit\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.pdb
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Business.dll.config
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Business.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Business.pdb
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\EntityFramework.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\EntityFramework.SqlServer.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\PagedList.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\PagedList.Mvc.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.Helpers.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.Mvc.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.Razor.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.WebPages.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.WebPages.Razor.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Entities.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Services.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Entities.pdb
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Entities.dll.config
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Services.pdb
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\ToanThangSite.Services.dll.config
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\EntityFramework.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\EntityFramework.SqlServer.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\PagedList.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\PagedList.Mvc.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.Helpers.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.Mvc.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.Razor.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.WebPages.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.WebPages.Deployment.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Debug\System.Web.WebPages.Razor.xml
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.csprojAssemblyReference.cache
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.csproj.CoreCompileInputs.cache
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.csproj.CopyComplete
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.dll
+B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Debug\ToanThangSite.Business.pdb

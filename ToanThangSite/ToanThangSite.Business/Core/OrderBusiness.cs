@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ToanThangSite.Entities.Core;
+using ToanThangSite.Entities.Models;
 using ToanThangSite.Services.Core;
 
 namespace ToanThangSite.Business.Core
@@ -36,11 +37,32 @@ namespace ToanThangSite.Business.Core
             }
         }
 
-        public static string Create(Order Model)
+        public static string Create(Order Model , List<ProductCart> listpro)
         {
             try
             {
-                return OrderServices.Create(Model);
+                DBEntities db = new DBEntities();
+                Model.ProductName = string.Empty;
+
+                
+                db.Orders.Add(Model);
+                db.SaveChanges();
+
+                List<ProductOrder> listadd = new List<ProductOrder>();
+                foreach (var item in listpro)
+                {
+                    ProductOrder obj = new ProductOrder();
+                    obj.ColorId = Convert.ToInt32(item.colorid);
+                    obj.OrderID = Convert.ToInt32(Model.OrderID);
+                    obj.ProductId = Convert.ToInt32(item.productId);
+                    obj.SizeId = Convert.ToInt32(item.sizeid);
+                    listadd.Add(obj);
+                }
+
+                db.ProductOrders.AddRange(listadd);
+                db.SaveChanges();
+                db.Dispose();
+                return "true";
             }
             catch (Exception ex)
             {
@@ -65,5 +87,6 @@ namespace ToanThangSite.Business.Core
                 return false;
             }
         }
+
     }
 }

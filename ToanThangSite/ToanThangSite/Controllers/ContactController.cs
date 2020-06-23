@@ -7,6 +7,8 @@ using ToanThangSite.Business.Core;
 using ToanThangSite.Entities.Core;
 using static ToanThangSite.Business.Common.SetMetatag;
 using System.Web.Script.Serialization;
+using ToanThangSite.Entities.Models;
+using Newtonsoft.Json;
 
 namespace ToanThangSite.Controllers
 {
@@ -65,7 +67,9 @@ namespace ToanThangSite.Controllers
             {
                 JavaScriptSerializer serializer = new JavaScriptSerializer();
                 Order models = model as Order;
-                string result = OrderBusiness.Create(models);
+                string json = model.ProductName;
+                var results = JsonConvert.DeserializeObject<List<ProductCart>>(json);
+                string result = OrderBusiness.Create(models, results);
 
 
 
