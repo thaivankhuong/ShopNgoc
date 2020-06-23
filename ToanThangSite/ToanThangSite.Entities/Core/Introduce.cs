@@ -26,5 +26,6 @@ namespace ToanThangSite.Entities.Core
         public Nullable<System.DateTime> ModifyTime { get; set; }
         public string CreateBy { get; set; }
         public string ModifyBy { get; set; }
+        public string ContentSort { get; set; }
     }
 }

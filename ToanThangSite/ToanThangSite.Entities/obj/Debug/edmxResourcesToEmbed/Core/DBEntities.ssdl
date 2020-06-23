@@ -72,6 +72,7 @@
     <Property Name="ModifyTime" Type="datetime" />
     <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
     <Property Name="ModifyBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContentSort" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Order">
     <Key>
