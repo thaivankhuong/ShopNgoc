@@ -29,7 +29,7 @@
                                 <p>
                                     <label>Vị trí</label>
                                     <span class="field">
-                                        @Html.TextBoxFor(model => model.Position, new { @class = "input-large", @placeholder="Vị trí" })
+                                        @Html.TextBoxFor(model => model.Position, new { @class = "input-large", @placeholder = "Vị trí" })
                                     </span>
                                 </p>
                                 <p>
@@ -41,9 +41,16 @@
                                 <p>
                                     <label>Mô tả</label>
                                     <span class="field">
-                                        @Html.TextAreaFor(model => model.Description, new {  @class = "span12", @cols = "100", @rows = "5"  })
+                                        @Html.TextAreaFor(model => model.Description, new { @class = "span12", @cols = "100", @rows = "5" })
                                     </span>
-                                    <small class="desc">Chú ý: Mô tả ngắn cho bài viết với nội dung có liên quan đến bài viết và không quá dài.</small>
+                                    <small class="desc">Chú ý: Mô tả ngắn cho bài viết với nội dung có liên quan đến bài viết và không quá dài(300).</small>
+                                </p>
+                                <p>
+                                    <label>Mô tả dài </label>
+                                    <span class="field">
+                                        @Html.TextAreaFor(model => model.DescriptionLong, new { @class = "span12", @cols = "100", @rows = "5" })
+                                    </span>
+                                    <small class="desc">Chú ý: Mô tả ngắn cho bài viết với nội dung có liên quan đến bài viết và không quá dài(MAX).</small>
                                 </p>
                                 <p>
                                     <label>Xem trước ảnh</label>
@@ -54,7 +61,7 @@
                                 <p>
                                     <label>Hình Ảnh</label>
                                     <span>
-                                        @Html.TextBoxFor(model=>model.Avatar,new { @class="span10",@id= "Picture" })
+                                        @Html.TextBoxFor(model => model.Avatar, new { @class = "span10", @id = "Picture" })
                                         <input type="button" id="Browse" value="..." class="btn btn-default fr" style="height:30px;width:30px" />
                                     </span>
                                     <script type="text/javascript">
@@ -73,8 +80,8 @@
                                 <p>
                                     <label>Trạng thái</label>
                                     <span class="field ">
-                                        @Html.RadioButtonFor(model => model.Status, 1, new { @name="ckbStatus",@checked="checked" }) Hiện
-                                        @Html.RadioButtonFor(model => model.Status, 0,new { @name = "ckbStatus" }) Ẩn
+                                        @Html.RadioButtonFor(model => model.Status, 1, new { @name = "ckbStatus", @checked = "checked" }) Hiện
+                                        @Html.RadioButtonFor(model => model.Status, 0, new { @name = "ckbStatus" }) Ẩn
                                     </span>
                                 </p>
                             </div>

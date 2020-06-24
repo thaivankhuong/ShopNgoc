@@ -38,6 +38,20 @@ namespace ToanThangSite.Services.Core
                 throw;
             }
         }
+        public static List<Introduce> GetTop3()
+        {
+            try
+            {
+                DBEntities db = new DBEntities();
+                List<Introduce>  data = db.Introduces.Where(x => x.Status == 1).Take(3).ToList();
+                db.Dispose();
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
         public static Introduce GetByID(int id)
         {
             try

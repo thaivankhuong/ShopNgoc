@@ -120,6 +120,7 @@
     <EntitySetMapping Name="Articles">
       <EntityTypeMapping TypeName="Model.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="DescriptionLong" ColumnName="DescriptionLong" />
           <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
           <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
           <ScalarProperty Name="SeoUrl" ColumnName="SeoUrl" />

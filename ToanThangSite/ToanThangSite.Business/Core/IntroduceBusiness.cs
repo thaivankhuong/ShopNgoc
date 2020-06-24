@@ -33,6 +33,19 @@ namespace ToanThangSite.Business.Core
                 throw;
             }
         }
+
+        public static List<Introduce> GetTop3()
+        {
+            try
+            {
+                return IntroduceServices.GetTop3();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         public static Introduce GetByID(int ID)
         {
             try

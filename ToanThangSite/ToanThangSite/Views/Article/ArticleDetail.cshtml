@@ -1,24 +1,44 @@
 ﻿@model ToanThangSite.Entities.Core.Article
 @{
     ViewBag.Title = "ArticleDetail";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutV2.cshtml";
 }
 
-<section id="body">
-    <div class="product-slide-2 mb25">
-        <div class="uk-container uk-container-center">
-            <div class="border">
-                <div class="uk-grid uk-grid-medium">
-                    <div class="uk-width-large-1-1 uk-width-large-1-1">
-                        <div class="ts-heading">
-                            <h3 class="title">@Model.Title</h3>
-                        </div>
-                        <div class="ts-text">
-                            <p class="mb20">@Html.Raw(Model.Content)</p>
+@*<section id="body">
+        <div class="product-slide-2 mb25">
+            <div class="uk-container uk-container-center">
+                <div class="border">
+                    <div class="uk-grid uk-grid-medium">
+                        <div class="uk-width-large-1-1 uk-width-large-1-1">
+                            <div class="ts-heading">
+                                <h3 class="title">@Model.Title</h3>
+                            </div>
+                            <div class="ts-text">
+                                <p class="mb20">@Html.Raw(Model.Content)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>*@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="article-content">
+                <div class="blog-excerpt">
+                    <span class="blog-date">
+                        <i class="fa fa-clock-o"></i>
+                        <span>@Convert.ToDateTime(Model.CreateTime).Day @Convert.ToDateTime(Model.CreateTime).ToString("MMMM") ,@Convert.ToDateTime(Model.CreateTime).Year</span>
+                    </span>
+                </div>
+                <div class="article-name">@Model.Title</div>
+                <div class="rte" itemprop="articleBody">
+                    @Html.Raw(Model.Content)
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+    <div class="quickview-product gred-popup"></div>
+</div>

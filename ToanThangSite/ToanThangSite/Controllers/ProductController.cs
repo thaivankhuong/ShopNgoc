@@ -43,7 +43,7 @@ namespace ToanThangSite.Controllers
                 return RedirectToRoute("/404");
             }
 
-            model = ProductBusiness.GetByCategoryID(page, 4, id);
+            model = ProductBusiness.GetByCategoryID(page, 16, id);
             return View(model);
         }
         public ActionResult ProductDetail(int id)

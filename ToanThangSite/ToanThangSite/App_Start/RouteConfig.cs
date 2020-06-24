@@ -47,13 +47,13 @@ namespace ToanThangSite
             // Article router
             routes.MapRoute(
                 name: "Article",
-                url: "tin-tuc.html",
+                url: "blogs.html",
                 defaults: new { controller = "Article", action = "ArticleList", id = UrlParameter.Optional },
                 namespaces: new string[] { "ToanThangSite.Controllers" }
             );
             routes.MapRoute(
                name: "ArticlePage",
-               url: "tin-tuc.htmlpage={page}",
+               url: "blogs.htmlpage={page}",
                defaults: new { controller = "Article", action = "ArticleList", page = UrlParameter.Optional },
                namespaces: new string[] { "ToanThangSite.Controllers" }
            );

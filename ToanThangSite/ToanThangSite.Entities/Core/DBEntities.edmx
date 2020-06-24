@@ -36,6 +36,7 @@
           <Property Name="SeoUrl" Type="nvarchar" MaxLength="250" />
           <Property Name="MetaTitle" Type="nvarchar" MaxLength="250" />
           <Property Name="MetaDescription" Type="nvarchar" MaxLength="550" />
+          <Property Name="DescriptionLong" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Branch">
           <Key>
@@ -354,6 +355,7 @@
           <Property Name="SeoUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="MetaTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="MetaDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="DescriptionLong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Product">
           <Key>
@@ -536,6 +538,7 @@
           <EntitySetMapping Name="Articles">
             <EntityTypeMapping TypeName="Model.Article">
               <MappingFragment StoreEntitySet="Article">
+                <ScalarProperty Name="DescriptionLong" ColumnName="DescriptionLong" />
                 <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
                 <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
                 <ScalarProperty Name="SeoUrl" ColumnName="SeoUrl" />

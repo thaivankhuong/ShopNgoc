@@ -31,5 +31,6 @@ namespace ToanThangSite.Entities.Core
         public string SeoUrl { get; set; }
         public string MetaTitle { get; set; }
         public string MetaDescription { get; set; }
+        public string DescriptionLong { get; set; }
     }
 }

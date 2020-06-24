@@ -123,6 +123,7 @@ namespace ToanThangSite.Business.Core
                 model.Position = item.Position;
                 model.Status = item.Status;
                 model.MetaTitle = item.MetaTitle;
+                model.DescriptionLong = item.DescriptionLong;
                 model.MetaDescription = item.MetaDescription;
                 db.SaveChanges();
                 db.Dispose();

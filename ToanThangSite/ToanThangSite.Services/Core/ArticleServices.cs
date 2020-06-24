@@ -31,7 +31,7 @@ namespace ToanThangSite.Services.Core
             try
             {
                 DBEntities db = new DBEntities();
-                List<Article> Lst = db.Articles.OrderByDescending(x => x.CreateTime).Take(4).ToList();
+                List<Article> Lst = db.Articles.OrderByDescending(x => x.CreateTime).Take(3).ToList();
                 db.Dispose();
                 return Lst;
             }

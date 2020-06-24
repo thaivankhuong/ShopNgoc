@@ -102,7 +102,17 @@
                                                 <a href="@url" title="@item.Title" class="product-item-name">@item.Title</a>
                                                 <div class="product-meta">
                                                     <div class="price-box pull-left">
-                                                        <span class=money>$@String.Format("{0:0,0}", item.Price)</span>
+                                                        @if (!string.IsNullOrEmpty(item.PriceSale))
+                                                        {
+                                                            <s class="sale-price"> <span class="money">$@String.Format("{0:0,0}", Convert.ToDouble(item.PriceSale))</span></s>
+                                                            <span class="money" >$@String.Format("{0:0,0}", Convert.ToDouble(item.Price))</span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class=money>$@String.Format("{0:0,0}", Convert.ToDouble(item.Price)) </span>
+                                                        }
+
+                                                     
                                                     </div>
                                                     <div class="custom-reviews hide-caption">
                                                         <span class="shopify-product-reviews-badge" data-id="@item.ProductID"></span>

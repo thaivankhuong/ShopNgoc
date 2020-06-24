@@ -46,7 +46,7 @@ namespace ToanThangSite.Areas.Admin.Controllers
         {
             if (BranchBusiness.Update( item,id))
             {
-                return RedirectToAction("BranchList", "Branch");
+                return RedirectToAction("List", "Branch");
             }
             return RedirectToAction("Error", "Home");
         }

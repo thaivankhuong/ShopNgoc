@@ -3,47 +3,41 @@
 @using ToanThangSite.Business.Common
 @{
     ViewBag.Title = "ArticleList";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutV2.cshtml";
 }
-<section id="body">
-    <div class="product-slide-2 mb25">
-        <div class="uk-container uk-container-center">
-            <div class="border">
-                <div class="uk-grid uk-grid-medium">
-                    <div class="uk-width-large-1-1 uk-width-large-1-1">
-                        <div class="ts-heading">
-                            <h3 class="title">Tin Tức</h3>
-                        </div>
-
-                        @foreach (var item in Model)
-                        {
-                            var url = "/" + item.Title.ToUrlFormat(true) +".html";
-                            <div class="item-tt">
-                                <div class="recipegridimage">
-                                    <a href="@url"><img title="@item.Title" alt="@item.Title.ToUrlFormat(true)" src="@item.Thumb"></a>
-                                </div>
-                                <div class="recipedetails">
-                                    <a class="title" href="@url" title="@item.Title"><b>@item.Title</b></a>
-                                    <p>@item.Description</p>
-                                    <ul class="rate"></ul>
-                                    <a href="@url" title="@item.Title" class="fr">Xem chi tiết &gt;&gt;</a>
-                                </div>
-                                <div class="uk-clearfix"></div>
-                            </div><!--<div class="item-tt">-->
-                            <hr />
-                        }
-                    </div>
+<div class="section_3">
+    <section class="collection-wrapper">
+        <div class="widget">
+            <div class="container">
+                <div class="widget-title">
+                    <h3 class="has-leaves">
+                        <span>COLLECTIONS</span>
+                    </h3>
                 </div>
+                @foreach (var item in Model)
+                {
+                    var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                    <div class="col-sm-4 col-xs-12 collection-wrap">
+                        <div class="col-img-wrap" style="background:url('@item.Thumb')"></div>
+                        <div class=""><i class="fa fa-calendar"></i>&nbsp;&nbsp;<span> Posted on @Convert.ToDateTime(item.CreateTime).Day @Convert.ToDateTime(item.CreateTime).ToString("MMMM") @Convert.ToDateTime(item.CreateTime).Year</span></div>
+                        <h4> @item.Title</h4>
+                        <p>
+                            @item.DescriptionLong
+                        </p>
+                        <a href="@url" class="btn btn-primary">View Blog</a>
+                    </div>
+                }
+                <div class="clr"></div>
             </div>
         </div>
-    </div>
-</section>
-<div class="pagination-container">
+    </section>
+</div>
+<div class="a-center clearfix">
     <ul class="pagination">
         @if (Model.PageCount > 1)
-            {
-                string urlpage = ViewBag.UrlArticle;
-            @Html.PagedListPager(Model, page => urlpage.ToString().Substring(0, urlpage.ToString().LastIndexOf('.')) + ".htmlpage=" + page);
-            }
+        {
+            string urlpage = ViewBag.UrlArticle;
+            @Html.PagedListPager(Model, page => urlpage.ToString().Substring(0, urlpage.ToString().LastIndexOf('.')) + ".htmlpg=" + page);
+        }
     </ul>
 </div>

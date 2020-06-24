@@ -1,4 +1,4 @@
-﻿@model ToanThangSite.Entities.Core.Introduce
+﻿@model List<ToanThangSite.Entities.Core.Introduce>
 @{
     ViewBag.Title = "Introduce";
     Layout = "~/Views/Shared/_LayoutV2.cshtml";
@@ -94,25 +94,15 @@
     </section>
 <section class="sayings container">
     <div class="inner-content">
-        <p>The Missing Piece is a small homegrown Singapore business, which makes stylish, flattering  and comfortable clothes for real women and their families. We  specialise in modern cheongsams with the additional bonus of coordinated options for families.</p>
+        @Html.Raw(Model[0].Content) 
     </div>
 </section>
 <section id="featured-wrap">
     <div class="featured-data">
         <div class="col-sm-6 col-xs-12 left" style="background:url('/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/abt_right_img9404.jpg')"></div>
         <div class="col-sm-6 col-xs-12 right">
-            <h3 class="has-leaves">WHAT SETS US APART</h3>
-            <p>
-                Here at The Missing Piece, pairing timeless, flattering silhouettes with comfortable fabrics, is our primary objective.
-                <br><br>
-                As such, all our pieces are in soft and breathable fabrics, which are great for our balmy climate. Whether it be formal or casual, we pride ourselves in ensuring that our lady is always effortlessly stylish, chic and comfortable.
-                <br><br>
-                We make clothes that not only make you feel and look good, but are also practical for the woman on the go. Our handpicked fabrics are mainly imported from South East Asia and the US. Each piece is lovingly handmade and paired with handpicked details to ensure customer satisfaction.
-                <br><br>
-                Each collection is limited edition to ensure exclusivity and quality. We largely do not mass produce and work on a made-to-order basis. Each piece is lovingly tailored and usually gets to you within 2-4 weeks.
-                <br><br>
-                We offer tasteful and comfortable clothing for women, kids and even men, so the whole family can now find their missing pieces here!
-            </p>
+            <h3 class="has-leaves"> @Model[1].Title</h3>
+            @Html.Raw(Model[1].Content)
         </div>
         <div class="clr"></div>
     </div>
@@ -124,14 +114,9 @@
     <div class="container">
         <!--<img class="author_img" src="//cdn.shopify.com/s/files/1/1187/0028/t/9/assets/abt_author_img.jpg?784" />-->
         <div class="author-inner">
-            <h3 class="has-leaves">About the Founder</h3>
-            <p>
-                Ee-ling is a mother of three who wants to make comfortable, unique pieces that the whole family would wear.
-                <br><br>
-                She picked up sewing when she was living in Australia and loved to shop for fabric and make her own clothes as a hobby. After becoming a mum, she started making one-of-a-kind pieces for her own kids and when she had a daughter, she started making matching outfits for the both of them! Before she knew it, others started asking where they could get clothes like theirs, and the rest, as they say, is history.
-                <br><br>
-                Our full collections can be seen on this website. If you have any queries at all with regards to any of the products you see here or on our instagram page, do feel free to contact us at hello@iwantthemissingpiece.com. We also provide customisation (with an additional fee), so do contact us if you require that option! We look forward to helping you find your Missing Pieces! xoxo
-            </p>
+            <h3 class="has-leaves">  @Model[2].Title </h3>
+            @Html.Raw(Model[2].Content)
+
         </div>
     </div>
 </section>

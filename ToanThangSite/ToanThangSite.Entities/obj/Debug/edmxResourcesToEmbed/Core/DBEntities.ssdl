@@ -31,6 +31,7 @@
     <Property Name="SeoUrl" Type="nvarchar" MaxLength="250" />
     <Property Name="MetaTitle" Type="nvarchar" MaxLength="250" />
     <Property Name="MetaDescription" Type="nvarchar" MaxLength="550" />
+    <Property Name="DescriptionLong" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Branch">
     <Key>

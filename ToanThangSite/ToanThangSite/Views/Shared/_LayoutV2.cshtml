@@ -179,29 +179,16 @@
         @Html.Action("Header", "Layout");
         <main class="wrapper main-content fade out">
 
-            <div class="pick_currency" align="right" style="display: none;">
-                <br \><label for="currencies" style="display: inline;">Pick a currency </label>
-                <select id="currencies" name="currencies" style="display: inline;max-height: 50px;max-width: 87px;height:100%;">
-
-
-                    <option value="SGD" selected="selected">SGD</option>
-
-
-
-
-                    <option value="USD">USD</option>
-
-
-
-                    <option value="AUD">AUD</option>
-
-
-                </select>
-                <br \>
-            </div>
+            @*<div class="pick_currency" align="right" style="display: none;">
+                    <br \><label for="currencies" style="display: inline;">Pick a currency </label>
+                    <select id="currencies" name="currencies" style="display: inline;max-height: 50px;max-width: 87px;height:100%;">
+                        <option value="SGD" selected="selected">SGD</option>
+                        <option value="USD">USD</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                    <br \>
+                </div>*@
             @RenderBody()
-
-
             <div class="quickview-product gred-popup"></div>
         </main>
     </section>
@@ -223,74 +210,9 @@
             </div>
         </div>
     </div>
+    @Html.Action("Footer", "Layout")
 
-
-    <footer>
-        <div class="site-footer">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="media" style="margin-top: 20px">
-                                <center><img src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/footer-logodd74.png?v=14315542564859059859" alt="" /></center>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <center>
-                                <h3><span>Quick Links</span></h3>
-                                <ul class="list-menu">
-
-                                    <li><a href="search.html">Search</a></li>
-
-                                    <li><a href="pages/orders-and-returns.html">Orders & Returns</a></li>
-
-                                    <li><a href="pages/size-charts.html">Size Charts</a></li>
-
-                                    <li><a href="pages/shipping.html">Shipping</a></li>
-
-                                    <li><a href="pages/terms-and-conditions.html">Terms and Conditions</a></li>
-
-                                </ul>
-                            </center>
-                        </div>
-                        <!--<div class="col-md-3 col-sm-6 col-xs-6">
-                          <h3><span></span></h3>
-                          <ul class="list-menu">
-
-                          </ul>
-                        </div>-->
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <center>
-                                <h3><span>Get in touch</span></h3>
-                                <div class="shop-info">
-                                    <ul>
-                                        <li>
-                                            <a href="#" title=""><i class="fa fa-envelope"></i></a><a href="mailto:sales@iwantthemissingpiece.com">sales@iwantthemissingpiece.com</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title=""><i class="fa fa-facebook"></i></a><a href="https://www.facebook.com/iwantthemissingiece/">The Missing Piece</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title=""><i class="fa fa-instagram"></i></a><a href="http://instagram.com/iwantthemissingpiece">iwantthemissingpiece</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright clearfix">
-            <div class="container">
-                <div class="inner clearfix">
-                    <div class="pull-left"><span>Copyright © 2017, The Missing Piece.</span></div>
-                    <div class="back-to-top"><i class="fa fa-chevron-up"></i><span>top</span></div>
-                    <div class="pull-right"><img src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/payment28fb.png?v=14425781279167821882" alt="" /></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
 
     <script src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/slideshow-tool.min1e87.js?v=12115935284730862311" type="text/javascript"></script>
     <script src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/slideshow.min73db.js?v=1454809380091815495" type="text/javascript"></script>
@@ -350,38 +272,38 @@
     </div>
 
     @*<div class="addcart-popup product-popup gred-popup">
-        <div class="overlay no-background"></div>
-        <div class="content">
-            <a href="javascript:void(0)" class="close-window close-popup"><i class="fa fa-close"></i></a>
-            <div class="product-image">
-                <img alt="" src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/logo69f9.png?v=18249558904098692576" style="max-width:100px; height:auto" />
-            </div>
-            <div class="product-info">
-                <p class="product-name"></p>
-                <p class="success-message btn-cart">Has been added to the cart !</p>
-                <div class="actions">
-                    <button class="btn btn-small btn-primary btn-cart" onclick="window.location='cart.html'">View cart</button>
-                    <button class="btn  btn-small btn-checkout" onclick="window.location='cart.html'">Check out</button>
+            <div class="overlay no-background"></div>
+            <div class="content">
+                <a href="javascript:void(0)" class="close-window close-popup"><i class="fa fa-close"></i></a>
+                <div class="product-image">
+                    <img alt="" src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/logo69f9.png?v=18249558904098692576" style="max-width:100px; height:auto" />
+                </div>
+                <div class="product-info">
+                    <p class="product-name"></p>
+                    <p class="success-message btn-cart">Has been added to the cart !</p>
+                    <div class="actions">
+                        <button class="btn btn-small btn-primary btn-cart" onclick="window.location='cart.html'">View cart</button>
+                        <button class="btn  btn-small btn-checkout" onclick="window.location='cart.html'">Check out</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="wishlist-popup product-popup gred-popup">
-        <div class="overlay no-background"></div>
-        <div class="content">
-            <a href="javascript:void(0)" class="close-window close-popup"><i class="fa fa-close"></i></a>
-            <div class="product-image">
-                <img alt="" src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/logo69f9.png?v=18249558904098692576" style="max-width:100px; height:auto" />
-            </div>
-            <div class="product-info">
-                <p class="product-name"></p>
-                <p class="success-message btn-cart">Has add to wishlist susscess !</p>
-                <div class="actions">
-                    <button class="btn btn-small btn-primary " onclick="window.location='pages/wish-list.html'">Go to wishlist</button>
+        <div class="wishlist-popup product-popup gred-popup">
+            <div class="overlay no-background"></div>
+            <div class="content">
+                <a href="javascript:void(0)" class="close-window close-popup"><i class="fa fa-close"></i></a>
+                <div class="product-image">
+                    <img alt="" src="~/Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/logo69f9.png?v=18249558904098692576" style="max-width:100px; height:auto" />
+                </div>
+                <div class="product-info">
+                    <p class="product-name"></p>
+                    <p class="success-message btn-cart">Has add to wishlist susscess !</p>
+                    <div class="actions">
+                        <button class="btn btn-small btn-primary " onclick="window.location='pages/wish-list.html'">Go to wishlist</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>*@
+        </div>*@
 
     <div class="error-popup gred-popup">
         <div class="overlay no-background"></div>

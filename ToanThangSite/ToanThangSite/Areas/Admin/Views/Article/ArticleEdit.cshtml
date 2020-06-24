@@ -46,6 +46,13 @@
                                     <small class="desc">Chú ý: Mô tả ngắn cho bài viết với nội dung có liên quan đến bài viết và không quá dài.</small>
                                 </p>
                                 <p>
+                                    <label>Mô tả dài</label>
+                                    <span class="field">
+                                        @Html.TextAreaFor(model => model.DescriptionLong, new { @class = "span12", @cols = "100", @rows = "5" })
+                                    </span>
+                                    <small class="desc">Chú ý: Mô tả ngắn cho bài viết với nội dung có liên quan đến bài viết và không quá dài.</small>
+                                </p>
+                                <p>
                                     <label>Xem trước ảnh</label>
                                     <span>
                                         <img src="@Model.Thumb" id="reviewImg" style="width:200px;height:220px" />
@@ -65,7 +72,7 @@
                                                 // lấy file ảnh cuối cùng
                                                 //fileUrl = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
                                                 jQuery('#Picture').val(fileUrl);
-                                                jQuery('#Picture-Thumb').val('/Areas/Admin/Content/FileUploads/_thumbs/Images/'+fileUrl.substring(fileUrl.lastIndexOf("/") + 1))
+                                                jQuery('#Picture-Thumb').val('/Areas/Admin/Content/FileUploads/_thumbs/Images/' + fileUrl.substring(fileUrl.lastIndexOf("/") + 1))
                                                 jQuery('#reviewImg').attr("src", fileUrl);
                                             };
                                             finder.popup();

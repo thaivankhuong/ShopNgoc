@@ -144,6 +144,7 @@
     <Property Name="SeoUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MetaTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MetaDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionLong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Product">
     <Key>

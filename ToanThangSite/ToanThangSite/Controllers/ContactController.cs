@@ -19,16 +19,16 @@ namespace ToanThangSite.Controllers
         {
             SeoMeta item = SeoMetaBusiness.GetById(4);
             Metatag tag = new Metatag();
-            tag.title = item.Title;
-            tag.siteName = "Tôm Hùm Tôm Càng Xanh";
-            tag.pageType = "website";
-            tag.description = item.Description;
-            tag.robots = "index,follow";
-            tag.canonica = "http://tomhumalaska.vn";
-            tag.image = item.Avatar;
-            tag.locale = "vi_VN";
-            tag.keywords = item.KeyWord;
-            tag.FBadmins = "";
+            //tag.title = item.Title;
+            //tag.siteName = "Tôm Hùm Tôm Càng Xanh";
+            //tag.pageType = "website";
+            //tag.description = item.Description;
+            //tag.robots = "index,follow";
+            //tag.canonica = "http://tomhumalaska.vn";
+            //tag.image = item.Avatar;
+            //tag.locale = "vi_VN";
+            //tag.keywords = item.KeyWord;
+            //tag.FBadmins = "";
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             return View();
