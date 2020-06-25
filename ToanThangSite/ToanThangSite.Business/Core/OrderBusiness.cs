@@ -23,6 +23,18 @@ namespace ToanThangSite.Business.Core
                 throw;
             }
         }
+        public static List<ProductOrderModel> GetProductByOrderId(int orderId)
+        {
+            try
+            {
+                return OrderServices.GetProductByOrderId(orderId);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
 
         public static Order GetByID(int ID)
         {
@@ -43,8 +55,8 @@ namespace ToanThangSite.Business.Core
             {
                 DBEntities db = new DBEntities();
                 Model.ProductName = string.Empty;
-
-                
+                Model.SendTime = DateTime.Now;
+                Model.Status = true;
                 db.Orders.Add(Model);
                 db.SaveChanges();
 
@@ -56,6 +68,7 @@ namespace ToanThangSite.Business.Core
                     obj.OrderID = Convert.ToInt32(Model.OrderID);
                     obj.ProductId = Convert.ToInt32(item.productId);
                     obj.SizeId = Convert.ToInt32(item.sizeid);
+                    obj.Quantity = Convert.ToInt32(item.quantity);
                     listadd.Add(obj);
                 }
 

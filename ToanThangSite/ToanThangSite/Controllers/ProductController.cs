@@ -31,7 +31,7 @@ namespace ToanThangSite.Controllers
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             IPagedList<Product> model;
-            ViewBag.CatName = ProductCategoryBusiness.GetByID(id).Title;
+            ViewBag.CatName = ProductCategoryBusiness.GetByID(id)?.Title;
             ViewBag.UrlProduct = Request.Url.AbsoluteUri;
             List<ProductColor> listcolor = ProductBusiness.GetAllProductColor();
             List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
@@ -46,6 +46,20 @@ namespace ToanThangSite.Controllers
             model = ProductBusiness.GetByCategoryID(page, 16, id);
             return View(model);
         }
+
+        public ActionResult ProductSearch(string search)
+        {
+         
+            List<ProductColor> listcolor = ProductBusiness.GetAllProductColor();
+            List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
+            ViewBag.ProductColor = listcolor;
+            ViewBag.ProducSize = listsize;
+            List<Product> model;
+            model = ProductBusiness.GetProducSearch(search);
+
+            return View(model);
+        }
+
         public ActionResult ProductDetail(int id)
         {
             Product item = ProductBusiness.GetByID(id);
@@ -70,8 +84,8 @@ namespace ToanThangSite.Controllers
             //tag.tags = item.Keyword;
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
-            ViewBag.ReasonTitle = ReasonBusiness.GetByProduct(item.ProductID).Title;
-            ViewBag.ReasonContent = ReasonBusiness.GetByProduct(item.ProductID).Content.Trim('|').Split('|');
+            //ViewBag.ReasonTitle = ReasonBusiness.GetByProduct(item.ProductID).Title;
+            //ViewBag.ReasonContent = ReasonBusiness.GetByProduct(item.ProductID).Content.Trim('|').Split('|');
             List<ProductColor> listcolor = ProductBusiness.GetAllProductColor()     ; 
             List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
             if (!string.IsNullOrEmpty(item.ProductColor))
@@ -102,6 +116,10 @@ namespace ToanThangSite.Controllers
         }
         public ActionResult ProductSimilar(int id)
         {
+            List<ProductColor> listcolor = ProductBusiness.GetAllProductColor();
+            List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
+            ViewBag.ProductColor = listcolor;
+            ViewBag.ProducSize = listsize;
             return PartialView(ProductBusiness.GetSimilar(id));
         }
         public ActionResult HotProduct()

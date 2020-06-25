@@ -57,11 +57,11 @@ namespace ToanThangSite.Controllers
         }
         public ActionResult Stockists()
         {
-            return View();
+            return View(BranchBusiness.GetAll().FirstOrDefault());
         }
 
         [HttpPost]
-        public string OrderCreate(Order model)
+        public string OrderCreate(Order model , string productname = "")
         {
             try
             {

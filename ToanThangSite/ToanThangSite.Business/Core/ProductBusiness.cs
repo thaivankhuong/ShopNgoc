@@ -102,6 +102,18 @@ namespace ToanThangSite.Business.Core
                 throw;
             }
         }
+        public static List<Product> GetProducSearch(string search)
+        {
+            try
+            {
+                return ProductServices.GetProducSearch( search);
+            }
+            catch (Exception ex)
+            {
+                return null;
+                throw;
+            }
+        }
 
         public static Product GetByID(int ID)
         {

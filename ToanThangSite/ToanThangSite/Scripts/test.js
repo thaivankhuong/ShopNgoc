@@ -188,10 +188,11 @@ $('#form-productsubmit').submit(function (event) {
             dataType: "text",
             success: function (data) {
                 $(".success-popup ").addClass("active");
+                localStorage.removeItem("orderCar");
                 setTimeout(function () {
                     $(".success-popup ").removeClass("active");
                     window.location.href = '/';
-                }, 2500);
+                }, 4500);
             }
         }).done(function () {
             $(".loading ").removeClass("active");

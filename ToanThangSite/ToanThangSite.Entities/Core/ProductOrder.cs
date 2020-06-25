@@ -19,5 +19,6 @@ namespace ToanThangSite.Entities.Core
         public Nullable<int> ProductId { get; set; }
         public Nullable<int> SizeId { get; set; }
         public Nullable<int> ColorId { get; set; }
+        public Nullable<int> Quantity { get; set; }
     }
 }

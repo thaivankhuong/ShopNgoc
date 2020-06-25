@@ -155,6 +155,7 @@
           <Property Name="ProductId" Type="int" />
           <Property Name="SizeId" Type="int" />
           <Property Name="ColorId" Type="int" />
+          <Property Name="Quantity" Type="int" />
         </EntityType>
         <EntityType Name="ProductSize">
           <Key>
@@ -412,6 +413,7 @@
           <Property Name="ProductId" Type="Int32" />
           <Property Name="SizeId" Type="Int32" />
           <Property Name="ColorId" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -611,6 +613,7 @@
           <EntitySetMapping Name="ProductOrders">
             <EntityTypeMapping TypeName="Model.ProductOrder">
               <MappingFragment StoreEntitySet="ProductOrder">
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="ColorId" ColumnName="ColorId" />
                 <ScalarProperty Name="SizeId" ColumnName="SizeId" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />

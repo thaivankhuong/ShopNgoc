@@ -13,6 +13,8 @@ namespace ToanThangSite.Controllers
         public ActionResult Slider()
         {
             var slider = SliderBusiness.GetAll().Where(x => x.Status == true).ToList();
+            var productcategory = ProductCategoryBusiness.GetAll();
+            ViewBag.ProductCategory = productcategory;
             return PartialView(SliderBusiness.GetAll().Where(x => x.Status == true).ToList());
         }
     }

@@ -102,6 +102,21 @@ namespace ToanThangSite.Services.Core
                 return null;
             }
         }
+
+        public static List<Product> GetProducSearch(string search)
+        {
+            try
+            {
+                DBEntities db = new DBEntities();
+                List<Product> Lst = db.Products.Where(x => x.Title.Contains(search)).OrderByDescending(x => x.CreateTime).ToList();
+                db.Dispose();
+                return Lst;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         public static Product GetByID(int ID)
         {
             try

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using ToanThangSite.Entities.Core;
+using ToanThangSite.Entities.Models;
 
 namespace ToanThangSite.Services.Core
 {
@@ -115,6 +116,36 @@ namespace ToanThangSite.Services.Core
             catch (Exception ex)
             {
                 return "false";
+            }
+        }
+
+        public static List<ProductOrderModel> GetProductByOrderId(int orderId)
+        {
+            try
+            {
+                DBEntities db = new DBEntities();
+                var list = from od in db.Orders.AsQueryable()
+                           join pd in db.ProductOrders.AsQueryable() on od.OrderID equals pd.OrderID
+                           join p in db.Products.AsQueryable() on pd.ProductId equals p.ProductID
+                           join pc in db.ProductColors.AsQueryable() on pd.ColorId equals pc.Id
+                           join ps in db.ProductSizes.AsQueryable() on pd.SizeId equals ps.Id
+                           where od.OrderID  == orderId
+                           select new ProductOrderModel
+                           {
+                               CustommerName = od.FullName ,
+                               Avatar =  p.Avatar,
+                               Color = pc.Name, 
+                               Size = ps.Name,
+                               NameProduct = p.Title,
+                               PriceSale  = p.PriceSale,
+                               Quantity = pd.Quantity , 
+                               Price = p.Price  
+                           } ;
+                return list.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 

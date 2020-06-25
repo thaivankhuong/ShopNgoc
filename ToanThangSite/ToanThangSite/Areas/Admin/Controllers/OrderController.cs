@@ -14,6 +14,12 @@ namespace ToanThangSite.Areas.Admin.Controllers
         {
             return View(OrderBusiness.GetAll());
         }
+        [HttpGet]
+        public ActionResult OrderProductProduct(int Id)
+        {
+            return View(OrderBusiness.GetProductByOrderId(Id));
+        }
+
 
         public string ChangeStatusOrder(string id)
         {

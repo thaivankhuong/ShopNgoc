@@ -1,0 +1,88 @@
+﻿@model List<ToanThangSite.Entities.Core.Product>
+@using PagedList.Mvc
+@using ToanThangSite.Business.Common
+@using ToanThangSite.Entities.Core
+
+@{
+    ViewBag.Title = "ProductList";
+    Layout = "~/Views/Shared/_LayoutV2.cshtml";
+    var listproductcolor = (List<ProductColor>)ViewBag.ProductColor;
+    var listProducSize = (List<ProductSize>)ViewBag.ProducSize;
+}
+<section class="product-wrap">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="main">
+                    <div class="collection-grid">
+                        <div class="row">
+                            @if (Model == null || Model.Count == 0)
+                            {
+                                <h1 style="text-align:center; font-size:20px;" >Product not found</h1>
+                            }
+                            else
+                            {
+                                foreach (var item in Model)
+                                {
+                                    var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                                    var idsize = string.IsNullOrEmpty(item.ProductSize) ? listProducSize.FirstOrDefault().Id.ToString() : item.ProductSize.Split(',')[0];
+                                    var idcolor = string.IsNullOrEmpty(item.ProductColor) ? listproductcolor.FirstOrDefault().Id.ToString() : item.ProductSize.Split(',')[0];
+                                    <div class="item col-md-3 col-sm-6">
+                                        <div class="product-item product-grid-item " data-id="product-@item.ProductID">
+                                            <div class="product-item-info" data-available="true">
+                                                <div class="product-image @item.ProductID">
+                                                    <a href="@url" class="product-item-photo">
+                                                        <img src="@item.Thumb" alt="@item.Title.ToUrlFormat(true)">
+                                                    </a>
+                                                    <div class="product-action">
+                                                        <div class="action-item">
+                                                            <a class="action-link btn-quickview" href="@url" title="Quick view"><i class="fa fa-search"></i></a>
+                                                        </div>
+                                                        <div class="action-item">
+                                                            <a class="action-link wishlist" href="javascript:void(0)" title="Wishlist">
+                                                                <i class="fa fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="action-item">
+                                                            <div class="action-link last action ">
+                                                                <input type="hidden" name="id" value="@item.ProductID" />
+                                                                <a class="btn-addToCart" onclick="addtocart(this)" href="javascript:void(0)" data-sizeid="@idsize" data-idcolor="@idcolor"
+                                                                   data-namesize="@listProducSize.FirstOrDefault(s=>s.Id.ToString() == idcolor).Name"
+                                                                   data-namecolor="@listproductcolor.FirstOrDefault(s=>s.Id.ToString() == idsize).Name"
+                                                                   data-name="@item.Title" data-url="@url" data-productid="@item.ProductID" data-price="@item.Price" data-pricesale="@item.PriceSale" data-urlimg="@item.Avatar" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item-details">
+                                                    <a href="@url" title="@item.Title" class="product-item-name">@item.Title</a>
+                                                    <div class="product-meta">
+                                                        <div class="price-box pull-left">
+                                                            @if (!string.IsNullOrEmpty(item.PriceSale))
+                                                            {
+                                                                <s class="sale-price"> <span class="money">$@String.Format("{0:0,0}", Convert.ToDouble(item.PriceSale))</span></s>
+                                                                <span class="money">$@String.Format("{0:0,0}", Convert.ToDouble(item.Price))</span>
+                                                            }
+                                                            else
+                                                            {
+                                                                <span class=money>$@String.Format("{0:0,0}", Convert.ToDouble(item.Price)) </span>
+                                                            }
+                                                        </div>
+                                                        <div class="custom-reviews hide-caption">
+                                                            <span class="shopify-product-reviews-badge" data-id="@item.ProductID"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

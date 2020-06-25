@@ -201,5 +201,6 @@
     <Property Name="ProductId" Type="Int32" />
     <Property Name="SizeId" Type="Int32" />
     <Property Name="ColorId" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
   </EntityType>
 </Schema>

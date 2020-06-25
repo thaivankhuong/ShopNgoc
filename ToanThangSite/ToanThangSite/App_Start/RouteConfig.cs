@@ -73,18 +73,19 @@ namespace ToanThangSite
 
 
             // // Product router
-            // routes.MapRoute(
-            //     name: "Product",
-            //     url: "p/{title}-{id}.html",
-            //     defaults: new { controller = "Product", action = "ProductList", id = UrlParameter.Optional },
-            //     namespaces: new string[] { "ToanThangSite.Controllers" }
-            // );
-            // routes.MapRoute(
-            //    name: "ProductPage",
-            //    url: "p/{title}-{id}.htmlpage={page}",
-            //    defaults: new { controller = "Product", action = "ProductList", page = UrlParameter.Optional, id = UrlParameter.Optional },
-            //    namespaces: new string[] { "ToanThangSite.Controllers" }
-            //);
+            routes.MapRoute(
+                name: "Product",
+                url: "p/{title}-{id}.html",
+                defaults: new { controller = "Product", action = "ProductList", id = UrlParameter.Optional },
+                namespaces: new string[] { "ToanThangSite.Controllers" }
+            );
+            routes.MapRoute(
+               name: "ProductPage",
+               url: "p/{title}-{id}.htmlpage={page}",
+               defaults: new { controller = "Product", action = "ProductList", page = UrlParameter.Optional, id = UrlParameter.Optional },
+               namespaces: new string[] { "ToanThangSite.Controllers" }
+           );
+
             // routes.MapRoute(
             //    name: "ProductDetail",
             //    url: "{title}-{id}.html",
@@ -104,8 +105,8 @@ namespace ToanThangSite
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "ToanThangSite.Controllers" }
             );
-          
-           
+
+
 
 
 

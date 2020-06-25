@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Models.ProductOrderModel>
+@{
+    ViewBag.Title = "OrderProductList";
+}
+
+<div class="breadcrumbwidget">
+    <ul class="breadcrumb">
+        <li><a href="@Url.Action("Index","Home")">Home</a> <span class="divider">/</span></li>
+        <li class="active">Danh sách</li>
+    </ul>
+</div><!--breadcrumbs-->
+<div class="pagetitle">
+    <h1>Danh sách</h1>
+</div><!--pagetitle-->
+<div class="maincontent">
+    <div class="contentinner">
+
+        <h4 class="widgettitle">
+            Danh sách
+            <a href="@Url.Action("OrderList","Order")" title="Tải lại" class="btn btn-primary" style="float:right;height: 17px;"><i class="iconfa-refresh icon-white" style="margin:0;line-height:17px;"></i></a>
+        </h4>
+
+        <table class="table table-bordered" id="dyntable">
+            <colgroup>
+                <col class="con0" style="align:center; width: 4%" />
+                <col class="con1" />
+                <col class="con0" />
+                <col class="con1" />
+                <col class="con0" />
+                <col class="con1" />
+                <col class="con0" />
+            </colgroup>
+            <thead>
+                <tr role="row">
+                    <th class="head0 nosort sorting_asc" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column ascending" style="width: 24px;">
+                        <div class="checker" id="uniform-undefined"><span><input type="checkbox" class="checkall" style="opacity: 0;"></span></div>
+                    </th>
+                    <th class="head0 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 121px;">Họ tên</th>
+                    <th class="head1 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 300px;">Sản phẩm</th>
+                    <th class="head0 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 150px;">Màu/Size</th>
+                    <th class="head1 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 106px;">Số lượng </th>
+                    <th class="head1 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 106px;">Đơn giá  </th>
+                    <th class="head1 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 106px;">Giá khuyến mãi</th>
+                    <th class="head1 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" style="width: 106px;">Tổng tiền </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr class="gradeX">
+                    <td class="aligncenter">
+                        <span class="center">
+                            <input type="checkbox" />
+                        </span>
+                    </td>
+                    <td>@item.CustommerName</td>
+                    <td>@item.NameProduct</td>
+                    <td>
+                        @item.Color /&nbsp; @item.Size
+                    </td>
+                    <td class="center">@item.Quantity</td>
+                    <td class="center">@String.Format("{0:0,0}", Convert.ToDouble(item.Price))</td>
+                    <td class="center">@String.Format("{0:0,0}", Convert.ToDouble(item.PriceSale))</td>
+                    <td class="center">@( !string.IsNullOrEmpty(item.PriceSale) ? String.Format("{0:0,0}", (Convert.ToDouble(item.Quantity) * Convert.ToDouble(item.PriceSale))) : String.Format("{0:0,0}", (Convert.ToDouble(item.Quantity) * Convert.ToDouble(item.Price)))  )</td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div><!--contentinner-->
+</div><!--maincontent-->

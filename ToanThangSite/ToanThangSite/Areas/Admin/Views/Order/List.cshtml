@@ -59,6 +59,7 @@
                         <td class="center">@item.SendTime</td>
                         <td class="center">
                             <ul class="list-nostyle">
+                                <li><a href="@Url.Action("OrderProductProduct","Order",new {@Id = item.OrderID })" class="btn btn-primary btn-control"><i class="icon-eye-open icon-white"></i>&nbsp;Thông tin Chi tiết</a></li>
                                 <li><a href="#" class="btn btn-primary btn-control confirmbutton" id="control_@item.OrderID" onclick="deleteOrder('ChangeStatusOrder/@item.OrderID',this.id)"><i class="icon-trash icon-white"></i>&nbsp; Xóa dữ liệu này</a></li>
                             </ul>
                         </td>

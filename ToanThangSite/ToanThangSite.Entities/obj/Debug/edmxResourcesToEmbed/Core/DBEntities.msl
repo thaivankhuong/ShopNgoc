@@ -193,6 +193,7 @@
     <EntitySetMapping Name="ProductOrders">
       <EntityTypeMapping TypeName="Model.ProductOrder">
         <MappingFragment StoreEntitySet="ProductOrder">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
           <ScalarProperty Name="ColorId" ColumnName="ColorId" />
           <ScalarProperty Name="SizeId" ColumnName="SizeId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />

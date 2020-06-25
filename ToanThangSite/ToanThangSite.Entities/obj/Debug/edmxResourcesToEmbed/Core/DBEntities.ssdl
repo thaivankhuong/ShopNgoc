@@ -150,6 +150,7 @@
     <Property Name="ProductId" Type="int" />
     <Property Name="SizeId" Type="int" />
     <Property Name="ColorId" Type="int" />
+    <Property Name="Quantity" Type="int" />
   </EntityType>
   <EntityType Name="ProductSize">
     <Key>

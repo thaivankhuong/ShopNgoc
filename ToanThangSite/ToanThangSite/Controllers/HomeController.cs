@@ -33,7 +33,7 @@ namespace ToanThangSite.Controllers
         }
         public ActionResult Slider()
         {
-            return View();
+            return View(ProductCategoryBusiness.GetAll());
         }
 
     }
