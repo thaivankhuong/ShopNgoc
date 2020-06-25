@@ -1,7 +1,9 @@
-﻿<!doctype html>
-<html class="no-js">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Html.Raw(ViewBag.Header)
     <script>
   window.theme_load = "popup";
   window.file_url = "http://cdn.shopify.com/s/files/1/1187/0028/files/?784";
@@ -177,7 +179,7 @@
                     <p></p>
                 </div>
                 <div class="widget-content">
-                    <form   id="mc-embedded-subscribe-form" >
+                    <form id="mc-embedded-subscribe-form">
                         <input type="submit" class="btn btn-primary subscribe" name="subscribe" id="subscribe" value="Submit">
                         <input type="email" value="" required placeholder="Your email" name="EMAIL" id="mail" aria-label="Your email">
                     </form>
@@ -187,7 +189,7 @@
     </div>
     @Html.Action("Footer", "Layout")
 
-    
+
 
     <script src="~/Content/Script_ImageSccAll/slideshow-tool.min1e87.js?v=12115935284730862311" type="text/javascript"></script>
     <script src="~/Content/Script_ImageSccAll/slideshow.min73db.js?v=1454809380091815495" type="text/javascript"></script>
@@ -199,7 +201,7 @@
 
 
 
-    <script src="~/Content/cdn.shopify.com/s/javascripts/currencies.js" type="text/javascript"></script>
+    <script src="~/Content/Script_ImageSccAll/currencies.js" type="text/javascript"></script>
     <script src="~/Content/Script_ImageSccAll/jquery.currencies.minb15e.js?v=17505776077200662322" type="text/javascript"></script>
 
     @RenderSection("Scripts", false)

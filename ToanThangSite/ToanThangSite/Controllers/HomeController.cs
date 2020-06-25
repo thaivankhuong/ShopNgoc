@@ -18,11 +18,11 @@ namespace ToanThangSite.Controllers
             SeoMeta item = SeoMetaBusiness.GetById(1);
             Metatag tag = new Metatag();
             tag.title = item.Title;
-            tag.siteName = "Tôm Hùm Tôm Càng Xanh";
+            tag.siteName = "Shop Ngoc Vo";
             tag.pageType = "website";
             tag.description = item.Description;
             tag.robots = "index,follow";
-            tag.canonica = "http://tomhumalaska.vn";
+            tag.canonica = "http://shopngocvo.vn";
             tag.image = item.Avatar;
             tag.locale = "vi_VN";
             tag.keywords = item.KeyWord;
