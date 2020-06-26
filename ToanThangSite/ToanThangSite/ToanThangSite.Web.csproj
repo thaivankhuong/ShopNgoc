@@ -2060,6 +2060,7 @@
     <Content Include="Content\img\logo1.png" />
     <Content Include="Content\img\logokhuong.jpg" />
     <Content Include="Content\img\logokhuong_icon.ico" />
+    <Content Include="Content\img\logongocvo.jpg" />
     <Content Include="Content\img\MikaCheongsam-Blossom_4381006a-efdc-4a01-9726-d9de482e35e4_1024x1024.jpg" />
     <Content Include="Content\img\nostalgic_blue_background_06_hd_pictures_169782.jpg" />
     <Content Include="Content\img\slide_1_button_imaged066.png" />
@@ -2298,6 +2299,8 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\NAPOHOSITE.pubxml" />
     <None Include="Properties\PublishProfiles\ToanThang.pubxml" />
     <None Include="Properties\PublishProfiles\ToanThangsite.pubxml" />
     <Content Include="Views\Slider\Slider.cshtml" />
@@ -2313,7 +2316,6 @@
     <Content Include="Views\Product\ProductListTypical.cshtml" />
     <Content Include="Views\Product\ProductTags.cshtml" />
     <None Include="Properties\PublishProfiles\Tomhum.pubxml" />
-    <None Include="Properties\PublishProfiles\TomhumAlaska.pubxml" />
     <Content Include="Views\Shared\_LayoutV2.cshtml" />
     <Content Include="Views\Shared\_HeaderNavBar.cshtml" />
     <Content Include="Views\Home\Slider.cshtml" />
@@ -2321,6 +2323,7 @@
     <Content Include="Views\Product\CartProduct.cshtml" />
     <Content Include="Views\Contact\Stockists.cshtml" />
     <Content Include="Views\Product\ProductSearch.cshtml" />
+    <None Include="Properties\PublishProfiles\Zikroksite.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -31,6 +31,7 @@
     <Property Name="SeoUrl" Type="nvarchar" MaxLength="250" />
     <Property Name="MetaTitle" Type="nvarchar" MaxLength="250" />
     <Property Name="MetaDescription" Type="nvarchar" MaxLength="550" />
+    <Property Name="DescriptionLong" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Branch">
     <Key>
@@ -72,6 +73,7 @@
     <Property Name="ModifyTime" Type="datetime" />
     <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
     <Property Name="ModifyBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContentSort" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Order">
     <Key>
@@ -116,6 +118,8 @@
     <Property Name="MetaTitle" Type="nvarchar" MaxLength="250" />
     <Property Name="MetaDescription" Type="nvarchar" MaxLength="550" />
     <Property Name="Tags" Type="nvarchar" MaxLength="4000" />
+    <Property Name="ProductSize" Type="nvarchar(max)" />
+    <Property Name="ProductColor" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="ProductCategory">
     <Key>
@@ -129,6 +133,31 @@
     <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
     <Property Name="ModifyBy" Type="nvarchar" MaxLength="50" />
     <Property Name="SeoUrl" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ProductColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ProductOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="SizeId" Type="int" />
+    <Property Name="ColorId" Type="int" />
+    <Property Name="Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="ProductSize">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Reason">
     <Key>
@@ -167,6 +196,9 @@
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductColor" EntityType="Self.ProductColor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductOrder" EntityType="Self.ProductOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductSize" EntityType="Self.ProductSize" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Reason" EntityType="Self.Reason" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SeoMeta" EntityType="Self.SeoMeta" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Slider" EntityType="Self.Slider" Schema="dbo" store:Type="Tables" />

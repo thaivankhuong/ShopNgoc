@@ -12,6 +12,9 @@
     <EntitySet Name="Sliders" EntityType="Model.Slider" />
     <EntitySet Name="Articles" EntityType="Model.Article" />
     <EntitySet Name="Products" EntityType="Model.Product" />
+    <EntitySet Name="ProductSizes" EntityType="Model.ProductSize" />
+    <EntitySet Name="ProductColors" EntityType="Model.ProductColor" />
+    <EntitySet Name="ProductOrders" EntityType="Model.ProductOrder" />
   </EntityContainer>
   <EntityType Name="Account">
     <Key>
@@ -63,6 +66,7 @@
     <Property Name="ModifyTime" Type="DateTime" Precision="3" />
     <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ModifyBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ContentSort" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Order">
     <Key>
@@ -140,6 +144,7 @@
     <Property Name="SeoUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MetaTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MetaDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionLong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Product">
     <Key>
@@ -170,5 +175,32 @@
     <Property Name="MetaTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="MetaDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
     <Property Name="Tags" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="ProductSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductColor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductSize">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="SizeId" Type="Int32" />
+    <Property Name="ColorId" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
   </EntityType>
 </Schema>

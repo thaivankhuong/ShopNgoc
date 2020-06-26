@@ -41,6 +41,7 @@
     <EntitySetMapping Name="Introduces">
       <EntityTypeMapping TypeName="Model.Introduce">
         <MappingFragment StoreEntitySet="Introduce">
+          <ScalarProperty Name="ContentSort" ColumnName="ContentSort" />
           <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
           <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
           <ScalarProperty Name="ModifyTime" ColumnName="ModifyTime" />
@@ -119,6 +120,7 @@
     <EntitySetMapping Name="Articles">
       <EntityTypeMapping TypeName="Model.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="DescriptionLong" ColumnName="DescriptionLong" />
           <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
           <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
           <ScalarProperty Name="SeoUrl" ColumnName="SeoUrl" />
@@ -142,6 +144,8 @@
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="Model.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
+          <ScalarProperty Name="ProductSize" ColumnName="ProductSize" />
           <ScalarProperty Name="Tags" ColumnName="Tags" />
           <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
           <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
@@ -167,6 +171,34 @@
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Code" ColumnName="Code" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSizes">
+      <EntityTypeMapping TypeName="Model.ProductSize">
+        <MappingFragment StoreEntitySet="ProductSize">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductColors">
+      <EntityTypeMapping TypeName="Model.ProductColor">
+        <MappingFragment StoreEntitySet="ProductColor">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOrders">
+      <EntityTypeMapping TypeName="Model.ProductOrder">
+        <MappingFragment StoreEntitySet="ProductOrder">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
