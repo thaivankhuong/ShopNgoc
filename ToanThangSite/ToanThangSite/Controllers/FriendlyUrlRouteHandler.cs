@@ -23,6 +23,14 @@ namespace ToanThangSite.Controllers
                     return base.GetHttpHandler(requestContext);
                 }
 
+                if (friendlyUrl == "collections.html")
+                {
+                    requestContext.RouteData.Values["controller"] = "Product";
+                    requestContext.RouteData.Values["action"] = "ProductCollection";
+                    requestContext.RouteData.Values["key"] = friendlyUrl.Replace("tags-", "").Replace(".html", "");
+                    return base.GetHttpHandler(requestContext);
+                }
+
                 //if (friendlyUrl.Contains("pg") && friendlyUrl.Contains("san-pham-noi-bat.html"))
                 //{
                 //    string seourl = friendlyUrl.Substring(0, friendlyUrl.LastIndexOf('=') - 2);
@@ -39,6 +47,16 @@ namespace ToanThangSite.Controllers
                 //    requestContext.RouteData.Values["page"] = 1;
                 //    return base.GetHttpHandler(requestContext);
                 //}
+
+                if (friendlyUrl.Contains("pgcl"))
+                {
+                    string seourl = friendlyUrl.Substring(0, friendlyUrl.LastIndexOf('=') - 2);
+                    requestContext.RouteData.Values["controller"] = "Product";
+                    requestContext.RouteData.Values["action"] = "ProductCollection";
+                    requestContext.RouteData.Values["page"] = friendlyUrl.Substring(friendlyUrl.LastIndexOf('=') + 1);
+                    return base.GetHttpHandler(requestContext);
+                }
+
 
                 if (friendlyUrl.Contains("pg"))
                 {
@@ -62,6 +80,20 @@ namespace ToanThangSite.Controllers
                         return base.GetHttpHandler(requestContext);
                     }
                 }
+
+                foreach (var item in db.Collections.ToList())
+                {
+                    if (item.SeoUrl == friendlyUrl)
+                    {
+                        requestContext.RouteData.Values["controller"] = "Product";
+                        requestContext.RouteData.Values["action"] = "ProductListCollection";
+                        requestContext.RouteData.Values["id"] = item.Id.ToString();
+                        requestContext.RouteData.Values["page"] = friendlyUrl.Substring(friendlyUrl.LastIndexOf('=') + 1);
+
+                        return base.GetHttpHandler(requestContext);
+                    }
+                }
+
                 foreach (var item in db.Articles.Where(x => x.Status == 1))
                     {
                         if (item.SeoUrl == friendlyUrl)

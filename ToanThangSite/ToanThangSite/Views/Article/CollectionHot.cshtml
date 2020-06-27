@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Core.Collection>
+@using ToanThangSite.Business.Common
+<div class="section_3">
+    <section class="collection-wrapper">
+        <div class="widget">
+            <div class="container">
+                <div class="widget-title">
+                    <h3 class="has-leaves has-leavesct">
+                        <span>Loolbook</span>
+                    </h3>
+                </div>
+                @foreach (var item in Model)
+                {
+                    var url = "/" + item.Title.ToUrlFormat(true) + ".html";
+                    <div class="col-sm-4 col-xs-12 collection-wrap">
+                        <div class="col-img-wrap" style="background:url('@item.Avatar')"></div>
+                        <div class=""><i class="fa fa-calendar"></i>&nbsp;&nbsp;<span> Posted on @Convert.ToDateTime(item.CreateDate).Day @Convert.ToDateTime(item.CreateDate).ToString("MMMM") @Convert.ToDateTime(item.CreateDate).Year</span></div>
+                        <h4> @item.Title</h4>
+                        <p>
+                            @item.Deripstion
+                        </p>
+                        <a href="@url" class="btn btn-primary">View Product</a>
+                    </div>
+                }
+                <div class="clr"></div>
+            </div>
+        </div>
+    </section>
+</div>

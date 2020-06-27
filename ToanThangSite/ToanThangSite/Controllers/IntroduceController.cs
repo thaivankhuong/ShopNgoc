@@ -18,12 +18,12 @@ namespace ToanThangSite.Controllers
             model = IntroduceBusiness.GetTop3();
             Metatag tag = new Metatag();
             //tag.title = model.Title;
-            //tag.siteName = "Tôm Hùm Tôm Càng Xanh";
+            //tag.siteName = "mkfashion";
             //tag.pageType = "object";
             //tag.description = model.Description;
             //tag.robots = "index,follow";
-            //tag.canonica = "http://tomhumalaska.vn";
-            //tag.image = "http://tomhumalaska.vn/Content/images/logo.png";
+            //tag.canonica = "http://mkfashion.vn";
+            //tag.image = "http://mkfashion.vn/Content/images/logo.png";
             //tag.locale = "vi_VN";
             //tag.keywords = "giới thiệu thảo dược toàn thắng";
             //tag.FBadmins = "";

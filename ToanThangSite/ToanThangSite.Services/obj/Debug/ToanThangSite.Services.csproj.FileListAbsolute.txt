@@ -213,3 +213,35 @@ B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.csproj.CopyComplete
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.dll
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\ToanThangSite.Services.dll.config
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\ToanThangSite.Services.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\ToanThangSite.Services.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\EntityFramework.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\PagedList.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\PagedList.Mvc.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.Helpers.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.Mvc.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.Razor.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.WebPages.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\ToanThangSite.Entities.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\ToanThangSite.Entities.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\ToanThangSite.Entities.dll.config
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\EntityFramework.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\PagedList.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\PagedList.Mvc.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.Helpers.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.Mvc.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.Razor.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.WebPages.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.csprojAssemblyReference.cache
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.csproj.CoreCompileInputs.cache
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.csproj.CopyComplete
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Services\obj\Debug\ToanThangSite.Services.pdb

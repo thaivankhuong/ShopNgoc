@@ -88,6 +88,9 @@
     <Compile Include="Core\Branch.cs">
       <DependentUpon>DBEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Core\Collection.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Core\Contact.cs">
       <DependentUpon>DBEntities.tt</DependentUpon>
     </Compile>

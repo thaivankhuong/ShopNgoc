@@ -17,16 +17,16 @@ namespace ToanThangSite.Controllers
         {
             SeoMeta item = SeoMetaBusiness.GetById(2);
             Metatag tag = new Metatag();
-            //tag.title = item.Title;
-            //tag.siteName = "Tôm Hùm Tôm Càng Xanh";
-            //tag.pageType = "website";
-            //tag.description = item.Description;
-            //tag.robots = "index,follow";
-            //tag.canonica = "http://tomhumalaska.vn";
-            //tag.image = item.Avatar;
-            //tag.locale = "vi_VN";
-            //tag.keywords = item.KeyWord;
-            //tag.FBadmins = "";
+            tag.title = item.Title;
+            tag.siteName = "mkfashion";
+            tag.pageType = "website";
+            tag.description = item.Description;
+            tag.robots = "index,follow";
+            tag.canonica = "http://mkfashion.vn";
+            tag.image = item.Avatar;
+            tag.locale = "vi_VN";
+            tag.keywords = item.KeyWord;
+            tag.FBadmins = "";
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             // Load DB set meta tag values
@@ -40,19 +40,19 @@ namespace ToanThangSite.Controllers
         {
             Article item = ArticleBusiness.GetByID(id);
             Metatag tag = new Metatag();
-            //tag.title = item.MetaTitle != "" ? item.MetaTitle : item.Title;
-            //tag.siteName = "";
-            //tag.pageType = "article";
-            //tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
-            //tag.robots = "index,follow";
-            //tag.canonica = "http://thaoduoctoanthang.com";
-            //tag.image = "http://thaoduoctoanthang.com/" + item.Avatar;
-            //tag.locale = "vi_VN";
-            //tag.keywords = item.Keyword;
-            //tag.FBadmins = "";
-            //tag.publishedTime = item.CreateTime.ToString();
-            //tag.updateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString();
-            //tag.tags = item.Keyword;
+            tag.title = item.MetaTitle != "" ? item.MetaTitle : item.Title;
+            tag.siteName = "";
+            tag.pageType = "article";
+            tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
+            tag.robots = "index,follow";
+            tag.canonica = "http://mkfashion.vn";
+            tag.image = "http://mkfashion.vn/" + item.Avatar;
+            tag.locale = "vi_VN";
+            tag.keywords = item.Keyword;
+            tag.FBadmins = "";
+            tag.publishedTime = item.CreateTime.ToString();
+            tag.updateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString();
+            tag.tags = item.Keyword;
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             ArticleBusiness.AddviewTime(id);
@@ -61,6 +61,11 @@ namespace ToanThangSite.Controllers
         public ActionResult ArticleHot()
         {
             return PartialView(ArticleBusiness.GetHot());
+        }
+
+        public ActionResult CollectionHot()
+        {
+            return PartialView(CollectionBusiness.GetHot());
         }
     }
 }

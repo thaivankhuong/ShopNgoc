@@ -49,6 +49,17 @@
           <Property Name="Map" Type="nvarchar" MaxLength="2500" />
           <Property Name="Status" Type="bit" />
         </EntityType>
+        <EntityType Name="Collection">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="500" />
+          <Property Name="Avatar" Type="nvarchar" MaxLength="500" />
+          <Property Name="Deripstion" Type="nvarchar(max)" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="SeoUrl" Type="nvarchar" MaxLength="500" />
+        </EntityType>
         <EntityType Name="Contact">
           <Key>
             <PropertyRef Name="ContactID" />
@@ -125,6 +136,7 @@
           <Property Name="Tags" Type="nvarchar" MaxLength="4000" />
           <Property Name="ProductSize" Type="nvarchar(max)" />
           <Property Name="ProductColor" Type="nvarchar(max)" />
+          <Property Name="CollectionId" Type="int" />
         </EntityType>
         <EntityType Name="ProductCategory">
           <Key>
@@ -196,6 +208,7 @@
           <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Article" EntityType="Self.Article" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Collection" EntityType="Self.Collection" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Introduce" EntityType="Self.Introduce" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
@@ -226,6 +239,7 @@
           <EntitySet Name="Products" EntityType="Model.Product" />
           <EntitySet Name="ProductSizes" EntityType="Model.ProductSize" />
           <EntitySet Name="ProductColors" EntityType="Model.ProductColor" />
+          <EntitySet Name="Collections" EntityType="Model.Collection" />
           <EntitySet Name="ProductOrders" EntityType="Model.ProductOrder" />
         </EntityContainer>
         <EntityType Name="Account">
@@ -389,6 +403,7 @@
           <Property Name="Tags" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
           <Property Name="ProductSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="ProductColor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CollectionId" Type="Int32" />
         </EntityType>
         <EntityType Name="ProductSize">
           <Key>
@@ -403,6 +418,17 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Collection">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Deripstion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="Avatar" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="SeoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ProductOrder">
           <Key>
@@ -564,6 +590,7 @@
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="Model.Product">
               <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
                 <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
                 <ScalarProperty Name="ProductSize" ColumnName="ProductSize" />
                 <ScalarProperty Name="Tags" ColumnName="Tags" />
@@ -606,6 +633,18 @@
             <EntityTypeMapping TypeName="Model.ProductColor">
               <MappingFragment StoreEntitySet="ProductColor">
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Collections">
+            <EntityTypeMapping TypeName="Model.Collection">
+              <MappingFragment StoreEntitySet="Collection">
+                <ScalarProperty Name="SeoUrl" ColumnName="SeoUrl" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Deripstion" ColumnName="Deripstion" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

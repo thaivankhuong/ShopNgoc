@@ -91,6 +91,7 @@
     <Compile Include="Core\AccountServices.cs" />
     <Compile Include="Core\ArticleServices.cs" />
     <Compile Include="Core\BranchServices.cs" />
+    <Compile Include="Core\CollectionServices.cs" />
     <Compile Include="Core\ContactServices.cs" />
     <Compile Include="Core\IntroduceServices.cs" />
     <Compile Include="Core\OrderServices.cs" />

@@ -95,6 +95,7 @@
     <Compile Include="Core\AccountBusiness.cs" />
     <Compile Include="Core\ArticleBusiness.cs" />
     <Compile Include="Core\BranchBusiness.cs" />
+    <Compile Include="Core\CollectionBusiness.cs" />
     <Compile Include="Core\ContactBusiness.cs" />
     <Compile Include="Core\IntroduceBusiness.cs" />
     <Compile Include="Core\OrderBusiness.cs" />

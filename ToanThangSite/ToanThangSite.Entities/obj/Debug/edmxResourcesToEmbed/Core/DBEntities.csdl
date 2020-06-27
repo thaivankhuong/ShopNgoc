@@ -14,6 +14,7 @@
     <EntitySet Name="Products" EntityType="Model.Product" />
     <EntitySet Name="ProductSizes" EntityType="Model.ProductSize" />
     <EntitySet Name="ProductColors" EntityType="Model.ProductColor" />
+    <EntitySet Name="Collections" EntityType="Model.Collection" />
     <EntitySet Name="ProductOrders" EntityType="Model.ProductOrder" />
   </EntityContainer>
   <EntityType Name="Account">
@@ -177,6 +178,7 @@
     <Property Name="Tags" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
     <Property Name="ProductSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="ProductColor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CollectionId" Type="Int32" />
   </EntityType>
   <EntityType Name="ProductSize">
     <Key>
@@ -191,6 +193,17 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Collection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Deripstion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="Avatar" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SeoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="ProductOrder">
     <Key>

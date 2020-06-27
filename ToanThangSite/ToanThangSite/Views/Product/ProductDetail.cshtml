@@ -113,19 +113,20 @@
                                 </div>
                             </div>
                             <div class="product-sharing">
-                                <div class="social-sharing is-clean" data-permalink="https://iwantthemissingpiece.com/products/dahlia-cheongsam-1">
+                                <div class="social-sharing is-clean">
                                     <label class="label">Share This</label>
-                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1" class="share-facebook">
+                                    @{ 
+                                        string shareface = "http://www.facebook.com/sharer.php?u=" + Request.Url.AbsoluteUri;
+                                        string sharetw = "http://twitter.com/share?text=" + Request.Url.AbsoluteUri;
+                                        string sharegg = "http://plus.google.com/share?url=" + Request.Url.AbsoluteUri;
+                                    }
+                                    <a target="_blank" href="@shareface" class="share-facebook">
                                         <i class="fa fa-facebook"></i>
                                     </a>
-                                    <a target="_blank" href="http://twitter.com/share?text=Dahlia%20Cheongsam&amp;url=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1" class="share-twitter">
+                                    <a target="_blank" href="@sharetw" class="share-twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="../../pinterest.com/pin/create/button/index9918.html?url=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1&amp;media=http://cdn.shopify.com/s/files/1/1187/0028/products/TMP_FLIGHTOFFANCY-2941_1024x1024.jpg?v=1578226670&amp;description=Dahlia%20Cheongsam" class="share-pinterest">
-                                        <i class="fa fa-pinterest"></i>
-                                    </a>
-                                    <a target="_blank" href="http://plus.google.com/share?url=https://iwantthemissingpiece.com/products/dahlia-cheongsam-1" class="share-google">
-                                        <!-- Cannot get Google+ share count with JS yet -->
+                                    <a target="_blank" href="@sharegg" class="share-google">
                                         <i class="fa fa-google-plus"></i>
                                     </a>
                                 </div>

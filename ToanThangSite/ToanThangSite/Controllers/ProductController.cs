@@ -39,12 +39,29 @@ namespace ToanThangSite.Controllers
             ViewBag.ProducSize = listsize;
             if (id == 0)
             {
-
                 return RedirectToRoute("/404");
             }
 
             model = ProductBusiness.GetByCategoryID(page, 16, id);
             return View(model);
+        }
+
+        public ActionResult ProductListCollection(int id = 0, int page = 1)
+        {
+            IPagedList<Product> model;
+            ViewBag.CatName = CollectionBusiness.GetByID(id)?.Title;
+            ViewBag.UrlProduct = Request.Url.AbsoluteUri;
+            List<ProductColor> listcolor = ProductBusiness.GetAllProductColor();
+            List<ProductSize> listsize = ProductBusiness.GetAllProductSize();
+            ViewBag.ProductColor = listcolor;
+            ViewBag.ProducSize = listsize;
+            if (id == 0)
+            {
+                return RedirectToRoute("/404");
+            }
+
+            model = ProductBusiness.GetByCollectionID(page, 16, id);
+            return View("ProductList", model);
         }
 
         public ActionResult ProductSearch(string search)
@@ -70,7 +87,7 @@ namespace ToanThangSite.Controllers
                 tag.title = item.Title;
             }
             
-            //tag.siteName = "Tôm Hùm Tôm Càng Xanh";
+            //tag.siteName = "mkfashion";
             //tag.pageType = "article";
             //tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
             //tag.robots = "index,follow";
@@ -133,10 +150,10 @@ namespace ToanThangSite.Controllers
         public ActionResult ProductListTypical(int page = 1)
         {
             Metatag tag = new Metatag();
-            //tag.title = "Tôm Hùm Tôm Càng Xanh";
+            //tag.title = "mkfashion";
             //tag.siteName = "Thảo Dược Toàn Thắng";
             //tag.pageType = "object";
-            //tag.description = "Tôm Hùm Tôm Càng Xanh cung cấp các loại tôm hùm tôm càng xanh";
+            //tag.description = "mkfashion cung cấp các loại mkfashion";
             //tag.robots = "index,follow";
             //tag.canonica = "http://localhost:27730";
             //tag.image = "";
@@ -171,6 +188,14 @@ namespace ToanThangSite.Controllers
         public ActionResult CartProduct()
         {
             return PartialView();
+        }
+
+        public ActionResult ProductCollection(int page = 1)
+        {
+            IPagedList<Collection> model;
+            ViewBag.UrlCollection = Request.Url.AbsoluteUri;
+            model = CollectionBusiness.GetAll(page,6);
+            return View(model);
         }
     }
 }

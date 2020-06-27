@@ -102,6 +102,18 @@ namespace ToanThangSite.Business.Core
                 throw;
             }
         }
+        public static IPagedList<Product> GetByCollectionID(int page, int pageSize, int CollectionId)
+        {
+            try
+            {
+                return ProductServices.GetByCollectionID(page, pageSize, CollectionId);
+            }
+            catch (Exception ex)
+            {
+                return null;
+                throw;
+            }
+        }
         public static List<Product> GetProducSearch(string search)
         {
             try
@@ -160,6 +172,7 @@ namespace ToanThangSite.Business.Core
                 product.ModifyBy = HttpContext.Current.User.Identity.Name;
                 product.ModifyTime = DateTime.Now;
                 product.ViewTime = 0;
+                product.CollectionId = item.CollectionId;
                 product.ProductColor = item.ProductColor.Count() > 0 ? string.Join(",", item.ProductColor).ToString() : null;
                 product.ProductSize = item.ProductSize.Count() > 0 ? string.Join(",", item.ProductSize).ToString() : null;
                 if (item.Description == null || item.Description == string.Empty || item.Description == "")
@@ -213,6 +226,7 @@ namespace ToanThangSite.Business.Core
                 model.Tags = item.Tags;
                 model.ProductColor = item.ProductColor.Count() > 0 ? string.Join(",", item.ProductColor).ToString() : null;
                 model.ProductSize = item.ProductSize.Count() > 0 ? string.Join(",", item.ProductSize).ToString() : null;
+                model.CollectionId = item.CollectionId;
                 db.SaveChanges();
                 db.Dispose();
                 return true;

@@ -3,60 +3,6 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_LayoutV2.cshtml";
 }
-@*<section id="body">
-    <div class="product-slide-2 mb25">
-        <div class="uk-container uk-container-center">
-                <div class="heading">
-                    <h3 class="title">Liên Hệ</h3>
-                </div>
-                <div class="border">
-                    <div class="contact1">
-
-                        @using (Html.BeginForm("Contact", "Contact", new { @class = "contactform", @novalidate = "novalidate" }, FormMethod.Post))
-                        {
-                            <ul>
-                                <li>
-                                    <label for="name">Tên <span class="required">*</span></label>
-                                    @Html.TextBoxFor(model => model.FullName, new { @class = "required" })
-                                </li>
-                                <li>
-                                    <label for="email">Email <span class="required">*</span></label>
-                                    @Html.TextBoxFor(model => model.Email, new { @class = "required email" })
-                                </li>
-                                <li>
-                                    <label for="message">Nội Dung Tin<span class="required">*</span></label>
-                                    
-                                    @Html.TextAreaFor(model => model.Content, new { @class = "required", @rows = "6", @cols = "40" })
-                                </li>
-                                <li>
-                                    <input class="linkbutton ml120" type="submit" value="Submit" id="submit_id">
-                                    <input class="linkbutton" type="reset" value="Reset">
-                                </li>
-                            </ul>
-                        }
-                    </div>
-
-                    <div class="contact2">
-                        <h3 class="heading3">Thông Tin Liên Hệ</h3>
-                        <div>
-                            <p>CÔNG TY TNHH LONG PHÚ TÂN</p>
-
-                            <p>Phường Tăng Nhơn Phú A, Quận 9, Thành phố Hồ Chí Minh</p>
-
-                            <p>Điện Thoại :0902.489.498</p>
-
-                            <p>Email: tomhumalaska.vn@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="uk-clearfix"></div>
-                  
-                    <iframe style="border:0;width:100%;height:450px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.527522474591!2d106.78861051435123!3d10.847423792273386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752714d4027fe5%3A0xcee524736d22ffa2!2zxJDGsOG7nW5nIDM4NSwgVMSDbmcgTmjGoW4gUGjDuiBBLCBRdeG6rW4gOSwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2sin!4v1499339442911" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>*@
-
 <style>
     #contact-us-the-missing-piece .links-wrap .orders h3:before, #contact-us-the-missing-piece .links-wrap .orders .h3:before {
         content: url(//Content/cdn.shopify.com/s/files/1/1187/0028/t/9/assets/orders-logo.png?v=7913019221162664319);
@@ -64,7 +10,7 @@
     }
 </style>
 <section class="title-header-wrap">
-    <div class="inner-title" style="background:url('//cdn.shopify.com/s/files/1/1187/0028/t/9/assets/contact_banner.jpg?v=16377844476272797995');">
+    <div class="inner-title" style="background:url('/Content/img/contact_banner.jpg');">
         <h1 style="color:#ffffff">
             Contact Us<br>
             <svg width="90px" ;="" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.7 57.2" style="enable-background:new 0 0 98.7 57.2;" xml:space="preserve">
@@ -73,6 +19,27 @@
         fill-rule: evenodd;
         clip-rule: evenodd;
         fill: #ffffff;
+    }
+
+    #h3inta:before {
+        content: url(/Content/img/icon/instagram-logo.png);
+        display: block;
+        min-height:53px;
+    }
+
+    #h3face:before {
+        content: url(/Content/img/icon/facebook-logo.png);
+        display: block;
+        min-height: 53px;
+    }
+
+    #orderlogo:before {
+        content: url(/Content/img/icon/orders-logo.png);
+        display: block;
+        min-height: 53px;
+    }
+    .orders, .fb, .insta {
+        text-align:center;
     }
 </style>
 <path class="st0" d="M93.9,45.1c-2.4,1.4-3.8,1.3-4.8-0.4c-0.7-1.3,0.1-2.6,2.5-4c-1.2-2.1-2.4-4.1-4.5-5.7
@@ -130,59 +97,20 @@
 <section class="contact-wrap">
     <div class="container">
         <div class="page-content">
-            <div class="links-wrap">
+            <div class="links-wrap" style="padding:5em;">
                 <div class="col-sm-4 col-xs-12 orders">
-                    <h3>FOR BESPOKE ORDERS</h3>
-                    <a href="mailto:sales@iwantthemissingpiece.com">sales@iwantthemissingpiece.com</a>
+                    <h3 id="orderlogo">FOR BESPOKE ORDERS</h3>
+                    <a href="mailto:sales@mkfashion.vn">sales@mkfashion.vn</a>
                 </div>
                 <div class="col-sm-4 col-xs-12 fb">
-                    <h3>FACEBOOK</h3>
-                    <a href="https://www.facebook.com/iwantthemissingiece/" target="_blank">https://www.facebook.com/iwantthemissingiece/</a>
+                    <h3 id="h3face">FACEBOOK</h3>
+                    <a href="https://www.facebook.com/mkfashion" target="_blank">https://www.facebook.com/mkfashion</a>
                 </div>
                 <div class="col-sm-4 col-xs-12 insta">
-                    <h3>INSTAGRAM</h3>
+                    <h3 id="h3inta">INSTAGRAM</h3>
                     <a href="https://instagram.com/iwantthemissingpiece" target="_blank">@@iwantthemissingpiece</a>
                 </div>
                 <div class="clr"></div>
-            </div>
-            <div class="row">
-
-                <div class="form-wrapper hide">
-
-                    <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
-                        <input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
-
-
-
-
-
-                        <div class="row">
-                            <div class="col-md-6">
-
-                                <label for="ContactFormName" class="label--hidden">Name</label>
-                                <input type="text" id="ContactFormName" name="contact[name]" placeholder="Name" autocapitalize="words" value="">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="ContactFormEmail" class="label--hidden">Email</label>
-                                <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="Email" autocorrect="off" autocapitalize="off" value="">
-
-                            </div>
-                        </div>
-
-
-
-                        <label for="ContactFormPhone" class="label--hidden">Phone Number</label>
-                        <input type="tel" id="ContactFormPhone" name="contact[phone-number]" placeholder="Phone Number" pattern="[0-9\-]*" value="">
-
-                        <label for="ContactFormMessage" class="label--hidden">Message</label>
-                        <textarea rows="10" id="ContactFormMessage" name="contact[body]" placeholder="Message"></textarea>
-
-                        <br>
-                        <input type="submit" class="btn btn-primary pull-right" value="Send">
-
-                    </form>
-
-                </div>
             </div>
         </div>
     </div>

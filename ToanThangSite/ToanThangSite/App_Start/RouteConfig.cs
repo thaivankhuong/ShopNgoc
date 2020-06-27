@@ -59,6 +59,13 @@ namespace ToanThangSite
            );
 
             routes.MapRoute(
+              name: "ProductCollection",
+              url: "collections.htmlpage={page}",
+              defaults: new { controller = "Product", action = "ProductCollection", page = UrlParameter.Optional },
+              namespaces: new string[] { "ToanThangSite.Controllers" }
+          );
+
+            routes.MapRoute(
               name: "Cart",
               url: "cart.html",
               defaults: new { controller = "Product", action = "CartProduct", page = UrlParameter.Optional },

@@ -102,6 +102,21 @@ namespace ToanThangSite.Services.Core
                 return null;
             }
         }
+        public static IPagedList<Product> GetByCollectionID(int page, int pageSize, int CollectionId)
+        {
+            try
+            {
+                DBEntities db = new DBEntities();
+                IPagedList<Product> Lst = db.Products.Where(x => x.CollectionId == CollectionId).OrderByDescending(x => x.CreateTime).ToPagedList(page, pageSize);
+                db.Dispose();
+                return Lst;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+       
 
         public static List<Product> GetProducSearch(string search)
         {

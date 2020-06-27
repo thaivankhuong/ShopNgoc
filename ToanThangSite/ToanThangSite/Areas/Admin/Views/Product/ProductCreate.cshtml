@@ -36,6 +36,12 @@
                                     </span>
                                 </p>
                                 <p>
+                                    <label>Bộ sưu tập</label>
+                                    <span class="field">
+                                        @Html.DropDownListFor(model => model.CollectionId, new SelectList(ViewBag.Collection, "Id", "Title", "....Chọn...."), new { @class = "input-large", @placeholder = "Bộ sưu tập" })
+                                    </span>
+                                </p>
+                                <p>
                                     <label>Độ ưu tiên</label>
                                     <span class="field">
                                         @Html.TextBoxFor(model => model.Position, new { @class = "input-large", @placeholder = "Độ ưu tiên" })

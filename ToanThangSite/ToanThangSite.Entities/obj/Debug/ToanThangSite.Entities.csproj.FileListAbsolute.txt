@@ -166,3 +166,28 @@ B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CopyComplete
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll.config
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\ToanThangSite.Entities.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Helpers.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Mvc.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.Razor.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csprojAssemblyReference.cache
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CoreCompileInputs.cache
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.csproj.CopyComplete
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Entities\obj\Debug\ToanThangSite.Entities.pdb

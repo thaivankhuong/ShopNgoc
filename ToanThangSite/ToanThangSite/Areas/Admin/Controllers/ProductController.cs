@@ -27,6 +27,11 @@ namespace ToanThangSite.Areas.Admin.Controllers
             ViewBag.ProductColor = ProductBusiness.GetAllProductColor();
             ViewBag.producSize = ProductBusiness.GetAllProductSize();
             ViewBag.ProductCategory = ProductCategoryBusiness.GetAll();
+
+            var conllectionlist = new List<Collection> { new Collection { Id = 0, Title = "Không Chọn" } };
+            conllectionlist.AddRange(CollectionBusiness.GetAll());
+            ViewBag.Collection = conllectionlist;
+
             return View();
         }
 
@@ -45,8 +50,13 @@ namespace ToanThangSite.Areas.Admin.Controllers
         {
             ViewBag.Branch = BranchBusiness.GetAll();
             ViewBag.ProductCategory = ProductCategoryBusiness.GetAll();
+            var conllectionlist = new List<Collection> { new Collection { Id = 0, Title = "Không Chọn" } };
+            conllectionlist.AddRange(CollectionBusiness.GetAll());
+            ViewBag.Collection = conllectionlist;
+
             ViewBag.ProductColor = ProductBusiness.GetAllProductColor();
             ViewBag.producSize = ProductBusiness.GetAllProductSize();
+
             Product item = ProductBusiness.GetByID(id);
             return View(item);
         }

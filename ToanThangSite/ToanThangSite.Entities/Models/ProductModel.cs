@@ -35,5 +35,7 @@ namespace ToanThangSite.Entities.Models
         public string Tags { get; set; }
         public string[] ProductSize { get; set; }
         public string[] ProductColor { get; set; }
+        public Nullable<int> CollectionId { get; set; }
+
     }
 }

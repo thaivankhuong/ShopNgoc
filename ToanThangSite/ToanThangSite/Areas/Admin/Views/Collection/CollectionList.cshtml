@@ -1,0 +1,112 @@
+﻿@model IEnumerable<ToanThangSite.Entities.Core.Collection>
+@{
+    ViewBag.Title = "CollectionList";
+}
+
+<div class="breadcrumbwidget">
+    <ul class="breadcrumb">
+        <li><a href="@Url.Action("Index","Home")">Home</a> <span class="divider">/</span></li>
+
+        <li class="active">Danh sách</li>
+    </ul>
+</div><!--breadcrumbs-->
+<div class="pagetitle">
+    <h1>Danh sách</h1>
+</div><!--pagetitle-->
+<div class="maincontent">
+    <div class="contentinner">
+
+        <h4 class="widgettitle">
+            Danh sách
+            <a href="@Url.Action("CollectionCreate","Collection")" title="Thêm mới" class="btn btn-primary" style="float:right;height: 17px;margin-left:2px"><i class="iconfa-plus icon-white" style="margin:0;line-height:17px;"></i></a>
+            <a href="@Url.Action("CollectionList","Collection")" title="Tải lại" class="btn btn-primary" style="float:right;height: 17px;"><i class="iconfa-refresh icon-white" style="margin:0;line-height:17px;"></i></a>
+        </h4>
+
+        <table class="table table-bordered" id="dyntable">
+            <colgroup>
+                <col class="con0" style="align:center; width: 4%" />
+                <col class="con1" />
+                <col class="con0" />
+                <col class="con1" />
+                <col class="con0" />
+                <col class="con1" />
+                <col class="con0" />
+            </colgroup>
+            <thead>
+                <tr role="row">
+                    <th class="head0 nosort sorting_asc" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column ascending" style="width: 24px;">
+                        <div class="checker" id="uniform-undefined"><span><input type="checkbox" class="checkall" style="opacity: 0;"></span></div>
+                    </th>
+                    <th class="head0 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" aria-label="Hình ảnh: activate to sort column ascending" style="width: 150px;">Tiêu đề</th>
+                    <th class="head0 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" aria-label="Hình ảnh: activate to sort column ascending" style="width: 150px;">Hình ảnh</th>
+                    <th class="head0 sorting" role="columnheader" tabindex="0" aria-controls="dyntable" rowspan="1" colspan="1" aria-label="Chức năng: activate to sort column ascending" style="width: 186px;">Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr class="gradeX">
+                    <td class="aligncenter">
+                        <span class="center">
+                            <input type="checkbox" />
+                        </span>
+                    </td>
+                    <td>@item.Title</td>
+                    <td>
+                        <a href="#" data-rel="image" class="cboxElement image-list" rel="image"><img src="@item.Avatar" id="picture_@item.Id" onclick="selectImage('ChangeImageCollection/@item.Id',this.id)" alt=""></a>
+                    </td>
+                    <td class="center">
+                        <ul class="list-nostyle">
+                            <li><a href="#" class="btn btn-primary btn-control confirmbutton" id="control_@item.Id" onclick="deleteCollection('DeleteCollection/@item.Id',this.id)"><i class="icon-trash icon-white"></i>&nbsp; Xóa dữ liệu này</a></li>
+                            <li><a href="@Url.Action("CollectionUpdate","Collection",new {@id=item.Id})" class="btn btn-primary btn-control"><i class="iconfa-edit icon-white"></i>&nbsp; Chỉnh sửa dữ liệu</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <script type="text/javascript">
+            function selectImage(action, id) {
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (fileUrl) {
+                    jQuery.ajax({
+                        method: "GET",
+                        url: action,
+                        data: { picture: fileUrl }
+                    }).done(function (path) {
+                        if (path != '') {
+                            alert('Lỗi cập nhật hình ảnh:' + path);
+                        }
+                        else {
+                            jQuery('#' + id).attr("src", fileUrl);
+                        }
+                    })
+                };
+                finder.popup();
+            }
+            function deleteCollection(action, id) {
+                jConfirm('Bạn có chắc muốn xóa dữ liệu này ?', 'Nhắc nhở', function (r) {
+                    if(r==true)
+                    {
+                        jQuery.ajax({
+                            method: "GET",
+                            url: action,
+                        }).done(function (data) {
+                            if (data != '') {
+                                jAlert('Xảy ra lỗi khi xóa dữ liệu :' + data);
+                            }
+                            else {
+                                var i = jQuery('#' + id).closest('tr');
+                                i.remove();
+                                jAlert('Đã xóa dữ liệu thanh công!', 'Thông báo');
+                            }
+                        })
+                    }
+                    else {
+                        jAlert('Đã hủy lệnh xóa dữ liệu!', 'Thông báo');
+                    }
+                });
+            }
+        </script>
+    </div><!--contentinner-->
+</div><!--maincontent-->
