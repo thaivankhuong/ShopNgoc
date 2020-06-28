@@ -64,3 +64,38 @@ B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Relea
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.csproj.CopyComplete
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.dll
 B:\Project Free\NgocShop\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Business.dll.config
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Business.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Business.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\EntityFramework.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\EntityFramework.SqlServer.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\PagedList.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\PagedList.Mvc.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.Helpers.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.Mvc.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.Razor.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.WebPages.Deployment.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.WebPages.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.WebPages.Razor.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Entities.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Services.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Entities.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Entities.dll.config
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Services.pdb
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\ToanThangSite.Services.dll.config
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\EntityFramework.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\EntityFramework.SqlServer.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\PagedList.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\PagedList.Mvc.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.Helpers.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.Mvc.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.Razor.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.WebPages.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.WebPages.Deployment.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\bin\Release\System.Web.WebPages.Razor.xml
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.csprojAssemblyReference.cache
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.csproj.CoreCompileInputs.cache
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.csproj.CopyComplete
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.dll
+D:\ShopNgoc\ShopNgoc\ToanThangSite\ToanThangSite.Business\obj\Release\ToanThangSite.Business.pdb

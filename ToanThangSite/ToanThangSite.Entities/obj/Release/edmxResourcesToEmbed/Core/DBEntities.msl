@@ -144,6 +144,7 @@
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="Model.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
           <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
           <ScalarProperty Name="ProductSize" ColumnName="ProductSize" />
           <ScalarProperty Name="Tags" ColumnName="Tags" />
@@ -186,6 +187,18 @@
       <EntityTypeMapping TypeName="Model.ProductColor">
         <MappingFragment StoreEntitySet="ProductColor">
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collections">
+      <EntityTypeMapping TypeName="Model.Collection">
+        <MappingFragment StoreEntitySet="Collection">
+          <ScalarProperty Name="SeoUrl" ColumnName="SeoUrl" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Deripstion" ColumnName="Deripstion" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

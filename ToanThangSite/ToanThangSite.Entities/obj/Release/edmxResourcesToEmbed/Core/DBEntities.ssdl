@@ -44,6 +44,17 @@
     <Property Name="Map" Type="nvarchar" MaxLength="2500" />
     <Property Name="Status" Type="bit" />
   </EntityType>
+  <EntityType Name="Collection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" />
+    <Property Name="Avatar" Type="nvarchar" MaxLength="500" />
+    <Property Name="Deripstion" Type="nvarchar(max)" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="SeoUrl" Type="nvarchar" MaxLength="500" />
+  </EntityType>
   <EntityType Name="Contact">
     <Key>
       <PropertyRef Name="ContactID" />
@@ -120,6 +131,7 @@
     <Property Name="Tags" Type="nvarchar" MaxLength="4000" />
     <Property Name="ProductSize" Type="nvarchar(max)" />
     <Property Name="ProductColor" Type="nvarchar(max)" />
+    <Property Name="CollectionId" Type="int" />
   </EntityType>
   <EntityType Name="ProductCategory">
     <Key>
@@ -191,6 +203,7 @@
     <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Article" EntityType="Self.Article" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Collection" EntityType="Self.Collection" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Introduce" EntityType="Self.Introduce" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
