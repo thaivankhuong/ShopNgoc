@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using ToanThangSite.Business.Core;
 using ToanThangSite.Entities.Core;
+using ToanThangSite.Entities.Models;
 using static ToanThangSite.Business.Common.SetMetatag;
 
 namespace ToanThangSite.Controllers
@@ -18,11 +19,11 @@ namespace ToanThangSite.Controllers
             SeoMeta item = SeoMetaBusiness.GetById(1);
             Metatag tag = new Metatag();
             tag.title = item.Title;
-            tag.siteName = "Shop Ngoc Vo";
+            tag.siteName = "Mk Fashion";
             tag.pageType = "website";
             tag.description = item.Description;
             tag.robots = "index,follow";
-            tag.canonica = "http://shopngocvo.vn";
+            tag.canonica = ConfigModel.urlCofig;
             tag.image = item.Avatar;
             tag.locale = "vi_VN";
             tag.keywords = item.KeyWord;

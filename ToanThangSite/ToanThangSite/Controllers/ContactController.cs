@@ -19,16 +19,16 @@ namespace ToanThangSite.Controllers
         {
             SeoMeta item = SeoMetaBusiness.GetById(4);
             Metatag tag = new Metatag();
-            //tag.title = item.Title;
-            //tag.siteName = "mkfashion";
-            //tag.pageType = "website";
-            //tag.description = item.Description;
-            //tag.robots = "index,follow";
-            //tag.canonica = "http://mkfashion.vn";
-            //tag.image = item.Avatar;
-            //tag.locale = "vi_VN";
-            //tag.keywords = item.KeyWord;
-            //tag.FBadmins = "";
+            tag.title = item.Title;
+            tag.siteName = "mkfashion";
+            tag.pageType = "website";
+            tag.description = item.Description;
+            tag.robots = "index,follow";
+            tag.canonica = ConfigModel.urlCofig;  
+            tag.image = item.Avatar;
+            tag.locale = "vi_VN";
+            tag.keywords = item.KeyWord;
+            tag.FBadmins = "";
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             return View();

@@ -2122,7 +2122,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\Fileuploads\_thumbs\Images\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Models\" />
+    <Folder Include="Model\" />
     <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>

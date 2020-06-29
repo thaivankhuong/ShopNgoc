@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using ToanThangSite.Business.Core;
 using ToanThangSite.Entities.Core;
+using ToanThangSite.Entities.Models;
 using static ToanThangSite.Business.Common.SetMetatag;
 
 namespace ToanThangSite.Controllers
@@ -17,16 +18,16 @@ namespace ToanThangSite.Controllers
             List<Introduce> model = new List<Introduce>();
             model = IntroduceBusiness.GetTop3();
             Metatag tag = new Metatag();
-            //tag.title = model.Title;
-            //tag.siteName = "mkfashion";
-            //tag.pageType = "object";
-            //tag.description = model.Description;
-            //tag.robots = "index,follow";
-            //tag.canonica = "http://mkfashion.vn";
-            //tag.image = "http://mkfashion.vn/Content/images/logo.png";
-            //tag.locale = "vi_VN";
-            //tag.keywords = "giới thiệu thảo dược toàn thắng";
-            //tag.FBadmins = "";
+            tag.title = model[0].Title;
+            tag.siteName = "mkfashion";
+            tag.pageType = "object";
+            tag.description = model[0].Description;
+            tag.robots = "index,follow";
+            tag.canonica = ConfigModel.urlCofig;// "http://mkfashion.vn";
+            tag.image = "http://mkfashion.vn/Content/img/logongocvo.jpg";
+            tag.locale = "vi_VN";
+            tag.keywords = "Introduce MK Fashion";
+            tag.FBadmins = "";
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             return View(model);

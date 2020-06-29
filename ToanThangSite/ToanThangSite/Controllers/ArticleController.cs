@@ -7,6 +7,7 @@ using ToanThangSite.Business.Core;
 using PagedList;
 using static ToanThangSite.Business.Common.SetMetatag;
 using ToanThangSite.Entities.Core;
+using ToanThangSite.Entities.Models;
 
 namespace ToanThangSite.Controllers  
 {
@@ -18,11 +19,11 @@ namespace ToanThangSite.Controllers
             SeoMeta item = SeoMetaBusiness.GetById(2);
             Metatag tag = new Metatag();
             tag.title = item.Title;
-            tag.siteName = "mkfashion";
+            tag.siteName = "mk fashion";
             tag.pageType = "website";
             tag.description = item.Description;
             tag.robots = "index,follow";
-            tag.canonica = "http://mkfashion.vn";
+            tag.canonica = ConfigModel.urlCofig;  
             tag.image = item.Avatar;
             tag.locale = "vi_VN";
             tag.keywords = item.KeyWord;
@@ -45,8 +46,8 @@ namespace ToanThangSite.Controllers
             tag.pageType = "article";
             tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
             tag.robots = "index,follow";
-            tag.canonica = "http://mkfashion.vn";
-            tag.image = "http://mkfashion.vn/" + item.Avatar;
+            tag.canonica = ConfigModel.urlCofig; 
+            tag.image = ConfigModel.urlCofig + item.Avatar;
             tag.locale = "vi_VN";
             tag.keywords = item.Keyword;
             tag.FBadmins = "";

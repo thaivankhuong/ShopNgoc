@@ -62,16 +62,15 @@
                                 }
                                 else
                                 {
-                                    <span id="ProductPrice" class="price" itemprop="price"> <span class="money" data-currency-sgd="$@String.Format("{0:0,0}", Model.Price)" data-currency="SGD"> $@String.Format("{0:0,0}", Model.Price)</span></span>
+                                    <span id="ProductPrice" class="price" itemprop="price"> <span class="money" data-currency-sgd="$@String.Format("{0:0,0}", Convert.ToDouble(Model.Price))" data-currency="SGD"> $@String.Format("{0:0,0}", Convert.ToDouble(Model.Price))</span></span>
                                 }
-
                             </div>
                             <div class="product-description rte">
                                 @Html.Raw(Model.Content)
                             </div>
                             <div class="product-options  linked-options">
                                 <div class="selector-wrapper">
-                                    <label >Size</label>
+                                    <label>Size</label>
                                     <select class="single-option-selector" data-option="option1" id="productsize">
                                         @foreach (var item in (List<ProductSize>)ViewBag.producSize)
                                         {
@@ -80,15 +79,22 @@
                                     </select>
                                 </div>
                                 <div class="selector-wrapper">
-                                <label>Color</label>
-                                <select class="single-option-selector" data-option="option2" id="productcolor">
-                                    @foreach (var item in (List<ProductColor>)ViewBag.ProductColor)
-                                    {
-                                        <option value="@item.Id">@item.Name</option>
-                                    }
-                                </select>
+                                    <label>Color</label>
+                                    <select class="single-option-selector" data-option="option2" id="productcolor">
+                                        @foreach (var item in (List<ProductColor>)ViewBag.ProductColor)
+                                        {
+                                            <option value="@item.Id">@item.Name</option>
+                                        }
+                                    </select>
                                 </div>
-                                <div class="total-price"> <span class="money" data-currency-sgd=" $180.00" data-currency="SGD"> $180.00</span></div>
+                                @if (!string.IsNullOrEmpty(Model.PriceSale))
+                                {
+                                    <div class="total-price"> <span class="money"> $@String.Format("{0:0,0}", Convert.ToDouble(Model.PriceSale))</span></div>
+                                }
+                                else
+                                {
+                                    <div class="total-price"> <span class="money">$@String.Format("{0:0,0}", Convert.ToDouble(Model.Price))</span></div>
+                                }
                             </div>
                             <div class="product-actions">
                                 <div class="product-single-quantity">

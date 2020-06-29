@@ -19,11 +19,11 @@ namespace ToanThangSite.Controllers
             SeoMeta item = SeoMetaBusiness.GetById(3);
             Metatag tag = new Metatag();
             tag.title = item.Title;
-            tag.siteName = "Shop Ngoc Vo";
+            tag.siteName = "MK Fashion";
             tag.pageType = "object";
             tag.description = item.Description;
             tag.robots = "index,follow";
-            tag.canonica = "http://Shopngocvo.vn";
+            tag.canonica = ConfigModel.urlCofig;
             tag.image = item.Avatar;
             tag.locale = "vi_VN";
             tag.keywords = item.KeyWord;
@@ -86,19 +86,18 @@ namespace ToanThangSite.Controllers
             {
                 tag.title = item.Title;
             }
-            
-            //tag.siteName = "mkfashion";
-            //tag.pageType = "article";
-            //tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
-            //tag.robots = "index,follow";
-            //tag.canonica = "http://localhost:27730";
-            //tag.image = "http://localhost:27730" + item.Avatar;
-            //tag.locale = "vi_VN";
-            //tag.keywords = item.Keyword;
-            //tag.FBadmins = "";
-            //tag.publishedTime = item.CreateTime.ToString();
-            //tag.updateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString();
-            //tag.tags = item.Keyword;
+            tag.siteName = "mkfashion";
+            tag.pageType = "article";
+            tag.description = item.MetaDescription != "" ? item.MetaDescription : item.Description;
+            tag.robots = "index,follow";
+            tag.canonica = ConfigModel.urlCofig;
+            tag.image = ConfigModel.urlCofig + item.Avatar;
+            tag.locale = "vi_VN";
+            tag.keywords = item.Keyword;
+            tag.FBadmins = "";
+            tag.publishedTime = item.CreateTime.ToString();
+            tag.updateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).ToString();
+            tag.tags = item.Keyword;
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             //ViewBag.ReasonTitle = ReasonBusiness.GetByProduct(item.ProductID).Title;
@@ -150,16 +149,6 @@ namespace ToanThangSite.Controllers
         public ActionResult ProductListTypical(int page = 1)
         {
             Metatag tag = new Metatag();
-            //tag.title = "mkfashion";
-            //tag.siteName = "Thảo Dược Toàn Thắng";
-            //tag.pageType = "object";
-            //tag.description = "mkfashion cung cấp các loại mkfashion";
-            //tag.robots = "index,follow";
-            //tag.canonica = "http://localhost:27730";
-            //tag.image = "";
-            //tag.locale = "vi_VN";
-            //tag.keywords = "tôm hùm,tôm càng xanh";
-            //tag.FBadmins = "";
             ViewResult view = SetMetaTags(tag);
             ViewBag.Header = view.ViewBag.All;
             ViewBag.UrlProductTypical = Request.Url.AbsoluteUri;
