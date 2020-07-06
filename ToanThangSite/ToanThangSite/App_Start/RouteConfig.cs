@@ -35,7 +35,7 @@ namespace ToanThangSite
             routes.MapRoute(
                 name: "Contact",
                 url: "contact.html",
-                defaults: new { controller = "Contact", action = "Contact", id = UrlParameter.Optional },
+                defaults: new { controller = "Contact", action = "Stockists", id = UrlParameter.Optional },
                 namespaces: new string[] { "ToanThangSite.Controllers" }
             );
             routes.MapRoute(

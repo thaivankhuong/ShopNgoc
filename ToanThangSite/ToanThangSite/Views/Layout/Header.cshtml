@@ -1,18 +1,23 @@
 ﻿@model IEnumerable<ToanThangSite.Entities.Core.ProductCategory>
 @using ToanThangSite.Business.Common
-<style>
-    .mini-cart .miniCart-content .total .cart-total {
-        float: right;
-        font-size: 24px;
-        font-weight: 600;
-    }
-    .mini-cart .miniCart-content  .total {
-        color: #1c1c1c;
-        line-height: 1em;
-        margin: 0 0 35px;
-    }
+    <style>
+        .mini-cart .miniCart-content .total .cart-total {
+            float: right;
+            font-size: 24px;
+            font-weight: 600;
+        }
 
-</style>
+        .mini-cart .miniCart-content .total {
+            color: #1c1c1c;
+            line-height: 1em;
+            margin: 0 0 35px;
+        }
+
+        .titlerig-em {
+            font-family: -webkit-body !important;
+            font-size: 19px;
+        }
+    </style>
 <header id="header" class="site-header header-v1  header--fixed hide-from-print headroom headroom--top headroom--not-bottom">
     <div class="header-bar">
         <div class="container">
@@ -63,24 +68,24 @@
                                                 }
                                             </ul>
                                         </li>
-                                        <li class="level-0 menu-item ">
+                                        @*<li class="level-0 menu-item ">
                                             <a href="/stockists.html" class="level-0">Stores</a>
-                                        </li>
+                                        </li>*@
                                         <li class="level-0 menu-item ">
                                             <a href="/contact.html" class="level-0">Contact</a>
                                         </li>
-                                        <li class="level-0 menu-item ">
+                                        @*<li class="level-0 menu-item ">
                                             <a href="/blogs.html" class="level-0">Blog</a>
-                                        </li>
+                                        </li>*@
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <ul class="list-inline message hidden-sm hidden-xs">
-                            <li>
+                        <ul class="list-inline message hidden-sm hidden-xs ">
+                            <li class="titlerig-em">
                                 <p><i class="fa fa-envelope"> </i> Email : <a href="mailto:mkshion7596@gmail.com">mkshion7596@gmail.com</a></p>
                             </li>
-                            <li>
+                            <li class="titlerig-em">
                                 <p><i class="fa fa-instagram"></i> IG: <a href="https://www.instagram.com/mkfashion7596/" target="_blank">@@mkfashion7596</a></p>
                             </li>
                         </ul>
@@ -91,10 +96,10 @@
     </div>
     <div class="header-inner">
         <div class="container">
-            <div class="inner-header-wrap">
+            <div class="inner-header-wrap" style="background: #c7c7c780;">
                 <div class="logo">
                     <a href="index.html" class="logo-wrapper hidden-xs">
-                        <img src="~/Content/img/rsz_1rsz_1rsz_logongocvo-removebg-preview.png" alt="Mk fashion" />
+                        <img src="~/Content/img/rsz_logongocvo-removebg-preview.png" alt="Mk fashion" style="max-width:125px;" />
                     </a>
                     <a href="index.html" class="logo-wrapper hidden-lg hidden-md hidden-sm">
                         <img src="~/Content/img/logongocvo-removebg-preview.png" alt="Mk fashion" />
@@ -102,8 +107,8 @@
                 </div>
                 <div class="site-header-inner">
                     <div class="main-menu hidden-sm hidden-xs">
-                        <div class="main-menu">
-                            <ul class="main-nav">
+                        <div class="main-menu" style="font-size: 16px;">
+                            <ul class="main-nav" style="    margin: 15px;">
                                 <li class="level-0 menu-item active ">
                                     <a href="/" class="level-0">Home</a>
                                 </li>
@@ -124,15 +129,15 @@
                                         }
                                     </ul>
                                 </li>
-                                <li class="level-0 menu-item ">
+                                @*<li class="level-0 menu-item ">
                                     <a href="/stockists.html" class="level-0">Stores</a>
-                                </li>
+                                </li>*@
                                 <li class="level-0 menu-item ">
                                     <a href="/contact.html" class="level-0">Contact</a>
                                 </li>
-                                <li class="level-0 menu-item ">
+                                @*<li class="level-0 menu-item ">
                                     <a href="/blogs.html"  class="level-0">Blog</a>
-                                </li>
+                                </li>*@
                             </ul>
                         </div>
                     </div>

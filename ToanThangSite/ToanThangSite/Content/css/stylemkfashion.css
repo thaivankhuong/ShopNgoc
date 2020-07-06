@@ -1,0 +1,22 @@
+﻿/*#the-missing-piece #section-wrap:before {
+    content: url(/Content/img//106609513_714023616099617_1169984287068707780_n-removebg-preview.png);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    z-index: 100
+}*/
+.message li {
+    font-family: '-webkit-body' !important
+}
+
+/*.message li {
+    font-family: 'Playfair Display' !important
+}*/
+.header-search .fa {
+    color: #1c1c1c !important;
+    font-size: 20px;
+}
+.mini-cart > a .fa {
+    font-size: 20px;
+}

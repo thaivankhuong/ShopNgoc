@@ -2034,11 +2034,14 @@
     <Content Include="Content\css\library.css" />
     <Content Include="Content\css\owl.carousel.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\stylemkfashion.css" />
     <Content Include="Content\css\uikit.docs.min.css" />
     <Content Include="Content\EmailTemplate\email.html" />
     <Content Include="Content\i.ibb.co\PhmSS7P\logo-Pay-Now.png" />
     <Content Include="Content\img\about_banner1.jpg" />
     <Content Include="Content\img\abt_right_img.jpg" />
+    <Content Include="Content\img\backgroup_.png" />
+    <Content Include="Content\img\bg_v2.png" />
     <Content Include="Content\img\cart_banner.jpg" />
     <Content Include="Content\img\collection_banner.jpg" />
     <Content Include="Content\img\collection_banner1.jpg" />
@@ -2058,6 +2061,9 @@
     <Content Include="Content\img\logongocvo-removebg-preview.png" />
     <Content Include="Content\img\logongocvo.jpg" />
     <Content Include="Content\img\MikaCheongsam-Blossom_4381006a-efdc-4a01-9726-d9de482e35e4_1024x1024.jpg" />
+    <Content Include="Content\img\resize-1594021390924679844backgroup.png" />
+    <Content Include="Content\img\rsz_1rsz_1rsz_logongocvo-removebg-preview.png" />
+    <Content Include="Content\img\rsz_logongocvo-removebg-preview.png" />
     <Content Include="Content\img\slide_1_button_imaged066.png" />
     <Content Include="Content\img\slide_2_button_image2890.png" />
     <Content Include="Content\img\stockists_banner.jpg" />
