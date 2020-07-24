@@ -183,7 +183,7 @@ namespace ToanThangSite.Controllers
         {
             IPagedList<Collection> model;
             ViewBag.UrlCollection = Request.Url.AbsoluteUri;
-            model = CollectionBusiness.GetAll(page,6);
+            model = CollectionBusiness.GetAll(page,18);
             return View(model);
         }
     }

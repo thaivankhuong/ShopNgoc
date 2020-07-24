@@ -81,14 +81,32 @@
                 @foreach (var item in Model)
                 {
                     var url = "/" + item.Title.ToUrlFormat(true) + ".html";
-                    <div class="col-sm-4 col-xs-12 collection-wrap">
-                        <div class="col-img-wrap" style="background:url('@item.Avatar')"></div>
-                        <div class=""><i class="fa fa-calendar"></i>&nbsp;&nbsp;<span> Posted on @Convert.ToDateTime(item.CreateDate).Day @Convert.ToDateTime(item.CreateDate).ToString("MMMM") @Convert.ToDateTime(item.CreateDate).Year</span></div>
-                        <h4> @item.Title</h4>
-                        <p>
-                            @item.Deripstion
-                        </p>
-                        <a href="@url" class="btn btn-primary">View Product</a>
+                    <div class="collection-wrap">
+                        <div class="col-sm-9 col-xs-12" style="padding-left:0px;">
+                            <div class="col-img-wrap" style="background:url('@item.Avatar')">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12" style="    text-align: center;">
+                            <div class=""><i class="fa fa-calendar"></i>&nbsp;&nbsp;<span> Posted on @Convert.ToDateTime(item.CreateDate).Day @Convert.ToDateTime(item.CreateDate).ToString("MMMM") @Convert.ToDateTime(item.CreateDate).Year</span></div>
+                            <h1 style="
+                                font-weight: 600;
+                                font-family: 'Helvetica Neue' !important;
+                                color: #000;
+                                letter-spacing: .5px;
+                                font-weight: 600;
+                                font-size: 24px;
+                                margin: 0;
+                                text-transform: uppercase;
+                            ">
+                                @item.Title
+                            </h1>
+                            <p>
+                                @item.Deripstion
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-xs-12" style="padding: 15px 0px 15px 0px;">
+                            <a href="@url" class="btn btn-primary">View Product</a>
+                        </div>
                     </div>
                 }
                 <div class="clr"></div>
